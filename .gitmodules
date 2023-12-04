@@ -1,0 +1,3 @@
+[submodule "ext/rusefi"]
+	path = ext/rusefi
+	url = https://github.com/rusefi/rusefi
