@@ -1,0 +1,16 @@
+name: Create Board Firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: rusefi/rusefi/.github/workflows/custom-board-build.yaml@master
+    secrets: inherit
+    permissions:
+      contents: write
+    with:
+      shortBoardName: XXX
+      iniFileName: rusefi_XXX.ini

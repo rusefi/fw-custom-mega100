@@ -1,0 +1,10 @@
+name: Update rusEFI Reference
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: rusefi/rusefi/.github/workflows/custom-board-update-rusefi-reference.yaml@master
+    permissions:
+      contents: write
