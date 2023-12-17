@@ -157,10 +157,12 @@
 #define can_nbc_e_CAN_BUS_NISSAN_VQ 9
 #define can_nbc_e_CAN_BUS_W202_C180 5
 #define CAN_RX_PREFIX "CAN_rx"
-#define can_vss_nbc_e_auto_enum 0="BMW_e46",3="BMW_e90",2="LUA",1="W202"
+#define can_vss_nbc_e_auto_enum 0="BMW_e46",2="BMW_e90",5="HONDA_CIVIC9",4="HYUNDAI_PB",3="NISSAN_350",1="W202"
 #define can_vss_nbc_e_BMW_e46 0
-#define can_vss_nbc_e_BMW_e90 3
-#define can_vss_nbc_e_LUA 2
+#define can_vss_nbc_e_BMW_e90 2
+#define can_vss_nbc_e_HONDA_CIVIC9 5
+#define can_vss_nbc_e_HYUNDAI_PB 4
+#define can_vss_nbc_e_NISSAN_350 3
 #define can_vss_nbc_e_W202 1
 #define CanGpioType_auto_enum 0="NONE",1="DRT",2="MS"
 #define CanGpioType_DRT 1
@@ -458,10 +460,7 @@
 #define GAUGE_NAME_ACCEL_LON "Accel: Longitudinal"
 #define GAUGE_NAME_ACCEL_ROLL "Acceleration: Roll"
 #define GAUGE_NAME_ACCEL_VERT "Accel: Vertical"
-#define GAUGE_NAME_ACCEL_X "Acceleration: X"
-#define GAUGE_NAME_ACCEL_Y "Acceleration: Y"
 #define GAUGE_NAME_ACCEL_YAW "Acceleration: Yaw"
-#define GAUGE_NAME_ACCEL_Z "Acceleration: Z"
 #define GAUGE_NAME_ADJUSTED_TIMING "Timing: ignition"
 #define GAUGE_NAME_AFR "Air/Fuel Ratio"
 #define GAUGE_NAME_AFR2 "Air/Fuel Ratio 2"
@@ -1023,7 +1022,7 @@
 #define LUA_GAUGE_COUNT 2
 #define LUA_PWM_COUNT 8
 #define LUA_SCRIPT_SIZE 8000
-#define MAF_DECODING_COUNT 256
+#define MAF_DECODING_COUNT 32
 #define maf_sensor_type_e_auto_enum 0="CUSTOM",2="Bosch0280218004",1="Bosch0280218037",3="DensoTODO"
 #define maf_sensor_type_e_Bosch0280218004 2
 #define maf_sensor_type_e_Bosch0280218037 1
@@ -1067,7 +1066,7 @@
 #define PACK_PERCENT_BYTE_MULT 100.0
 #define PEDAL_TO_TPS_SIZE 8
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 23880
+#define persistent_config_s_size 22088
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1144,7 +1143,7 @@
 #define SentEtbType_NONE 0
 #define show_Frankenso_presets true
 #define show_test_presets true
-#define SIGNATURE_HASH 2192944932
+#define SIGNATURE_HASH 2366587278
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1194,7 +1193,7 @@
 #define TOOTH_PACKET_SIZE 2
 #define TOP_DEAD_CENTER_MESSAGE "r"
 #define TORQUE_CURVE_SIZE 6
-#define TOTAL_CONFIG_SIZE 23880
+#define TOTAL_CONFIG_SIZE 22088
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_TPS_ACCEL_CLT_CORR_TABLE 4
 #define TPS_TPS_ACCEL_TABLE 8
@@ -1423,6 +1422,8 @@
 #define ts_show_full_pinout true
 #define ts_show_hardware_simulator true
 #define ts_show_hip9011 false
+#define ts_show_ign_key_analog_input false
+#define ts_show_ign_key_switch false
 #define ts_show_ignitionPinMode true
 #define ts_show_inj_diag false
 #define ts_show_injectionPinMode false
@@ -1441,14 +1442,14 @@
 #define ts_show_vr_threshold_2 true
 #define ts_show_vr_threshold_all true
 #define ts_show_vr_threshold_pins true
-#define TS_SIGNATURE "rusEFI default.2023.12.04.XXX.2192944932"
+#define TS_SIGNATURE "rusEFI default.2023.12.17.XXX.2366587278"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
 #define TS_SINGLE_WRITE_COMMAND_char W
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 1440
+#define TS_TOTAL_OUTPUT_SIZE 1444
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
