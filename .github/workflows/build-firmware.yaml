@@ -13,4 +13,3 @@ jobs:
       contents: write
     with:
       shortBoardName: XXX
-      iniFileName: rusefi_XXX.ini
