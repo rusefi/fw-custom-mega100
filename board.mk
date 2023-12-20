@@ -1,5 +1,7 @@
 BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp
 
+BOARDINC += $(BOARD_DIR)/generated/controllers/generated
+
 DDEFS += -DFIRMWARE_ID=\"XXX\"
 SHORT_BOARD_NAME=XXX
 
