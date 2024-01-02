@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition.jar based on (unknown script) integration/rusefi_config.txt Wed Dec 20 00:46:01 EST 2023
+// this section was generated automatically by rusEFI tool config_definition.jar based on (unknown script) integration/rusefi_config.txt Tue Jan 02 17:17:03 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -3076,11 +3076,9 @@ struct engine_configuration_s {
 	 */
 	uint8_t camDecoder2jzPosition;
 	/**
-	 * need 4 byte alignment
-	units
 	 * offset 1577
 	 */
-	uint8_t alignmentFill_at_1577[1];
+	uint8_t mc33810maxDwellTimer;
 	/**
 	 * Duration of each test pulse
 	ms
@@ -3764,9 +3762,19 @@ struct engine_configuration_s {
 	 */
 	scaled_channel<uint8_t, 1, 50> triggerCompSensorSatRpm;
 	/**
+	ratio
 	 * offset 2672
 	 */
-	pid_s idleRpmPid2;
+	scaled_channel<uint16_t, 100, 1> tractionControlSlipBins[TRACTION_CONTROL_ETB_DROP_SIZE];
+	/**
+	RPM
+	 * offset 2684
+	 */
+	uint8_t tractionControlSpeedBins[TRACTION_CONTROL_ETB_DROP_SIZE];
+	/**
+	 * offset 2690
+	 */
+	int8_t unusedHere[2];
 	/**
 	 * offset 2692
 	 */
@@ -4470,10 +4478,15 @@ struct engine_configuration_s {
 	 */
 	float triggerVVTGapOverrideTo[VVT_TRACKING_LENGTH];
 	/**
-	units
+	%
 	 * offset 4348
 	 */
-	uint8_t mainUnusedEnd[208];
+	int8_t tractionControlEtbDrop[TRACTION_CONTROL_ETB_DROP_SIZE][TRACTION_CONTROL_ETB_DROP_SIZE];
+	/**
+	units
+	 * offset 4384
+	 */
+	uint8_t mainUnusedEnd[172];
 };
 static_assert(sizeof(engine_configuration_s) == 4556);
 
@@ -5208,17 +5221,17 @@ struct persistent_config_s {
 	%
 	 * offset 19444
 	 */
-	scaled_channel<int8_t, 10, 1> throttle2TrimTable[6][6];
+	scaled_channel<int8_t, 10, 1> throttle2TrimTable[ETB2_TRIM_SIZE][ETB2_TRIM_SIZE];
 	/**
 	%
 	 * offset 19480
 	 */
-	uint8_t throttle2TrimTpsBins[6];
+	uint8_t throttle2TrimTpsBins[ETB2_TRIM_SIZE];
 	/**
 	RPM
 	 * offset 19486
 	 */
-	scaled_channel<uint8_t, 1, 100> throttle2TrimRpmBins[6];
+	scaled_channel<uint8_t, 1, 100> throttle2TrimRpmBins[ETB2_TRIM_SIZE];
 	/**
 	deg
 	 * offset 19492
@@ -5385,4 +5398,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22088);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition.jar based on (unknown script) integration/rusefi_config.txt Wed Dec 20 00:46:01 EST 2023
+// this section was generated automatically by rusEFI tool config_definition.jar based on (unknown script) integration/rusefi_config.txt Tue Jan 02 17:17:03 UTC 2024
