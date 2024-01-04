@@ -299,14 +299,13 @@
 #define display_mode_e_DM_HD44780_OVER_PCF8574 2
 #define display_mode_e_DM_NONE 0
 #define DWELL_CURVE_SIZE 8
-#define ego_sensor_e_auto_enum 0="ES_BPSX_D1",2="ES_14Point7_Free",6="ES_AEM",5="ES_Custom",1="ES_Innovate_MTX_L",3="ES_NarrowBand",4="ES_PLX"
-#define ego_sensor_e_enum "BPSX", "Innovate", "14Point7", "Narrow", "PLX", "Custom", "AEM"
+#define ego_sensor_e_auto_enum 0="ES_BPSX_D1",2="ES_14Point7_Free",6="ES_AEM",5="ES_Custom",1="ES_Innovate_MTX_L",4="ES_PLX"
+#define ego_sensor_e_enum "BPSX", "Innovate", "14Point7", "INVALID", "PLX", "Custom", "AEM"
 #define ego_sensor_e_ES_14Point7_Free 2
 #define ego_sensor_e_ES_AEM 6
 #define ego_sensor_e_ES_BPSX_D1 0
 #define ego_sensor_e_ES_Custom 5
 #define ego_sensor_e_ES_Innovate_MTX_L 1
-#define ego_sensor_e_ES_NarrowBand 3
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
 #define engine_configuration_s_size 4556
@@ -1035,9 +1034,15 @@
 #define MAP_sensor_config_s_size 140
 #define MAP_WINDOW_SIZE 8
 #define MAX_CYLINDER_COUNT 12
+#define mc33810maxDwellTimer_e_auto_enum 0="DWELL_2MS",3="DWELL_16MS",4="DWELL_32MS",1="DWELL_4MS",5="DWELL_64MS",2="DWELL_8MS"
+#define mc33810maxDwellTimer_e_DWELL_16MS 3
+#define mc33810maxDwellTimer_e_DWELL_2MS 0
+#define mc33810maxDwellTimer_e_DWELL_32MS 4
+#define mc33810maxDwellTimer_e_DWELL_4MS 1
+#define mc33810maxDwellTimer_e_DWELL_64MS 5
+#define mc33810maxDwellTimer_e_DWELL_8MS 2
 #define MLQ_FIELD_HEADER_SIZE 89
 #define MLQ_HEADER_SIZE 24
-#define NARROW_BAND_WIDE_BAND_CONVERSION_SIZE 8
 #define operation_mode_e_FOUR_STROKE_CAM_SENSOR 2
 #define operation_mode_e_FOUR_STROKE_CRANK_SENSOR 1
 #define operation_mode_e_FOUR_STROKE_SYMMETRICAL_CRANK_SENSOR 4
@@ -1146,7 +1151,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 160115348
+#define SIGNATURE_HASH 4099975782
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1315,12 +1320,22 @@
 #define ts_14_command_TS_14_4 4
 #define ts_14_command_TS_14_5 5
 #define ts_14_command_TS_14_9 9
+#define ts_14_command_TS_BURN_WITHOUT_FLASH 0x15
+#define ts_14_command_TS_ETB_AUTOCAL_0 0x0E
+#define ts_14_command_TS_ETB_AUTOCAL_1 0x11
 #define ts_14_command_TS_ETB_RESET 0x0B
+#define ts_14_command_TS_ETB_START_AUTOTUNE 0x0C
+#define ts_14_command_TS_ETB_STOP_AUTOTUNE 0x10
+#define ts_14_command_TS_EXTERNAL_TRIGGER_STIMULATOR_ENABLE 0x13
 #define ts_14_command_TS_GRAB_PEDAL_UP 6
 #define ts_14_command_TS_GRAB_PEDAL_WOT 7
 #define ts_14_command_TS_GRAB_TPS_CLOSED 2
 #define ts_14_command_TS_GRAB_TPS_WOT 3
+#define ts_14_command_TS_RESET_MC33810 0x14
 #define ts_14_command_TS_RESET_TLE8888 8
+#define ts_14_command_TS_TRIGGER_STIMULATOR_DISABLE 0x0F
+#define ts_14_command_TS_TRIGGER_STIMULATOR_ENABLE 0x0D
+#define ts_14_command_TS_WIDEBAND_UPDATE 0x12
 #define ts_14_command_TS_WRITE_FLASH 0x0A
 #define TS_BLOCK_READ_TIMEOUT 3000
 #define TS_BURN_COMMAND 'B'
@@ -1432,13 +1447,17 @@
 #define ts_show_inj_diag false
 #define ts_show_injectionPinMode false
 #define ts_show_joystick true
+#define ts_show_l9779 false
 #define ts_show_lcd true
 #define ts_show_main_relay true
 #define ts_show_main_relay_microRusEFI_message false
+#define ts_show_mc33810 false
+#define ts_show_output_diag false
 #define ts_show_sd_card true
 #define ts_show_sd_pins true
 #define ts_show_software_knock false
 #define ts_show_spi true
+#define ts_show_tle8888 false
 #define ts_show_tps_sent false
 #define ts_show_trigger_comparator false
 #define ts_show_tunerstudio_port true
@@ -1446,14 +1465,14 @@
 #define ts_show_vr_threshold_2 true
 #define ts_show_vr_threshold_all true
 #define ts_show_vr_threshold_pins true
-#define TS_SIGNATURE "rusEFI default.2024.01.02.XXX.160115348"
+#define TS_SIGNATURE "rusEFI default.2024.01.04.XXX.4099975782"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
 #define TS_SINGLE_WRITE_COMMAND_char W
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 1448
+#define TS_TOTAL_OUTPUT_SIZE 1452
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
