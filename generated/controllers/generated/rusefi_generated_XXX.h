@@ -1472,7 +1472,7 @@
 #define ts_show_vr_threshold_2 true
 #define ts_show_vr_threshold_all true
 #define ts_show_vr_threshold_pins true
-#define TS_SIGNATURE "rusEFI default.2024.01.08.XXX.1405088747"
+#define TS_SIGNATURE "rusEFI default.2024.01.09.XXX.1405088747"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
