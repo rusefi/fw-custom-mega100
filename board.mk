@@ -2,7 +2,9 @@ BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
+# todo: do we even need this DFIRMWARE_ID?
 DDEFS += -DFIRMWARE_ID=\"XXX\"
+# todo: use meta-info.txt
 SHORT_BOARD_NAME=XXX
 
 # reduce memory usage monitoring
