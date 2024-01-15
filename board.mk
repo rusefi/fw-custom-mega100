@@ -2,8 +2,8 @@ BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
-# todo: use meta-info.txt
-SHORT_BOARD_NAME=XXX
+# defines SHORT_BOARD_NAME
+include $(BOARD_DIR)/meta-info.env
 
 # reduce memory usage monitoring
 DDEFS += -DRAM_UNUSED_SIZE=100

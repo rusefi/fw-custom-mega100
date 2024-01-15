@@ -1,2 +1,0 @@
-# todo: find a way for build-firmware.yaml to consume this file? maybe the other way around?
-shortBoardName=XXX
