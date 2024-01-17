@@ -308,7 +308,7 @@
 #define ego_sensor_e_ES_Innovate_MTX_L 1
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
-#define engine_configuration_s_size 4580
+#define engine_configuration_s_size 4648
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
 #define engine_load_mode_e_LM_ALPHA_N 2
@@ -330,7 +330,7 @@
 #define ENGINE_NOISE_CURVE_SIZE 16
 #define ENGINE_SNIFFER_UNIT_US 10
 #define engine_type_e_ALPHAX_8CHAN_SBC 97
-#define engine_type_e_auto_enum 0="DEFAULT_FRANKENSO",97="ALPHAX_8CHAN_SBC",24="BMW_M73_M",50="BMW_M73_MRE",51="BMW_M73_MRE_SLAVE",38="DISCOVERY_PDM",2="DODGE_NEON_1995",46="DODGE_NEON_2003_CRANK",64="DODGE_RAM",61="EEPROM_BENCH_ENGINE",58="ETB_BENCH_ENGINE",35="ET_UNUSED_35",105="FERRARI_F136",3="FORD_ASPIRE_1996",11="FORD_COYOTE",14="FORD_ESCORT_GT",7="FORD_INLINE_6_1995",40="FRANKENSO_BMW_M73_F",47="FRANKENSO_MAZDA_MIATA_2003",56="FRANKENSO_MAZDA_MIATA_NA8",41="FRANKENSO_MIATA_NA6_MAP",49="FRANKENSO_QA_ENGINE",59="FRANKENSO_TEST_33810",15="FUEL_BENCH",8="GY6_139QMB",6="HARLEY",84="HELLEN_121_NISSAN_4_CYL",72="HELLEN_121_NISSAN_6_CYL",85="HELLEN_121_NISSAN_8_CYL",87="HELLEN_121_NISSAN_ALMERA_N16",71="HELLEN_121_VAG_4_CYL",77="HELLEN_121_VAG_5_CYL",81="HELLEN_121_VAG_8_CYL",78="HELLEN_121_VAG_V6_CYL",79="HELLEN_121_VAG_VR6_CYL",36="HELLEN_128_MERCEDES_4_CYL",88="HELLEN_128_MERCEDES_6_CYL",89="HELLEN_128_MERCEDES_8_CYL",82="HELLEN_154_HYUNDAI_COUPE_BK1",95="HELLEN_154_HYUNDAI_COUPE_BK2",76="HELLEN_154_VAG",75="HELLEN_2CHAN_STIM_QC",74="HELLEN_4CHAN_STIM_QC",57="HELLEN_HONDA_BCM",34="HELLEN_NA6",10="HELLEN_NA8_96",80="HELLEN_NA94",83="HELLEN_NB1",94="HELLEN_NB1_36",69="HELLEN_NB2",86="HELLEN_NB2_36",43="HONDA_600",90="HONDA_K",104="HYUNDAI_PB",60="L9779_BENCH_ENGINE",54="MAVERICK_X3",55="MAZDA_MIATA_2003_BOARD_TEST",33="ME17_9_MISC",1="MIATA_PROTEUS_TCU",99="MINIMAL_PINS",12="MITSUBISHI_3A92",16="MITSUBISHI_4G93",31="MRE_BOARD_NEW_TEST",23="MRE_BODY_CONTROL",68="MRE_M111",66="MRE_MIATA_NA6_MAP",4="MRE_SECONDARY_CAN",37="MRE_SUBARU_EJ18",62="MRE_VW_B6",5="NISSAN_PRIMERA",30="PROTEUS_ANALOG_PWM_TEST",63="PROTEUS_BMW_M73",9="PROTEUS_E65_6H_MAN_IN_THE_MIDDLE",27="PROTEUS_GM_LS_4",91="PROTEUS_HONDA_OBD2A",25="PROTEUS_LUA_DEMO",17="PROTEUS_M111",67="PROTEUS_MIATA_NB2",93="PROTEUS_N73",103="PROTEUS_NISSAN_VQ35",42="PROTEUS_QC_TEST_BOARD",98="PROTEUS_SBC",73="PROTEUS_STIM_QC",39="PROTEUS_VW_B6",29="SACHS",92="SIMULATOR_CONFIG",70="SUBARUEG33_DEFAULTS",100="TEST_100",101="TEST_101",102="TEST_102",18="TEST_33816",28="TEST_CRANK_ENGINE",48="TEST_DC_WASTEGATE_DISCOVERY",26="TEST_ENGINE",45="TEST_ENGINE_VVT",52="TEST_ISSUE_366_BOTH",53="TEST_ISSUE_366_RISE",19="TEST_ROTARY",13="TOYOTA_1NZ_FE",44="TOYOTA_2JZ_GTE_VVTi",20="UNUSED_20",21="UNUSED_21",22="UNUSED_22",65="UNUSED_65",32="VW_ABA",96="WASTEGATE_PROTEUS_TEST"
+#define engine_type_e_auto_enum 0="DEFAULT_FRANKENSO",97="ALPHAX_8CHAN_SBC",24="BMW_M73_M",50="BMW_M73_MRE",51="BMW_M73_MRE_SLAVE",38="DISCOVERY_PDM",2="DODGE_NEON_1995",46="DODGE_NEON_2003_CRANK",64="DODGE_RAM",61="EEPROM_BENCH_ENGINE",58="ETB_BENCH_ENGINE",35="ET_UNUSED_35",55="ET_UNUSED_55",56="ET_UNUSED_56",105="FERRARI_F136",3="FORD_ASPIRE_1996",11="FORD_COYOTE",14="FORD_ESCORT_GT",7="FORD_INLINE_6_1995",40="FRANKENSO_BMW_M73_F",47="FRANKENSO_MAZDA_MIATA_2003",41="FRANKENSO_MIATA_NA6_MAP",49="FRANKENSO_QA_ENGINE",59="FRANKENSO_TEST_33810",15="FUEL_BENCH",8="GY6_139QMB",6="HARLEY",84="HELLEN_121_NISSAN_4_CYL",72="HELLEN_121_NISSAN_6_CYL",85="HELLEN_121_NISSAN_8_CYL",87="HELLEN_121_NISSAN_ALMERA_N16",71="HELLEN_121_VAG_4_CYL",77="HELLEN_121_VAG_5_CYL",81="HELLEN_121_VAG_8_CYL",78="HELLEN_121_VAG_V6_CYL",79="HELLEN_121_VAG_VR6_CYL",36="HELLEN_128_MERCEDES_4_CYL",88="HELLEN_128_MERCEDES_6_CYL",89="HELLEN_128_MERCEDES_8_CYL",82="HELLEN_154_HYUNDAI_COUPE_BK1",95="HELLEN_154_HYUNDAI_COUPE_BK2",76="HELLEN_154_VAG",75="HELLEN_2CHAN_STIM_QC",74="HELLEN_4CHAN_STIM_QC",57="HELLEN_HONDA_BCM",34="HELLEN_NA6",80="HELLEN_NA94",83="HELLEN_NB1",94="HELLEN_NB1_36",69="HELLEN_NB2",86="HELLEN_NB2_36",43="HONDA_600",90="HONDA_K",66="HONDA_OBD1",91="HONDA_OBD2A",104="HYUNDAI_PB",60="L9779_BENCH_ENGINE",54="MAVERICK_X3",10="MAZDA_NA8_96",33="ME17_9_MISC",1="MIATA_PROTEUS_TCU",99="MINIMAL_PINS",12="MITSUBISHI_3A92",16="MITSUBISHI_4G93",31="MRE_BOARD_NEW_TEST",23="MRE_BODY_CONTROL",68="MRE_M111",4="MRE_SECONDARY_CAN",37="MRE_SUBARU_EJ18",62="MRE_VW_B6",5="NISSAN_PRIMERA",30="PROTEUS_ANALOG_PWM_TEST",63="PROTEUS_BMW_M73",9="PROTEUS_E65_6H_MAN_IN_THE_MIDDLE",27="PROTEUS_GM_LS_4",25="PROTEUS_LUA_DEMO",17="PROTEUS_M111",67="PROTEUS_MIATA_NB2",93="PROTEUS_N73",103="PROTEUS_NISSAN_VQ35",42="PROTEUS_QC_TEST_BOARD",98="PROTEUS_SBC",73="PROTEUS_STIM_QC",39="PROTEUS_VW_B6",29="SACHS",92="SIMULATOR_CONFIG",70="SUBARU_EG33",100="TEST_100",101="TEST_101",102="TEST_102",18="TEST_33816",28="TEST_CRANK_ENGINE",48="TEST_DC_WASTEGATE_DISCOVERY",26="TEST_ENGINE",45="TEST_ENGINE_VVT",52="TEST_ISSUE_366_BOTH",53="TEST_ISSUE_366_RISE",19="TEST_ROTARY",13="TOYOTA_1NZ_FE",44="TOYOTA_2JZ_GTE_VVTi",20="UNUSED_20",21="UNUSED_21",22="UNUSED_22",65="UNUSED_65",32="VW_ABA",96="WASTEGATE_PROTEUS_TEST"
 #define engine_type_e_BMW_M73_M 24
 #define engine_type_e_BMW_M73_MRE 50
 #define engine_type_e_BMW_M73_MRE_SLAVE 51
@@ -341,6 +341,8 @@
 #define engine_type_e_DODGE_RAM 64
 #define engine_type_e_EEPROM_BENCH_ENGINE 61
 #define engine_type_e_ET_UNUSED_35 35
+#define engine_type_e_ET_UNUSED_55 55
+#define engine_type_e_ET_UNUSED_56 56
 #define engine_type_e_ETB_BENCH_ENGINE 58
 #define engine_type_e_FERRARI_F136 105
 #define engine_type_e_FORD_ASPIRE_1996 3
@@ -349,7 +351,6 @@
 #define engine_type_e_FORD_INLINE_6_1995 7
 #define engine_type_e_FRANKENSO_BMW_M73_F 40
 #define engine_type_e_FRANKENSO_MAZDA_MIATA_2003 47
-#define engine_type_e_FRANKENSO_MAZDA_MIATA_NA8 56
 #define engine_type_e_FRANKENSO_MIATA_NA6_MAP 41
 #define engine_type_e_FRANKENSO_QA_ENGINE 49
 #define engine_type_e_FRANKENSO_TEST_33810 59
@@ -375,7 +376,6 @@
 #define engine_type_e_HELLEN_4CHAN_STIM_QC 74
 #define engine_type_e_HELLEN_HONDA_BCM 57
 #define engine_type_e_HELLEN_NA6 34
-#define engine_type_e_HELLEN_NA8_96 10
 #define engine_type_e_HELLEN_NA94 80
 #define engine_type_e_HELLEN_NB1 83
 #define engine_type_e_HELLEN_NB1_36 94
@@ -383,10 +383,12 @@
 #define engine_type_e_HELLEN_NB2_36 86
 #define engine_type_e_HONDA_600 43
 #define engine_type_e_HONDA_K 90
+#define engine_type_e_HONDA_OBD1 66
+#define engine_type_e_HONDA_OBD2A 91
 #define engine_type_e_HYUNDAI_PB 104
 #define engine_type_e_L9779_BENCH_ENGINE 60
 #define engine_type_e_MAVERICK_X3 54
-#define engine_type_e_MAZDA_MIATA_2003_BOARD_TEST 55
+#define engine_type_e_MAZDA_NA8_96 10
 #define engine_type_e_ME17_9_MISC 33
 #define engine_type_e_MIATA_PROTEUS_TCU 1
 #define engine_type_e_MINIMAL_PINS 99
@@ -395,7 +397,6 @@
 #define engine_type_e_MRE_BOARD_NEW_TEST 31
 #define engine_type_e_MRE_BODY_CONTROL 23
 #define engine_type_e_MRE_M111 68
-#define engine_type_e_MRE_MIATA_NA6_MAP 66
 #define engine_type_e_MRE_SECONDARY_CAN 4
 #define engine_type_e_MRE_SUBARU_EJ18 37
 #define engine_type_e_MRE_VW_B6 62
@@ -404,7 +405,6 @@
 #define engine_type_e_PROTEUS_BMW_M73 63
 #define engine_type_e_PROTEUS_E65_6H_MAN_IN_THE_MIDDLE 9
 #define engine_type_e_PROTEUS_GM_LS_4 27
-#define engine_type_e_PROTEUS_HONDA_OBD2A 91
 #define engine_type_e_PROTEUS_LUA_DEMO 25
 #define engine_type_e_PROTEUS_M111 17
 #define engine_type_e_PROTEUS_MIATA_NB2 67
@@ -416,7 +416,7 @@
 #define engine_type_e_PROTEUS_VW_B6 39
 #define engine_type_e_SACHS 29
 #define engine_type_e_SIMULATOR_CONFIG 92
-#define engine_type_e_SUBARUEG33_DEFAULTS 70
+#define engine_type_e_SUBARU_EG33 70
 #define engine_type_e_TEST_100 100
 #define engine_type_e_TEST_101 101
 #define engine_type_e_TEST_102 102
@@ -441,7 +441,7 @@
 #define ETB_BIAS_CURVE_LENGTH 8
 #define ETB_COUNT 2
 #define ETB_HW_MAX_FREQUENCY 3000
-#define FLASH_DATA_VERSION 230721
+#define FLASH_DATA_VERSION 20014
 #define FUEL_LEVEL_TABLE_COUNT 8
 #define FUEL_LOAD_COUNT 16
 #define fuel_pressure_sensor_mode_e_auto_enum 0="FPM_Absolute",2="FPM_Differential",1="FPM_Gauge"
@@ -902,13 +902,14 @@
 #define Gpio_TLE8888_PIN_MR 196
 #define Gpio_TLE8888_PIN_WAKE 198
 #define Gpio_Unassigned 0
-#define gppwm_channel_e_auto_enum 0="GPPWM_Zero",9="GPPWM_AccelPedal",16="GPPWM_AuxLinear1",17="GPPWM_AuxLinear2",7="GPPWM_AuxTemp1",8="GPPWM_AuxTemp2",3="GPPWM_Clt",25="GPPWM_DetectedGear",15="GPPWM_EthanolPercent",5="GPPWM_FuelLoad",18="GPPWM_GppwmOutput1",19="GPPWM_GppwmOutput2",20="GPPWM_GppwmOutput3",21="GPPWM_GppwmOutput4",4="GPPWM_Iat",6="GPPWM_IgnLoad",22="GPPWM_LuaGauge1",23="GPPWM_LuaGauge2",2="GPPWM_Map",24="GPPWM_Rpm",1="GPPWM_Tps",12="GPPWM_VVT_1E",11="GPPWM_VVT_1I",14="GPPWM_VVT_2E",13="GPPWM_VVT_2I",10="GPPWM_Vbatt"
-#define gppwm_channel_e_enum "Zero", "TPS", "MAP", "CLT", "IAT", "Fuel Load", "Ignition Load", "Aux Temp 1", "Aux Temp 2", "Accel Pedal", "Battery Voltage", "VVT 1 I", "VVT 1 E", "VVT 2 I", "VVT 2 E", "Ethanol (Flex) %", "Aux Linear 1", "Aux Linear 2", "GPPWM Output 1", "GPPWM Output 2", "GPPWM Output 3", "GPPWM Output 4", "Lua Gauge 1", "Lua Gauge 2", "RPM", "Gear (detected)"
+#define gppwm_channel_e_auto_enum 0="GPPWM_Zero",9="GPPWM_AccelPedal",16="GPPWM_AuxLinear1",17="GPPWM_AuxLinear2",7="GPPWM_AuxTemp1",8="GPPWM_AuxTemp2",26="GPPWM_BaroPressure",3="GPPWM_Clt",25="GPPWM_DetectedGear",15="GPPWM_EthanolPercent",5="GPPWM_FuelLoad",18="GPPWM_GppwmOutput1",19="GPPWM_GppwmOutput2",20="GPPWM_GppwmOutput3",21="GPPWM_GppwmOutput4",4="GPPWM_Iat",6="GPPWM_IgnLoad",22="GPPWM_LuaGauge1",23="GPPWM_LuaGauge2",2="GPPWM_Map",24="GPPWM_Rpm",1="GPPWM_Tps",12="GPPWM_VVT_1E",11="GPPWM_VVT_1I",14="GPPWM_VVT_2E",13="GPPWM_VVT_2I",10="GPPWM_Vbatt"
+#define gppwm_channel_e_enum "Zero", "TPS", "MAP", "CLT", "IAT", "Fuel Load", "Ignition Load", "Aux Temp 1", "Aux Temp 2", "Accel Pedal", "Battery Voltage", "VVT 1 I", "VVT 1 E", "VVT 2 I", "VVT 2 E", "Ethanol (Flex) %", "Aux Linear 1", "Aux Linear 2", "GPPWM Output 1", "GPPWM Output 2", "GPPWM Output 3", "GPPWM Output 4", "Lua Gauge 1", "Lua Gauge 2", "RPM", "Gear (detected)", "Baro pressure"
 #define gppwm_channel_e_GPPWM_AccelPedal 9
 #define gppwm_channel_e_GPPWM_AuxLinear1 16
 #define gppwm_channel_e_GPPWM_AuxLinear2 17
 #define gppwm_channel_e_GPPWM_AuxTemp1 7
 #define gppwm_channel_e_GPPWM_AuxTemp2 8
+#define gppwm_channel_e_GPPWM_BaroPressure 26
 #define gppwm_channel_e_GPPWM_Clt 3
 #define gppwm_channel_e_GPPWM_DetectedGear 25
 #define gppwm_channel_e_GPPWM_EthanolPercent 15
@@ -1077,7 +1078,7 @@
 #define PACK_PERCENT_BYTE_MULT 100.0
 #define PEDAL_TO_TPS_SIZE 8
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 22108
+#define persistent_config_s_size 22176
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1157,7 +1158,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 955178111
+#define SIGNATURE_HASH 3199275614
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1207,7 +1208,7 @@
 #define TOOTH_PACKET_SIZE 2
 #define TOP_DEAD_CENTER_MESSAGE "r"
 #define TORQUE_CURVE_SIZE 6
-#define TOTAL_CONFIG_SIZE 22108
+#define TOTAL_CONFIG_SIZE 22176
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_TPS_ACCEL_CLT_CORR_TABLE 4
 #define TPS_TPS_ACCEL_TABLE 8
@@ -1475,7 +1476,7 @@
 #define ts_show_vr_threshold_2 true
 #define ts_show_vr_threshold_all true
 #define ts_show_vr_threshold_pins true
-#define TS_SIGNATURE "rusEFI default.2024.01.16.XXX.955178111"
+#define TS_SIGNATURE "rusEFI default.2024.01.17.XXX.3199275614"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
