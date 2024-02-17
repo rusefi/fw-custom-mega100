@@ -8,32 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  read-meta-info:
-    runs-on: ubuntu-latest
-    outputs:
-      short_board_name: ${{ steps.read_meta.outputs.SHORT_BOARD_NAME }}
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Read meta-info file with the board description
-        id: read_meta
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-        run: |
-          echo "$(cat ./meta-info.env)" >> $GITHUB_OUTPUT
-
-      - name: Debug output of the board name
-        run: |
-          echo "SHORT_BOARD_NAME = ${{ steps.read_meta.outputs.SHORT_BOARD_NAME }}"
-
   call-workflow-passing-data:
-    needs: read-meta-info
     uses: rusefi/rusefi/.github/workflows/custom-board-build.yaml@master
     secrets: inherit
     permissions:
       contents: write
-    with:
-      shortBoardName: ${{ needs.read-meta-info.outputs.SHORT_BOARD_NAME }}
-      rusefi_dir: ext/rusefi
-      relative_board_dir: ../..
