@@ -1,5 +1,3 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 cd ext/rusefi/firmware/
-
-bash config/boards/common_script.sh ../../../../.. ARCH_STM32F4
+bash bin/compile.sh ../../../meta-info.env
