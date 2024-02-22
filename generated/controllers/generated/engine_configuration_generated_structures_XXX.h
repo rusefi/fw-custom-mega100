@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Feb 21 17:17:40 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Feb 22 17:16:46 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -6,13 +6,13 @@
 // start of stft_cell_cfg_s
 struct stft_cell_cfg_s {
 	/**
-	 * Maximum VE % that the short term fuel trim can add
+	 * Maximum % that the short term fuel trim can add
 	 * units: %
 	 * offset 0
 	 */
 	int8_t maxAdd;
 	/**
-	 * Maximum VE % that the short term fuel trim can remove
+	 * Maximum % that the short term fuel trim can remove
 	 * units: %
 	 * offset 1
 	 */
@@ -5557,4 +5557,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22236);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Feb 21 17:17:40 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Feb 22 17:16:46 UTC 2024
