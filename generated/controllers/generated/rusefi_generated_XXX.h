@@ -1158,15 +1158,17 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 2088864438
+#define SIGNATURE_HASH 3832554693
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
-#define spi_device_e_auto_enum 0="SPI_NONE",1="SPI_DEVICE_1",2="SPI_DEVICE_2",3="SPI_DEVICE_3",4="SPI_DEVICE_4"
+#define spi_device_e_auto_enum 0="SPI_NONE",1="SPI_DEVICE_1",2="SPI_DEVICE_2",3="SPI_DEVICE_3",4="SPI_DEVICE_4",5="SPI_DEVICE_5",6="SPI_DEVICE_6"
 #define spi_device_e_SPI_DEVICE_1 1
 #define spi_device_e_SPI_DEVICE_2 2
 #define spi_device_e_SPI_DEVICE_3 3
 #define spi_device_e_SPI_DEVICE_4 4
+#define spi_device_e_SPI_DEVICE_5 5
+#define spi_device_e_SPI_DEVICE_6 6
 #define spi_device_e_SPI_NONE 0
 #define spi_speed_e__150KHz 3
 #define spi_speed_e__1_25MHz 2
@@ -1483,7 +1485,7 @@
 #define ts_show_vr_threshold_all false
 #define ts_show_vr_threshold_pins true
 #define ts_show_vvt_output true
-#define TS_SIGNATURE "rusEFI default.2024.02.26.XXX.2088864438"
+#define TS_SIGNATURE "rusEFI default.2024.02.27.XXX.3832554693"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'

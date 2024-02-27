@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sat Feb 24 17:17:39 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Tue Feb 27 17:20:25 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -2854,10 +2854,10 @@ struct engine_configuration_s {
 	bool useVssAsSecondWheelSpeed : 1 {};
 	/**
 	offset 1576 bit 13 */
-	bool unusedBit_503_13 : 1 {};
+	bool is_enabled_spi_5 : 1 {};
 	/**
 	offset 1576 bit 14 */
-	bool unusedBit_503_14 : 1 {};
+	bool is_enabled_spi_6 : 1 {};
 	/**
 	offset 1576 bit 15 */
 	bool unusedBit_503_15 : 1 {};
@@ -2869,46 +2869,46 @@ struct engine_configuration_s {
 	bool unusedBit_503_17 : 1 {};
 	/**
 	offset 1576 bit 18 */
-	bool unusedBit_503_18 : 1 {};
+	bool unusedBit_508_18 : 1 {};
 	/**
 	offset 1576 bit 19 */
-	bool unusedBit_503_19 : 1 {};
+	bool unusedBit_508_19 : 1 {};
 	/**
 	offset 1576 bit 20 */
-	bool unusedBit_503_20 : 1 {};
+	bool unusedBit_508_20 : 1 {};
 	/**
 	offset 1576 bit 21 */
-	bool unusedBit_503_21 : 1 {};
+	bool unusedBit_508_21 : 1 {};
 	/**
 	offset 1576 bit 22 */
-	bool unusedBit_503_22 : 1 {};
+	bool unusedBit_508_22 : 1 {};
 	/**
 	offset 1576 bit 23 */
-	bool unusedBit_503_23 : 1 {};
+	bool unusedBit_508_23 : 1 {};
 	/**
 	offset 1576 bit 24 */
-	bool unusedBit_503_24 : 1 {};
+	bool unusedBit_508_24 : 1 {};
 	/**
 	offset 1576 bit 25 */
-	bool unusedBit_503_25 : 1 {};
+	bool unusedBit_508_25 : 1 {};
 	/**
 	offset 1576 bit 26 */
-	bool unusedBit_503_26 : 1 {};
+	bool unusedBit_508_26 : 1 {};
 	/**
 	offset 1576 bit 27 */
-	bool unusedBit_503_27 : 1 {};
+	bool unusedBit_508_27 : 1 {};
 	/**
 	offset 1576 bit 28 */
-	bool unusedBit_503_28 : 1 {};
+	bool unusedBit_508_28 : 1 {};
 	/**
 	offset 1576 bit 29 */
-	bool unusedBit_503_29 : 1 {};
+	bool unusedBit_508_29 : 1 {};
 	/**
 	offset 1576 bit 30 */
-	bool unusedBit_503_30 : 1 {};
+	bool unusedBit_508_30 : 1 {};
 	/**
 	offset 1576 bit 31 */
-	bool unusedBit_503_31 : 1 {};
+	bool unusedBit_508_31 : 1 {};
 	/**
 	 * This is the duration in cycles that the IAC will take to reach its normal idle position, it can be used to hold the idle higher for a few seconds after cranking to improve startup.
 	 * units: cycles
@@ -4572,7 +4572,7 @@ struct engine_configuration_s {
 	/**
 	 * offset 4383
 	 */
-	uint8_t unusedExplicitFilling2;
+	pin_mode_e spi6MisoMode;
 	/**
 	 * units: ratio
 	 * offset 4384
@@ -4635,10 +4635,78 @@ struct engine_configuration_s {
 	 */
 	float brakeMeanEffectivePressureDifferential;
 	/**
-	 * units: units
 	 * offset 4560
 	 */
-	uint8_t unusedOftenChangesDuringFirmwareUpdate[146];
+	Gpio spi4mosiPin;
+	/**
+	 * offset 4562
+	 */
+	Gpio spi4misoPin;
+	/**
+	 * offset 4564
+	 */
+	Gpio spi4sckPin;
+	/**
+	 * offset 4566
+	 */
+	Gpio spi5mosiPin;
+	/**
+	 * offset 4568
+	 */
+	Gpio spi5misoPin;
+	/**
+	 * offset 4570
+	 */
+	Gpio spi5sckPin;
+	/**
+	 * offset 4572
+	 */
+	Gpio spi6mosiPin;
+	/**
+	 * offset 4574
+	 */
+	Gpio spi6misoPin;
+	/**
+	 * offset 4576
+	 */
+	Gpio spi6sckPin;
+	/**
+	 * offset 4578
+	 */
+	pin_mode_e spi4SckMode;
+	/**
+	 * offset 4579
+	 */
+	pin_mode_e spi4MosiMode;
+	/**
+	 * offset 4580
+	 */
+	pin_mode_e spi4MisoMode;
+	/**
+	 * offset 4581
+	 */
+	pin_mode_e spi5SckMode;
+	/**
+	 * offset 4582
+	 */
+	pin_mode_e spi5MosiMode;
+	/**
+	 * offset 4583
+	 */
+	pin_mode_e spi5MisoMode;
+	/**
+	 * offset 4584
+	 */
+	pin_mode_e spi6SckMode;
+	/**
+	 * offset 4585
+	 */
+	pin_mode_e spi6MosiMode;
+	/**
+	 * units: units
+	 * offset 4586
+	 */
+	uint8_t unusedOftenChangesDuringFirmwareUpdate[120];
 	/**
 	 * need 4 byte alignment
 	 * units: units
@@ -5557,4 +5625,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22236);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sat Feb 24 17:17:39 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Tue Feb 27 17:20:25 UTC 2024
