@@ -8,8 +8,32 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-workflow-passing-data:
-    uses: rusefi/rusefi/.github/workflows/custom-board-build.yaml@master
-    secrets: inherit
-    permissions:
-      contents: write
+  build-firmware:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - name: Set run variables
+      id: set-variables
+      run: |
+        if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
+          echo 'upload="bundles"' >> $GITHUB_OUTPUT
+        else
+          echo 'push="false"' >> $GITHUB_OUTPUT
+        fi
+
+    - uses: ./ext/rusefi/.github/workflows/custom-board-build
+      with:
+        artifacts: bin srec hex list map elf bundle autoupdate
+        uploads: ini ${{steps.set-variables.outputs.upload}}
+        push: ${{ steps.set-variables.outputs.push }}
+        MY_REPO_PAT: ${{secrets.MY_REPO_PAT}}
+        RUSEFI_ONLINE_FTP_USER: ${{secrets.RUSEFI_ONLINE_FTP_USER}}
+        RUSEFI_ONLINE_FTP_PASS: ${{secrets.RUSEFI_ONLINE_FTP_PASS}}
+        RUSEFI_FTP_SERVER: ${{secrets.RUSEFI_FTP_SERVER}}
+        RUSEFI_SSH_SERVER: ${{secrets.RUSEFI_SSH_SERVER}}
+        RUSEFI_SSH_USER: ${{secrets.RUSEFI_SSH_USER}}
+        RUSEFI_SSH_PASS: ${{secrets.RUSEFI_SSH_PASS}}
+        ADDITIONAL_ENV: ${{secrets.ADDITIONAL_ENV}}
