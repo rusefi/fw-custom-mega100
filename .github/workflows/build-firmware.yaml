@@ -15,17 +15,20 @@ jobs:
       with:
         submodules: true
 
-    - name: Set bundle upload
-      id: set-upload
+    - name: Set run variables
+      id: set-variables
       run: |
         if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
           echo 'upload="bundles"' >> $GITHUB_OUTPUT
+        else
+          echo 'push="false"' >> $GITHUB_OUTPUT
         fi
 
     - uses: ./ext/rusefi/.github/workflows/custom-board-build
       with:
         artifacts: bin srec hex list map elf bundle autoupdate
-        uploads: ini ${{steps.set-upload.outputs.upload}}
+        uploads: ini ${{steps.set-variables.outputs.upload}}
+        push: ${{ steps.set-variables.outputs.push }}
         MY_REPO_PAT: ${{secrets.MY_REPO_PAT}}
         RUSEFI_ONLINE_FTP_USER: ${{secrets.RUSEFI_ONLINE_FTP_USER}}
         RUSEFI_ONLINE_FTP_PASS: ${{secrets.RUSEFI_ONLINE_FTP_PASS}}
