@@ -1,4 +1,6 @@
-BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp
+BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp \
+    $(BOARD_DIR)/default_tune.cpp \
+
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
