@@ -19,9 +19,10 @@ jobs:
       id: set-variables
       run: |
         if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
-          echo 'upload="bundles"' >> $GITHUB_OUTPUT
+          echo 'upload=bundles' >> $GITHUB_OUTPUT
+          echo 'push=true' >> $GITHUB_OUTPUT
         else
-          echo 'push="false"' >> $GITHUB_OUTPUT
+          echo 'push=false' >> $GITHUB_OUTPUT
         fi
 
     - uses: ./ext/rusefi/.github/workflows/custom-board-build
