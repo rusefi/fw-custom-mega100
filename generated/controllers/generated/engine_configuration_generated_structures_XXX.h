@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Mar 07 17:17:28 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Mar 13 01:50:37 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -822,7 +822,7 @@ struct engine_configuration_s {
 	 * units: deg
 	 * offset 420
 	 */
-	int launchTimingRetard;
+	float launchTimingRetard;
 	/**
 	 * value '6' for 8MHz hw osc
 	 * read hip9011 datasheet for details
@@ -3649,7 +3649,7 @@ struct engine_configuration_s {
 	/**
 	 * offset 2284
 	 */
-	float etbDutyThreshold;
+	float unused645646;
 	/**
 	 * This sets the RPM above which fuel cut is active.
 	 * units: rpm
@@ -4314,7 +4314,7 @@ struct engine_configuration_s {
 	/**
 	 * offset 4120
 	 */
-	float etbDutyShutdownThreshold;
+	float unused3124141;
 	/**
 	 * offset 4124
 	 */
@@ -4483,11 +4483,11 @@ struct engine_configuration_s {
 	 */
 	scaled_channel<uint8_t, 2, 1> boostCutPressureHyst;
 	/**
-	 * Boost duty cycle added by gear
+	 * Boost duty cycle modified by gear
 	 * units: %
 	 * offset 4201
 	 */
-	scaled_channel<uint8_t, 2, 1> gearBasedOpenLoopBoostAdder[TCU_GEAR_COUNT];
+	scaled_channel<int8_t, 2, 1> gearBasedOpenLoopBoostAdder[TCU_GEAR_COUNT];
 	/**
 	 * need 4 byte alignment
 	 * units: units
@@ -5634,4 +5634,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22236);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Mar 07 17:17:28 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Mar 13 01:50:37 UTC 2024
