@@ -7,7 +7,7 @@
     engineConfiguration->ignitionMode = IM_WASTED_SPARK;
     // default 4.0
     engineConfiguration->cylindersCount = 6;
-    // default 2.0
+    // default 1.6
     engineConfiguration->displacement = 3;
     // default 0.0
     engineConfiguration->trigger.customTotalToothCount = 3;

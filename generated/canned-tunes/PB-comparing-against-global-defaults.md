@@ -7,8 +7,6 @@
     engineConfiguration->injectionTimingMode = Center;
     // default "Single Coil"
     engineConfiguration->ignitionMode = IM_INDIVIDUAL_COILS;
-    // default 2.0
-    engineConfiguration->displacement = 1.6;
     // default 0.0
     engineConfiguration->globalTriggerAngleOffset = 115;
     // default "Inactive"

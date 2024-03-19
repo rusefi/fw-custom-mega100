@@ -15,7 +15,7 @@
     engineConfiguration->ignitionMode = IM_WASTED_SPARK;
     // default 0.0
     engineConfiguration->fixedTiming = 10;
-    // default 2.0
+    // default 1.6
     engineConfiguration->displacement = 2.2;
     // default 0.0
     engineConfiguration->globalTriggerAngleOffset = 72;
