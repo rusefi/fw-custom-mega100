@@ -208,7 +208,7 @@
         <constant name="acrPin">"NONE"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0240328E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0240329E7</constant>
         <constant name="tps1_1AdcChannel">"Disabled"</constant>
         <constant name="vbattAdcChannel">"Disabled"</constant>
         <constant name="fuelLevelSensor">"Disabled"</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240328E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240329E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -444,8 +444,8 @@
         <constant name="consoleUartDevice">"Off"</constant>
         <constant name="sensorChartMode">"none"</constant>
         <constant name="mafSensorType">"v1"</constant>
-        <constant name="clutchUpPinInverted">"false"</constant>
-        <constant name="clutchDownPinInverted">"false"</constant>
+        <constant name="clutchUpPinInverted">"Normal"</constant>
+        <constant name="clutchDownPinInverted">"Normal"</constant>
         <constant name="useHbridgesToDriveIdleStepper">"false"</constant>
         <constant name="multisparkEnable">"false"</constant>
         <constant name="enableLaunchRetard">"false"</constant>
@@ -742,7 +742,7 @@
         <constant name="mc33810Gpgd3Mode">"false"</constant>
         <constant name="enableExtendedCanBroadcast">"true"</constant>
         <constant name="luaCanRxWorkaround">"false"</constant>
-        <constant name="flexSensorInverted">"false"</constant>
+        <constant name="flexSensorInverted">"Normal"</constant>
         <constant name="useHardSkipInTraction">"false"</constant>
         <constant name="fancySmartS">"false"</constant>
         <constant name="fancySmartL">"false"</constant>
@@ -1603,11 +1603,8 @@
         <constant digits="0" name="tunerStudioSerialSpeed" units="BPs">38400.0</constant>
         <constant name="camSimulatorPin">"NONE"</constant>
         <constant name="camSimulatorPinMode">"default"</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="230">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant digits="0" name="anotherCiTest" units="">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="226">
          0.0
          0.0
          0.0
@@ -4645,7 +4642,7 @@ end</constant>
          1.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240227" nPages="1" signature="rusEFI default.2024.03.28.XXX.3940057799" version="5.0"/>
+    <versionInfo firmwareInfo="20240227" nPages="1" signature="rusEFI default.2024.03.29.XXX.624877416" version="5.0"/>
     <bibliography author="rusEFI 20240227" writeDate="date"/>
     <settings/>
     <userComments/>
