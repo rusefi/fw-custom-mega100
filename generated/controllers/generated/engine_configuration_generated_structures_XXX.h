@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Fri Mar 29 17:15:39 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Apr 03 17:16:00 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -407,7 +407,6 @@ static_assert(sizeof(injector_s) == 68);
 struct trigger_config_s {
 	/**
 	 * https://github.com/rusefi/rusefi/wiki/All-Supported-Triggers
-	 * set trigger_type X
 	 * offset 0
 	 */
 	trigger_type_e type;
@@ -1035,7 +1034,8 @@ struct engine_configuration_s {
 	 */
 	uint16_t minOilPressureAfterStart;
 	/**
-	 * Dynamic uses the timing map to decide the ignition timing, Static timing fixes the timing to the value set below (only use for checking static timing with a timing light).
+	 * Dynamic uses the timing map to decide the ignition timing
+	 * Static timing fixes the timing to the value set below (only use for checking static timing with a timing light).
 	 * offset 466
 	 */
 	timing_mode_e timingMode;
@@ -1055,7 +1055,10 @@ struct engine_configuration_s {
 	 * Angle between Top Dead Center (TDC) and the first trigger event.
 	 * Positive value in case of synchronization point before TDC and negative in case of synchronization point after TDC
 	 * .Knowing this angle allows us to control timing and other angles in reference to TDC.
-	 * set global_trigger_offset_angle X
+	 * HOWTO:
+	 * 1: Switch to fixed timing mode on 'ignition setting' dialog
+	 * 2: use an actual timing light to calibrate
+	 * 3: add/subtract until timing light confirms desired fixed timing value!'
 	 * units: deg btdc
 	 * offset 472
 	 */
@@ -1128,7 +1131,6 @@ struct engine_configuration_s {
 	adc_channel_e fuelLevelSensor;
 	/**
 	 * Second throttle body position sensor, single channel so far
-	 * set_analog_input_pin tps2 X
 	 * offset 511
 	 */
 	adc_channel_e tps2_1AdcChannel;
@@ -2251,7 +2253,6 @@ struct engine_configuration_s {
 	uint8_t alignmentFill_at_1186[2];
 	/**
 	 * Angle between cam sensor and VVT zero position
-	 * set vvt_offset X
 	 * units: value
 	 * offset 1188
 	 */
@@ -2638,7 +2639,6 @@ struct engine_configuration_s {
 	/**
 	 * Closed throttle#2. todo: extract these two fields into a structure
 	 * See also tps2_1AdcChannel
-	 * set tps2_min X
 	 * units: ADC
 	 * offset 1420
 	 */
@@ -2646,7 +2646,6 @@ struct engine_configuration_s {
 	/**
 	 * Full throttle#2. tpsMax value as 10 bit ADC value. Not Voltage!
 	 * See also tps1_1AdcChannel
-	 * set tps2_max X
 	 * units: ADC
 	 * offset 1422
 	 */
@@ -2801,10 +2800,11 @@ struct engine_configuration_s {
 	offset 1496 bit 10 */
 	bool fancySmartL : 1 {};
 	/**
+	 * Use Aux Speed 1 as one of speeds for wheel slip ratio?
 	offset 1496 bit 11 */
 	bool useAuxSpeedForSlipRatio : 1 {};
 	/**
-	 * VSS and auxSpeed1 or auxSpeed1 with auxSpeed2?
+	 * VSS and Aux Speed 1 or Aux Speed 1 with Aux Speed 2?
 	offset 1496 bit 12 */
 	bool useVssAsSecondWheelSpeed : 1 {};
 	/**
@@ -5547,4 +5547,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22400);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Fri Mar 29 17:15:39 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Apr 03 17:16:00 UTC 2024
