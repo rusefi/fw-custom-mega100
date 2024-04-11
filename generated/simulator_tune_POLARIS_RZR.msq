@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22400">
+    <page number="0" size="22656">
         <constant name="engineType">"POLARIS_RZR"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">1000.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024041E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240411E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"PE15"</constant>
@@ -754,6 +754,14 @@
         <constant name="is_enabled_spi_6">"false"</constant>
         <constant name="enableAemXSeriesEgt">"false"</constant>
         <constant name="skipBoardCanDash">"false"</constant>
+        <constant name="devBit0">"false"</constant>
+        <constant name="devBit1">"false"</constant>
+        <constant name="devBit2">"false"</constant>
+        <constant name="devBit3">"false"</constant>
+        <constant name="devBit4">"false"</constant>
+        <constant name="devBit5">"false"</constant>
+        <constant name="devBit6">"false"</constant>
+        <constant name="devBit7">"false"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">200.0</constant>
         <constant digits="0" name="iacByTpsTaper" units="percent">5.0</constant>
         <constant name="auxSerialTxPin">"NONE"</constant>
@@ -4631,8 +4639,79 @@ end</constant>
          0.9
          0.8
 </constant>
+        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.10.XXX.3393323259" version="5.0"/>
+    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.11.XXX.3107998653" version="5.0"/>
     <bibliography author="rusEFI 20240402" writeDate="date"/>
     <settings/>
     <userComments/>
