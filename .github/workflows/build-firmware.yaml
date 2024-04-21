@@ -2,7 +2,7 @@ name: Create Board Firmware
 
 on:
   schedule:
-    - cron: '10 17 * * *' # build fresh every 5:10 PM
+    - cron: '35 16 * * *' # build fresh every 4:35 PM UTC which is often 12:35 EST
   push:
   #  pull_request:
   workflow_dispatch:
@@ -18,6 +18,9 @@ jobs:
       - name: Set run variables
         id: set-variables
         run: |
+          if [ "${{github.event_name}}" = "schedule" ]; then
+            echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          fi
           if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
             echo 'push=true' >> $GITHUB_OUTPUT
             echo 'sim=true' >> $GITHUB_OUTPUT
@@ -30,6 +33,7 @@ jobs:
         with:
           artifacts: bin srec hex list map elf bundle autoupdate
           uploads: ini ${{steps.set-variables.outputs.upload}}
+          release_date: ${{steps.set-variables.outputs.release_date}}
           push: ${{steps.set-variables.outputs.push}}
           run_simulator: ${{ steps.set-variables.outputs.sim }}
           MY_REPO_PAT: ${{secrets.MY_REPO_PAT}}
