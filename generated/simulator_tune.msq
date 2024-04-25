@@ -208,7 +208,7 @@
         <constant name="acrPin">"NONE"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0240421E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0240424E7</constant>
         <constant name="tps1_1AdcChannel">"Disabled"</constant>
         <constant name="vbattAdcChannel">"Disabled"</constant>
         <constant name="fuelLevelSensor">"Disabled"</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240423E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240425E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -360,7 +360,7 @@
         <constant name="disableEtbWhenEngineStopped">"false"</constant>
         <constant name="is_enabled_spi_4">"false"</constant>
         <constant name="pauseEtbControl">"false"</constant>
-        <constant name="alignEngineSnifferAtTDC">"false"</constant>
+        <constant name="unusedAlign">"false"</constant>
         <constant name="verboseKLine">"false"</constant>
         <constant name="idleIncrementalPidCic">"false"</constant>
         <constant name="enableAemXSeries">"false"</constant>
@@ -375,8 +375,8 @@
         <constant digits="0" name="verboseCanBaseAddress" units="">512.0</constant>
         <constant digits="0" name="mc33_hvolt" units="v">65.0</constant>
         <constant digits="0" name="minimumBoostClosedLoopMap" units="kPa">0.0</constant>
-        <constant name="acFanPin">"NONE"</constant>
-        <constant name="acFanPinMode">"default"</constant>
+        <constant digits="0" name="unusedacFanPin" units="">0.0</constant>
+        <constant digits="0" name="unusedAcFanPinMode" units="">0.0</constant>
         <constant name="l9779spiDevice">"Off"</constant>
         <constant name="imuType">"None"</constant>
         <constant digits="0" name="vehicleWeight" units="kg">0.0</constant>
@@ -404,7 +404,7 @@
         <constant digits="0" name="etbMaximumPosition" units="%">100.0</constant>
         <constant digits="0" name="sdCardLogFrequency" units="hz">50.0</constant>
         <constant name="idlePositionChannel">"Disabled"</constant>
-        <constant name="debugMapAveraging">"NONE"</constant>
+        <constant digits="0" name="unusedHere" units="">0.0</constant>
         <constant name="starterRelayDisablePin">"NONE"</constant>
         <constant name="starterRelayDisablePinMode">"default"</constant>
         <constant name="secondSolenoidPin">"NONE"</constant>
@@ -505,8 +505,8 @@
         <constant digits="1" name="noFuelTrimAfterDfcoTime" units="sec">0.0</constant>
         <constant digits="0" name="launchSpeedThreshold" units="Kph">30.0</constant>
         <constant digits="0" name="launchRpmWindow" units="RPM">500.0</constant>
-        <constant digits="0" name="launchSparkSkipPercent" units="%">0.0</constant>
-        <constant digits="0" name="launchBoostDuty" units="%">0.0</constant>
+        <constant digits="0" name="unusedHere12" units="">0.0</constant>
+        <constant digits="0" name="unusedHere13" units="">0.0</constant>
         <constant digits="0" name="magicNumberAvailableForDevTricks" units="">1.0</constant>
         <constant digits="0" name="turbochargerFilter" units="">0.01</constant>
         <constant digits="0" name="launchTpsThreshold" units="">0.0</constant>
@@ -762,6 +762,7 @@
         <constant name="devBit5">"false"</constant>
         <constant name="devBit6">"false"</constant>
         <constant name="devBit7">"false"</constant>
+        <constant name="skipADC12bitAssert">"false"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">200.0</constant>
         <constant digits="0" name="iacByTpsTaper" units="percent">2.0</constant>
         <constant name="auxSerialTxPin">"NONE"</constant>
@@ -1448,7 +1449,7 @@
         <constant digits="2" name="ALSIdleAdd" units="%">0.0</constant>
         <constant digits="2" name="ALSEtbAdd" units="%">0.0</constant>
         <constant digits="1" name="ALSSkipRatio" units="">0.0</constant>
-        <constant digits="0" name="ALSMaxDriverThrottleIntent" units="%">0.0</constant>
+        <constant digits="0" name="unusedSorry11" units="">0.0</constant>
         <constant name="ALSActivatePinMode">"DEFAULT"</constant>
         <constant digits="1" name="tpsSecondaryMaximum" units="%">0.0</constant>
         <constant digits="1" name="ppsSecondaryMaximum" units="%">0.0</constant>
@@ -4709,7 +4710,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.23.XYZ.3376708825" version="5.0"/>
+    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.25.XYZ.2604809928" version="5.0"/>
     <bibliography author="rusEFI 20240402" writeDate="date"/>
     <settings/>
     <userComments/>
