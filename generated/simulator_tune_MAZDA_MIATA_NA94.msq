@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240511E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240512E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -364,6 +364,7 @@
         <constant name="verboseKLine">"false"</constant>
         <constant name="idleIncrementalPidCic">"false"</constant>
         <constant name="enableAemXSeries">"false"</constant>
+        <constant name="doNotUse1x5_overdwell_protection">"false"</constant>
         <constant name="logicAnalyzerPins1">"NONE"</constant>
         <constant name="logicAnalyzerPins2">"NONE"</constant>
         <constant name="logicAnalyzerPins3">"NONE"</constant>
@@ -376,7 +377,7 @@
         <constant digits="0" name="mc33_hvolt" units="v">65.0</constant>
         <constant digits="0" name="minimumBoostClosedLoopMap" units="kPa">0.0</constant>
         <constant digits="0" name="unusedacFanPin" units="">0.0</constant>
-        <constant digits="0" name="unusedAcFanPinMode" units="">0.0</constant>
+        <constant name="boostOpenLoopYAxis">"TPS"</constant>
         <constant name="l9779spiDevice">"Off"</constant>
         <constant name="imuType">"None"</constant>
         <constant digits="0" name="vehicleWeight" units="kg">950.0</constant>
@@ -4716,7 +4717,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.05.11.XYZ.3415507727" version="5.0"/>
+    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.05.12.XYZ.2039921943" version="5.0"/>
     <bibliography author="rusEFI 20240402" writeDate="date"/>
     <settings/>
     <userComments/>
