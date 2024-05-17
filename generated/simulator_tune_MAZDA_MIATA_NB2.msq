@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240516E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240517E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1098,11 +1098,11 @@
         <constant digits="2" name="triggerCompHystMax" units="V">0.0</constant>
         <constant digits="0" name="triggerCompSensorSatRpm" units="RPM">0.0</constant>
         <constant cols="1" digits="2" name="tractionControlSlipBins" rows="6">
-         0.8
          0.9
          0.95
-         1.05
+         1.0
          1.1
+         1.15
          1.2
 </constant>
         <constant cols="1" digits="0" name="tractionControlSpeedBins" rows="6">
@@ -4719,7 +4719,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240511" nPages="1" signature="rusEFI default.2024.05.16.XYZ.3764030223" version="5.0"/>
+    <versionInfo firmwareInfo="20240511" nPages="1" signature="rusEFI default.2024.05.17.XYZ.1987743276" version="5.0"/>
     <bibliography author="rusEFI 20240511" writeDate="date"/>
     <settings/>
     <userComments/>
