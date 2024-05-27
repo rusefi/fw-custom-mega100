@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240526E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240527E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1325,7 +1325,7 @@
         <constant digits="0" name="etbJamIntegratorLimit" units="%">0.0</constant>
         <constant digits="0" name="hpfpCamLobes" units="lobes/cam">3.0</constant>
         <constant name="hpfpCam">"NONE"</constant>
-        <constant digits="0" name="auxiliarySetting1" units="">0.0</constant>
+        <constant digits="0" name="unusedByteHere" units="">0.0</constant>
         <constant digits="0" name="hpfpMinAngle" units="deg">10.0</constant>
         <constant digits="3" name="hpfpPumpVolume" units="cc">0.29</constant>
         <constant digits="0" name="hpfpActivationAngle" units="deg">30.0</constant>
@@ -1633,9 +1633,9 @@
         <constant digits="1" name="tcu_rangeSensorBiasResistor" units="Ohm">0.0</constant>
         <constant name="msIoBox0_id">"Off"</constant>
         <constant name="msIoBox0_vss">"Off"</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="200">
-         0.0
-         0.0
+        <constant digits="2" name="mc33810Nomi" units="A">0.0</constant>
+        <constant digits="0" name="mc33810Maxi" units="A">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="198">
          0.0
          0.0
          0.0
@@ -4765,7 +4765,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240522" nPages="1" signature="rusEFI default.2024.05.26.XYZ.721842033" version="5.0"/>
+    <versionInfo firmwareInfo="20240522" nPages="1" signature="rusEFI default.2024.05.27.XYZ.269536690" version="5.0"/>
     <bibliography author="rusEFI 20240522" writeDate="date"/>
     <settings/>
     <userComments/>
