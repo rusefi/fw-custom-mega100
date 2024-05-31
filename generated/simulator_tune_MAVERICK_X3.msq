@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024053E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240531E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"PE15"</constant>
@@ -376,7 +376,8 @@
         <constant digits="0" name="verboseCanBaseAddress" units="">512.0</constant>
         <constant digits="0" name="mc33_hvolt" units="v">65.0</constant>
         <constant digits="0" name="minimumBoostClosedLoopMap" units="kPa">0.0</constant>
-        <constant digits="0" name="unusedacFanPin" units="">0.0</constant>
+        <constant digits="0" name="initialIgnitionCutPercent" units="%">0.0</constant>
+        <constant digits="0" name="finalIgnitionCutPercentBeforeLaunch" units="%">0.0</constant>
         <constant name="boostOpenLoopYAxis">"TPS"</constant>
         <constant name="l9779spiDevice">"Off"</constant>
         <constant name="imuType">"None"</constant>
@@ -405,7 +406,7 @@
         <constant digits="0" name="etbMaximumPosition" units="%">100.0</constant>
         <constant digits="0" name="sdCardLogFrequency" units="hz">50.0</constant>
         <constant name="idlePositionChannel">"Disabled"</constant>
-        <constant digits="0" name="smoothRetardEndRpm" units="">0.0</constant>
+        <constant digits="0" name="launchCorrectionsEndRpm" units="">0.0</constant>
         <constant name="starterRelayDisablePin">"NONE"</constant>
         <constant name="starterRelayDisablePinMode">"default"</constant>
         <constant name="secondSolenoidPin">"NONE"</constant>
@@ -4715,7 +4716,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240522" nPages="1" signature="rusEFI default.2024.05.30.XYZ.2498762432" version="5.0"/>
+    <versionInfo firmwareInfo="20240522" nPages="1" signature="rusEFI default.2024.05.31.XYZ.3039310959" version="5.0"/>
     <bibliography author="rusEFI 20240522" writeDate="date"/>
     <settings/>
     <userComments/>
