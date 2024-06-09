@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Jun 06 03:37:22 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jun 09 16:39:48 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -2168,9 +2168,10 @@ struct engine_configuration_s {
 	 */
 	int launchRpmWindow;
 	/**
+	 * units: ms
 	 * offset 988
 	 */
-	int unusedHere12;
+	float triggerEventsTimeoutMs;
 	/**
 	 * offset 992
 	 */
@@ -4918,25 +4919,20 @@ struct persistent_config_s {
 	 */
 	float crankingFuelBins[CRANKING_CURVE_SIZE];
 	/**
-	 * units: ratio
-	 * offset 14024
-	 */
-	float crankingCycleCoef[CRANKING_CURVE_SIZE];
-	/**
 	 * units: counter
-	 * offset 14056
+	 * offset 14024
 	 */
 	float crankingCycleBins[CRANKING_CURVE_SIZE];
 	/**
 	 * units: C
-	 * offset 14088
+	 * offset 14056
 	 */
 	int16_t crankingCycleFuelCltBins[CRANKING_CYCLE_CLT_SIZE];
 	/**
 	 * units: mult
-	 * offset 14096
+	 * offset 14064
 	 */
-	float crankingCycleFuelCoef[CRANKING_ENRICH_COUNT][CRANKING_CYCLE_CLT_SIZE];
+	float crankingCycleFuelCoef[CRANKING_CYCLE_CLT_SIZE][CRANKING_CURVE_SIZE];
 	/**
 	 * CLT-based idle position multiplier for simple manual idle controller
 	 * units: C
@@ -5638,4 +5634,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22748);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Jun 06 03:37:22 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jun 09 16:39:48 UTC 2024
