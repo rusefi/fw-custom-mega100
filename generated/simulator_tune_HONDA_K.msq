@@ -157,7 +157,7 @@
         <constant digits="2" name="map_sensor_lowValue" units="kpa">0.0</constant>
         <constant digits="2" name="map_sensor_highValue" units="kpa">0.0</constant>
         <constant name="map_sensor_type">"DENSO183"</constant>
-        <constant name="map_sensor_hwChannel">"Disabled"</constant>
+        <constant name="map_sensor_hwChannel">"NONE"</constant>
         <constant digits="1" name="clt_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="clt_tempC_2" units="*C">23.8889</constant>
         <constant digits="1" name="clt_tempC_3" units="*C">48.8889</constant>
@@ -165,7 +165,7 @@
         <constant digits="1" name="clt_resistance_2" units="Ohm">2100.0</constant>
         <constant digits="1" name="clt_resistance_3" units="Ohm">1000.0</constant>
         <constant digits="1" name="clt_bias_resistor" units="Ohm">1500.0</constant>
-        <constant name="clt_adcChannel">"Disabled"</constant>
+        <constant name="clt_adcChannel">"NONE"</constant>
         <constant digits="1" name="iat_tempC_1" units="*C">-20.0</constant>
         <constant digits="1" name="iat_tempC_2" units="*C">23.8889</constant>
         <constant digits="1" name="iat_tempC_3" units="*C">120.0</constant>
@@ -173,7 +173,7 @@
         <constant digits="1" name="iat_resistance_2" units="Ohm">2100.0</constant>
         <constant digits="1" name="iat_resistance_3" units="Ohm">100.0</constant>
         <constant digits="1" name="iat_bias_resistor" units="Ohm">2700.0</constant>
-        <constant name="iat_adcChannel">"Disabled"</constant>
+        <constant name="iat_adcChannel">"NONE"</constant>
         <constant digits="2" name="launchTimingRetard" units="deg">0.0</constant>
         <constant digits="0" name="hip9011PrescalerAndSDO" units="integer">0.0</constant>
         <constant digits="2" name="knockBandCustom" units="kHz">0.0</constant>
@@ -209,10 +209,10 @@
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant name="tps1_1AdcChannel">"Disabled"</constant>
-        <constant name="vbattAdcChannel">"Disabled"</constant>
-        <constant name="fuelLevelSensor">"Disabled"</constant>
-        <constant name="tps2_1AdcChannel">"Disabled"</constant>
+        <constant name="tps1_1AdcChannel">"NONE"</constant>
+        <constant name="vbattAdcChannel">"NONE"</constant>
+        <constant name="fuelLevelSensor">"NONE"</constant>
+        <constant name="tps2_1AdcChannel">"NONE"</constant>
         <constant digits="4" name="idle_derivativeFilterLoss" units="x">0.0</constant>
         <constant digits="0" name="trailingSparkAngle" units="angle">10.0</constant>
         <constant name="trigger_type">"Honda K 12+1"</constant>
@@ -221,22 +221,22 @@
         <constant digits="1" name="airByRpmTaper" units="%">0.0</constant>
         <constant name="hip9011SpiDevice">"Off"</constant>
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
-        <constant name="mafAdcChannel">"Disabled"</constant>
+        <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024061E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240616E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
         <constant name="camInputs2">"NONE"</constant>
         <constant name="camInputs3">"NONE"</constant>
         <constant name="camInputs4">"NONE"</constant>
-        <constant name="afr_hwChannel">"Disabled"</constant>
-        <constant name="afr_hwChannel2">"Disabled"</constant>
+        <constant name="afr_hwChannel">"NONE"</constant>
+        <constant name="afr_hwChannel2">"NONE"</constant>
         <constant digits="2" name="afr_v1" units="volts">0.0</constant>
         <constant digits="2" name="afr_value1" units="AFR">9.996</constant>
         <constant digits="2" name="afr_v2" units="volts">5.0</constant>
         <constant digits="2" name="afr_value2" units="AFR">19.992</constant>
-        <constant name="throttlePedalPositionAdcChannel">"Disabled"</constant>
+        <constant name="throttlePedalPositionAdcChannel">"NONE"</constant>
         <constant digits="1" name="etbSplit" units="%">5.0</constant>
         <constant name="tle6240_cs">"NONE"</constant>
         <constant name="tle6240_csPinMode">"default"</constant>
@@ -245,7 +245,7 @@
         <constant digits="2" name="baroSensor_lowValue" units="kpa">0.0</constant>
         <constant digits="2" name="baroSensor_highValue" units="kpa">500.0</constant>
         <constant name="baroSensor_type">"Custom"</constant>
-        <constant name="baroSensor_hwChannel">"Disabled"</constant>
+        <constant name="baroSensor_hwChannel">"NONE"</constant>
         <constant digits="0" name="idle_solenoidFrequency" units="Hz">300.0</constant>
         <constant name="idle_solenoidPin">"NONE"</constant>
         <constant name="idle_stepperDirectionPin">"NONE"</constant>
@@ -308,10 +308,10 @@
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant name="mc33972_cs">"NONE"</constant>
         <constant name="mc33972_csPinMode">"default"</constant>
-        <constant name="auxFastSensor1_adcChannel">"Disabled"</constant>
-        <constant name="tps1_2AdcChannel">"Disabled"</constant>
-        <constant name="tps2_2AdcChannel">"Disabled"</constant>
-        <constant name="throttlePedalPositionSecondAdcChannel">"Disabled"</constant>
+        <constant name="auxFastSensor1_adcChannel">"NONE"</constant>
+        <constant name="tps1_2AdcChannel">"NONE"</constant>
+        <constant name="tps2_2AdcChannel">"NONE"</constant>
+        <constant name="throttlePedalPositionSecondAdcChannel">"NONE"</constant>
         <constant name="afr_type">"14Point7"</constant>
         <constant name="mc33810_cs1">"NONE"</constant>
         <constant digits="4" name="idle_antiwindupFreq" units="x">0.0</constant>
@@ -328,7 +328,7 @@
         <constant digits="3" name="fordInjectorSmallPulseSlope" units="g/s">0.0</constant>
         <constant name="triggerSimulatorPinModes1">"default"</constant>
         <constant name="triggerSimulatorPinModes2">"default"</constant>
-        <constant name="maf2AdcChannel">"Disabled"</constant>
+        <constant name="maf2AdcChannel">"NONE"</constant>
         <constant name="o2heaterPin">"NONE"</constant>
         <constant name="o2heaterPinModeTodO">"default"</constant>
         <constant digits="0" name="lambdaProtectionMinRpm" units="RPM">2500.0</constant>
@@ -360,7 +360,7 @@
         <constant name="disableEtbWhenEngineStopped">"false"</constant>
         <constant name="is_enabled_spi_4">"false"</constant>
         <constant name="pauseEtbControl">"false"</constant>
-        <constant name="unusedAlign">"false"</constant>
+        <constant name="tpsTpsPercentMode">"ms adder"</constant>
         <constant name="verboseKLine">"false"</constant>
         <constant name="idleIncrementalPidCic">"false"</constant>
         <constant name="enableAemXSeries">"false"</constant>
@@ -405,7 +405,7 @@
         <constant digits="1" name="stoichRatioSecondary" units=":1">9.0</constant>
         <constant digits="0" name="etbMaximumPosition" units="%">100.0</constant>
         <constant digits="0" name="sdCardLogFrequency" units="hz">50.0</constant>
-        <constant name="idlePositionChannel">"Disabled"</constant>
+        <constant name="idlePositionChannel">"NONE"</constant>
         <constant digits="0" name="launchCorrectionsEndRpm" units="">0.0</constant>
         <constant name="starterRelayDisablePin">"NONE"</constant>
         <constant name="starterRelayDisablePinMode">"default"</constant>
@@ -508,7 +508,7 @@
         <constant digits="0" name="launchSpeedThreshold" units="Kph">30.0</constant>
         <constant digits="0" name="launchRpmWindow" units="RPM">500.0</constant>
         <constant digits="3" name="triggerEventsTimeoutMs" units="ms">0.0</constant>
-        <constant digits="0" name="unusedHere13" units="">0.0</constant>
+        <constant digits="3" name="mapExpAverageAlpha" units="">0.0</constant>
         <constant digits="0" name="magicNumberAvailableForDevTricks" units="">1.0</constant>
         <constant digits="0" name="turbochargerFilter" units="">0.01</constant>
         <constant digits="0" name="launchTpsThreshold" units="">0.0</constant>
@@ -639,9 +639,9 @@
         <constant name="launchActivateInverted">"false"</constant>
         <constant name="twoStroke">"Four Stroke"</constant>
         <constant name="skippedWheelOnCam">"On crankshaft"</constant>
-        <constant name="hipOutputChannel">"Disabled"</constant>
+        <constant name="hipOutputChannel">"NONE"</constant>
         <constant name="acSwitch">"NONE"</constant>
-        <constant name="vRefAdcChannel">"Disabled"</constant>
+        <constant name="vRefAdcChannel">"NONE"</constant>
         <constant digits="0" name="etbNeutralPosition" units="%">0.0</constant>
         <constant name="idleMode">"Open Loop"</constant>
         <constant name="isInjectionEnabled">"true"</constant>
@@ -782,7 +782,7 @@
         <constant name="auxSpeedSensorInputPin2">"NONE"</constant>
         <constant digits="0" name="totalGearsCount" units="">0.0</constant>
         <constant name="injectionTimingMode">"End of injection"</constant>
-        <constant name="debugMode">"MAP"</constant>
+        <constant name="debugMode">"Executor"</constant>
         <constant digits="0" name="fan1ExtraIdle" units="%">2.0</constant>
         <constant digits="0" name="uartConsoleSerialSpeed" units="BPs">115200.0</constant>
         <constant digits="1" name="tpsDecelEnleanmentThreshold" units="roc">0.0</constant>
@@ -815,7 +815,7 @@
         <constant name="can2TxPin">"NONE"</constant>
         <constant name="can2RxPin">"NONE"</constant>
         <constant name="starterControlPinMode">"default"</constant>
-        <constant name="wastegatePositionSensor">"Disabled"</constant>
+        <constant name="wastegatePositionSensor">"NONE"</constant>
         <constant name="ignOverrideMode">"None"</constant>
         <constant name="injectorPressureType">"Low"</constant>
         <constant name="hpfpValvePin">"NONE"</constant>
@@ -861,7 +861,7 @@
         <constant digits="2" name="mapLowValueVoltage" units="v">0.0</constant>
         <constant digits="2" name="mapHighValueVoltage" units="v">5.0</constant>
         <constant digits="2" name="egoValueShift" units="value">0.0</constant>
-        <constant name="vvtPins1">"PI0"</constant>
+        <constant name="vvtPins1">"INVALID"</constant>
         <constant name="vvtPins2">"NONE"</constant>
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
@@ -878,14 +878,14 @@
         <constant name="vvtMode2">"Honda K Exhaust"</constant>
         <constant digits="0" name="fan2ExtraIdle" units="%">2.0</constant>
         <constant digits="2" name="primingDelay" units="sec">0.5</constant>
-        <constant name="auxAnalogInputs1">"Disabled"</constant>
-        <constant name="auxAnalogInputs2">"Disabled"</constant>
-        <constant name="auxAnalogInputs3">"Disabled"</constant>
-        <constant name="auxAnalogInputs4">"Disabled"</constant>
-        <constant name="auxAnalogInputs5">"Disabled"</constant>
-        <constant name="auxAnalogInputs6">"Disabled"</constant>
-        <constant name="auxAnalogInputs7">"Disabled"</constant>
-        <constant name="auxAnalogInputs8">"Disabled"</constant>
+        <constant name="auxAnalogInputs1">"NONE"</constant>
+        <constant name="auxAnalogInputs2">"NONE"</constant>
+        <constant name="auxAnalogInputs3">"NONE"</constant>
+        <constant name="auxAnalogInputs4">"NONE"</constant>
+        <constant name="auxAnalogInputs5">"NONE"</constant>
+        <constant name="auxAnalogInputs6">"NONE"</constant>
+        <constant name="auxAnalogInputs7">"NONE"</constant>
+        <constant name="auxAnalogInputs8">"NONE"</constant>
         <constant name="trailingCoilPins1">"NONE"</constant>
         <constant name="trailingCoilPins2">"NONE"</constant>
         <constant name="trailingCoilPins3">"NONE"</constant>
@@ -934,7 +934,7 @@
         <constant digits="1" name="auxTempSensor1_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor1_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor1_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="auxTempSensor1_adcChannel">"Disabled"</constant>
+        <constant name="auxTempSensor1_adcChannel">"NONE"</constant>
         <constant digits="1" name="auxTempSensor2_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor2_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor2_tempC_3" units="*C">0.0</constant>
@@ -942,7 +942,7 @@
         <constant digits="1" name="auxTempSensor2_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor2_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor2_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="auxTempSensor2_adcChannel">"Disabled"</constant>
+        <constant name="auxTempSensor2_adcChannel">"NONE"</constant>
         <constant digits="0" name="knockSamplingDuration" units="Deg">45.0</constant>
         <constant digits="0" name="etbFreq" units="Hz">800.0</constant>
         <constant digits="4" name="etbWastegatePid_pFactor" units="">1.0</constant>
@@ -1014,7 +1014,7 @@
          80.0
          100.0
 </constant>
-        <constant name="oilPressure_hwChannel">"Disabled"</constant>
+        <constant name="oilPressure_hwChannel">"NONE"</constant>
         <constant digits="2" name="oilPressure_v1" units="volts">0.5</constant>
         <constant digits="2" name="oilPressure_value1" units="">0.0</constant>
         <constant digits="2" name="oilPressure_v2" units="volts">4.5</constant>
@@ -1035,12 +1035,12 @@
         <constant digits="0" name="coastingFuelCutClt" units="C">60.0</constant>
         <constant digits="0" name="pidExtraForLowRpm" units="%">0.0</constant>
         <constant digits="0" name="coastingFuelCutMap" units="kPa">30.0</constant>
-        <constant name="highPressureFuel_hwChannel">"Disabled"</constant>
+        <constant name="highPressureFuel_hwChannel">"NONE"</constant>
         <constant digits="2" name="highPressureFuel_v1" units="volts">0.0</constant>
         <constant digits="2" name="highPressureFuel_value1" units="">0.0</constant>
         <constant digits="2" name="highPressureFuel_v2" units="volts">0.0</constant>
         <constant digits="2" name="highPressureFuel_value2" units="">0.0</constant>
-        <constant name="lowPressureFuel_hwChannel">"Disabled"</constant>
+        <constant name="lowPressureFuel_hwChannel">"NONE"</constant>
         <constant digits="2" name="lowPressureFuel_v1" units="volts">0.0</constant>
         <constant digits="2" name="lowPressureFuel_value1" units="">0.0</constant>
         <constant digits="2" name="lowPressureFuel_v2" units="volts">0.0</constant>
@@ -1326,7 +1326,7 @@
         <constant digits="0" name="etbJamIntegratorLimit" units="%">0.0</constant>
         <constant digits="0" name="hpfpCamLobes" units="lobes/cam">3.0</constant>
         <constant name="hpfpCam">"NONE"</constant>
-        <constant digits="0" name="unusedByteHere" units="">0.0</constant>
+        <constant digits="0" name="acLowRpmLimit" units="RPM">500.0</constant>
         <constant digits="0" name="hpfpMinAngle" units="deg">10.0</constant>
         <constant digits="3" name="hpfpPumpVolume" units="cc">0.29</constant>
         <constant digits="0" name="hpfpActivationAngle" units="deg">30.0</constant>
@@ -1376,12 +1376,12 @@
         <constant name="gearControllerMode">"None"</constant>
         <constant name="transmissionControllerMode">"None"</constant>
         <constant digits="0" name="acrDisablePhase" units="deg">0.0</constant>
-        <constant name="auxLinear1_hwChannel">"Disabled"</constant>
+        <constant name="auxLinear1_hwChannel">"NONE"</constant>
         <constant digits="2" name="auxLinear1_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear1_value1" units="">0.0</constant>
         <constant digits="2" name="auxLinear1_v2" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear1_value2" units="">0.0</constant>
-        <constant name="auxLinear2_hwChannel">"Disabled"</constant>
+        <constant name="auxLinear2_hwChannel">"NONE"</constant>
         <constant digits="2" name="auxLinear2_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear2_value1" units="">0.0</constant>
         <constant digits="2" name="auxLinear2_v2" units="volts">0.0</constant>
@@ -1515,7 +1515,7 @@
         <constant digits="1" name="oilTempSensor_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="oilTempSensor_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="oilTempSensor_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="oilTempSensor_adcChannel">"Disabled"</constant>
+        <constant name="oilTempSensor_adcChannel">"NONE"</constant>
         <constant digits="1" name="fuelTempSensor_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="fuelTempSensor_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="fuelTempSensor_tempC_3" units="*C">0.0</constant>
@@ -1523,7 +1523,7 @@
         <constant digits="1" name="fuelTempSensor_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="fuelTempSensor_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="fuelTempSensor_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="fuelTempSensor_adcChannel">"Disabled"</constant>
+        <constant name="fuelTempSensor_adcChannel">"NONE"</constant>
         <constant digits="1" name="ambientTempSensor_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="ambientTempSensor_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="ambientTempSensor_tempC_3" units="*C">0.0</constant>
@@ -1531,7 +1531,7 @@
         <constant digits="1" name="ambientTempSensor_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="ambientTempSensor_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="ambientTempSensor_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="ambientTempSensor_adcChannel">"Disabled"</constant>
+        <constant name="ambientTempSensor_adcChannel">"NONE"</constant>
         <constant digits="1" name="compressorDischargeTemperature_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_tempC_3" units="*C">0.0</constant>
@@ -1539,9 +1539,9 @@
         <constant digits="1" name="compressorDischargeTemperature_resistance_2" units="Ohm">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_resistance_3" units="Ohm">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_bias_resistor" units="Ohm">0.0</constant>
-        <constant name="compressorDischargeTemperature_adcChannel">"Disabled"</constant>
-        <constant name="throttleInletPressureChannel">"Disabled"</constant>
-        <constant name="compressorDischargePressureChannel">"Disabled"</constant>
+        <constant name="compressorDischargeTemperature_adcChannel">"NONE"</constant>
+        <constant name="throttleInletPressureChannel">"NONE"</constant>
+        <constant name="compressorDischargePressureChannel">"NONE"</constant>
         <constant name="dacOutputPins1">"NONE"</constant>
         <constant name="dacOutputPins2">"NONE"</constant>
         <constant name="speedometerOutputPin">"NONE"</constant>
@@ -1550,7 +1550,7 @@
         <constant digits="0" name="simulatorCamPosition2" units="">0.0</constant>
         <constant digits="0" name="simulatorCamPosition3" units="">0.0</constant>
         <constant digits="0" name="simulatorCamPosition4" units="">0.0</constant>
-        <constant name="ignKeyAdcChannel">"Disabled"</constant>
+        <constant name="ignKeyAdcChannel">"NONE"</constant>
         <constant name="spi6MisoMode">"default"</constant>
         <constant digits="3" name="triggerVVTGapOverrideFrom1" units="ratio">0.0</constant>
         <constant digits="3" name="triggerVVTGapOverrideFrom2" units="ratio">0.0</constant>
@@ -1625,12 +1625,12 @@
         <constant digits="0" name="device_uid1" units="">0.0</constant>
         <constant digits="0" name="device_uid2" units="">0.0</constant>
         <constant digits="0" name="device_uid3" units="">0.0</constant>
-        <constant name="tcu_rangeAnalogInput1">"Disabled"</constant>
-        <constant name="tcu_rangeAnalogInput2">"Disabled"</constant>
-        <constant name="tcu_rangeAnalogInput3">"Disabled"</constant>
-        <constant name="tcu_rangeAnalogInput4">"Disabled"</constant>
-        <constant name="tcu_rangeAnalogInput5">"Disabled"</constant>
-        <constant name="tcu_rangeAnalogInput6">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput1">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput2">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput3">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput4">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput5">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput6">"NONE"</constant>
         <constant digits="1" name="tcu_rangeSensorBiasResistor" units="Ohm">0.0</constant>
         <constant name="msIoBox0_id">"Off"</constant>
         <constant name="msIoBox0_vss">"Off"</constant>
@@ -4721,8 +4721,8 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240607" nPages="1" signature="rusEFI main.2024.06.10.XYZ.2051356106" version="5.0"/>
-    <bibliography author="rusEFI 20240607" writeDate="date"/>
+    <versionInfo firmwareInfo="20240616" nPages="1" signature="rusEFI main.2024.06.16.XYZ.2448227185" version="5.0"/>
+    <bibliography author="rusEFI 20240616" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
