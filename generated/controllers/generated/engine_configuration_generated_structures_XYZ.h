@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Jun 10 16:40:48 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jun 16 18:45:41 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -1629,7 +1629,7 @@ struct engine_configuration_s {
 	bool pauseEtbControl : 1 {};
 	/**
 	offset 752 bit 27 */
-	bool unusedAlign : 1 {};
+	bool tpsTpsPercentMode : 1 {};
 	/**
 	offset 752 bit 28 */
 	bool verboseKLine : 1 {};
@@ -2175,7 +2175,7 @@ struct engine_configuration_s {
 	/**
 	 * offset 992
 	 */
-	int unusedHere13;
+	float mapExpAverageAlpha;
 	/**
 	 * offset 996
 	 */
@@ -3912,9 +3912,11 @@ struct engine_configuration_s {
 	 */
 	hpfp_cam_e hpfpCam;
 	/**
+	 * Low engine speed for A/C. Larger engines can survive lower values
+	 * units: RPM
 	 * offset 3249
 	 */
-	uint8_t unusedByteHere;
+	scaled_channel<int8_t, 1, 10> acLowRpmLimit;
 	/**
 	 * If the requested activation time is below this angle, don't bother running the pump
 	 * units: deg
@@ -5635,4 +5637,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22748);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Jun 10 16:40:48 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jun 16 18:45:41 UTC 2024
