@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22748">
+    <page number="0" size="22752">
         <constant name="engineType">"HONDA_OBD1"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240617E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240618E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1635,27 +1635,12 @@
         <constant name="msIoBox0_vss">"Off"</constant>
         <constant digits="2" name="mc33810Nomi" units="A">5.5</constant>
         <constant digits="0" name="mc33810Maxi" units="A">14.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="198">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant name="acPressure_hwChannel">"NONE"</constant>
+        <constant digits="2" name="acPressure_v1" units="volts">0.0</constant>
+        <constant digits="2" name="acPressure_value1" units="">0.0</constant>
+        <constant digits="2" name="acPressure_v2" units="volts">0.0</constant>
+        <constant digits="2" name="acPressure_value2" units="">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="178">
          0.0
          0.0
          0.0
@@ -2199,11 +2184,9 @@
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="unusedGapHere" rows="16">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant digits="0" name="minAcPressure" units="">0.0</constant>
+        <constant digits="0" name="maxAcPressure" units="">0.0</constant>
+        <constant cols="1" digits="0" name="unusedGapHere" rows="12">
          0.0
          0.0
          0.0
@@ -4720,8 +4703,8 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240616" nPages="1" signature="rusEFI main.2024.06.17.XYZ.2448227185" version="5.0"/>
-    <bibliography author="rusEFI 20240616" writeDate="date"/>
+    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.18.XYZ.2350820797" version="5.0"/>
+    <bibliography author="rusEFI 20240617" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
