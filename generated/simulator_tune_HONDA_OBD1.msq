@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240618E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240619E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1640,11 +1640,9 @@
         <constant digits="2" name="acPressure_value1" units="">0.0</constant>
         <constant digits="2" name="acPressure_v2" units="volts">0.0</constant>
         <constant digits="2" name="acPressure_value2" units="">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="178">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant digits="3" name="minAcPressure" units="kPa">0.0</constant>
+        <constant digits="3" name="maxAcPressure" units="kPa">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="174">
          0.0
          0.0
          0.0
@@ -2184,9 +2182,11 @@
          0.0
          0.0
 </constant>
-        <constant digits="0" name="minAcPressure" units="">0.0</constant>
-        <constant digits="0" name="maxAcPressure" units="">0.0</constant>
-        <constant cols="1" digits="0" name="unusedGapHere" rows="12">
+        <constant cols="1" digits="0" name="unusedGapHere" rows="16">
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
          0.0
@@ -4703,7 +4703,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.18.XYZ.2350820797" version="5.0"/>
+    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.19.XYZ.4248253071" version="5.0"/>
     <bibliography author="rusEFI 20240617" writeDate="date"/>
     <settings/>
     <userComments/>
