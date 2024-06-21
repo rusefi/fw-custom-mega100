@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22752">
+    <page number="0" size="22800">
         <constant name="engineType">"HELLEN_154_HYUNDAI_COUPE_BK2"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024062E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240621E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1641,8 +1641,8 @@
         <constant digits="2" name="acPressure_value1" units="">0.0</constant>
         <constant digits="2" name="acPressure_v2" units="volts">0.0</constant>
         <constant digits="2" name="acPressure_value2" units="">0.0</constant>
-        <constant digits="0" name="minAcPressure" units="kPa">0.0</constant>
-        <constant digits="0" name="maxAcPressure" units="kPa">0.0</constant>
+        <constant digits="0" name="minAcPressure" units="kPa">100.0</constant>
+        <constant digits="0" name="maxAcPressure" units="kPa">300.0</constant>
         <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="174">
          0.0
          0.0
@@ -4750,8 +4750,26 @@ end</constant>
          0.0
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
+        <constant cols="4" digits="1" name="alternatorVoltageTargetTable" rows="4">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+</constant>
+        <constant cols="1" digits="0" name="alternatorVoltageTargetLoadBins" rows="4">
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="alternatorVoltageTargetRpmBins" rows="4">
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.20.XYZ.2191093639" version="5.0"/>
+    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.21.XYZ.235008617" version="5.0"/>
     <bibliography author="rusEFI 20240617" writeDate="date"/>
     <settings/>
     <userComments/>
