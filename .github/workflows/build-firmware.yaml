@@ -31,9 +31,9 @@ jobs:
 
       - uses: ./ext/rusefi/.github/workflows/custom-board-build
         with:
+          new_tag: ${{steps.set-variables.outputs.release_date}}
           artifacts: bin srec hex list map elf bundle autoupdate
           uploads: ini ${{steps.set-variables.outputs.upload}}
-          release_date: ${{steps.set-variables.outputs.release_date}}
           push: ${{steps.set-variables.outputs.push}}
           run_simulator: ${{ steps.set-variables.outputs.sim }}
           MY_REPO_PAT: ${{secrets.MY_REPO_PAT}}
