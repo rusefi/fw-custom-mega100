@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024063E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240701E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2333,41 +2333,130 @@ IN_285 = 0x285 -- 645
 IN_285 = 0x285
 IN_35D = 0x35d
 
-OUT_1F9 = 0x1F9 -- 505
-OUT_233 = 0x233 -- 563
-OUT_23D = 0x23D -- 573
-OUT_23E = 0x23E -- 574
+ENGINE_1_1F9_505 = 505
+ENGINE_2_561 = 561
+ENGINE_7_233_563 = 563
+ENGINE_3_23D_573 = 573
+ENGINE_4_23E_574 = 574
+ENGINE_5_551_1361 = 1361
+ENGINE_6_580_1408 = 1408
+
+speedSensor = Sensor.new("VehicleSpeed")
+speedSensor : setTimeout(3000)
 
 setTickRate(100)
-t = Timer.new()
-t : reset()
-
-HEATER_OUTOUT_INDEX = 1
-startPwm(HEATER_OUTOUT_INDEX, 1, 0)
+startUpTimer = Timer.new()
+startUpTimer : reset()
+rpm = 0
+pps = 0
 
 globalAcOut = 0
+cltGauge = 0
 
 function getTwoBytesMSB(data, offset, factor)
 	return (data[offset + 1] * 256 + data[offset + 2]) * factor
 end
 
-function onTick()
-    local MAF = getSensor("MAF")
-    MAF = (MAF == nil and 0 or MAF)
-    local TPS = getSensor("Tps1")
-    TPS = (TPS == nil and 0 or TPS)
-    local PPS = getSensor("AcceleratorPedal")
-    PPS = (PPS == nil and 0 or PPS)
-    -- print ("MAF " .. MAF .. " TPS " .. TPS .. " PPS " .. PPS)
-    local rpmValue = math.floor(getSensor("RPM") + 0.5)
-	local RPMread = rpmValue / 3.125
+-- Little-endian System, "Intel"
+function setTwoBytesLsb(data, offset, value)
+	value = math.floor(value)
+	data[offset + 2] = value &gt;&gt; 8
+	data[offset + 1] = value &amp; 0xff
+end
+
+payloadENGINE_3_573 = { 0x00, 0, 0x0C, 0x01, 0x0A, 0x87, 0xFF, 0xFF }
+function sendENGINE_3_573()
+  rpmWithSweep = startUpTimer : getElapsedSeconds() &lt; 2 and 8000 or rpm
+  setTwoBytesLsb(payloadENGINE_3_573, 3, rpmWithSweep / 3.125)
+
+	payloadENGINE_3_573[2] = pps / 0.392
+	payloadENGINE_3_573[3] = pps / 0.392 -- Throttle_position_capped
+	payloadENGINE_3_573[8] = cltGauge
+	txCan(1, ENGINE_3_23D_573, 0, payloadENGINE_3_573)
+end
+
+payloadENGINE_7_563 = {0x79, 0xa2, 0x00, 0x18, 0x0e, 0x00, 0x00, 0x01}
+function sendENGINE_7_233_563()
+	local RPMread = rpm / 3.125
 	local RPMhi = RPMread / 256
 	local RPMlo = RPMread
+
+	payloadENGINE_7_563[1] = cltGauge
+	payloadENGINE_7_563[4] = state_233
+	payloadENGINE_7_563[5] = RPMlo
+	payloadENGINE_7_563[8] = RPMhi
+
+   state_233 = rpm &gt; 250 and 0x10 or 0x18
+
+	txCan(1, ENGINE_7_233_563, 0, payloadENGINE_7_563) -- transmit CLT and RPM for who knows whom
+end
+
+function sendENGINE_1_505()
+  	if rpm &gt; 250 then
+  		if cltValue &lt;= 80 then
+  			txCan(1, ENGINE_1_1F9_505, 0, fanPayloadOff)
+  		elseif cltValue &lt; 85 then
+  		    -- send nothing
+  		elseif cltValue &lt; 90 then
+  			txCan(1, ENGINE_1_1F9_505, 0, fanPayloadLo)
+  		else
+  			txCan(1, ENGINE_1_1F9_505, 0, fanPayloadHi)
+  		end
+  	else
+  		txCan(1, ENGINE_1_1F9_505, 0, fanPayloadOff)
+  	end
+  	-- print('CLT temp' ..cltValue)
+end
+
+payloadENGINE_2_561 = {0xe0, 0x80, 0x09, 0xe0, 0xd4, 0xc3, 0x4c, 0x9e}
+function sendENGINE_2_231_561()
+	payloadENGINE_2_561[3] = pps / 0.5 -- tps or pps
+	txCan(1, ENGINE_2_561, 0, payloadENGINE_2_561)
+end
+
+payloadENGINE_4_574 = {0x00, 0x40, 0xff, 0x45, 0x00, 0xd6, 0x00, 0xa2}
+function sendENGINE_4_23E_574()
+	payloadENGINE_4_574[3] = (100 - pps) / 0.392 -- data[3] -- affects desired torque converter pressure Throttle_position_inverted
+	payloadENGINE_4_574[7] = pps / 0.392 -- data[7] -- TPS
+	txCan(1, ENGINE_4_23E_574, 0, payloadENGINE_4_574)
+end
+
+CAN_721_2d1 = 721
+payload721_2d1 = {0x00, 0x84, 0x00, 0x00, 0x31, 0xf8, 0x01}
+function sendCan721_2d1()
+	txCan(1, CAN_721_2d1, 0, payload721_2d1)
+end
+
+CAN_734_2de = 734
+payload734_2de = {0x0f, 0x08, 0x02, 0x00, 0x19, 0x65, 0x07, 0xa8}
+function sendCan734_2de()
+	txCan(1, CAN_734_2de, 0, payload734_2de)
+end
+
+payloadENGINE_5 = {0x7d, 0xdb, 0x00, 0xa0, 0x00, 0x02, 0x80, 0xff}
+function sendENGINE_5_551_1361()
+	txCan(1, ENGINE_5_551_1361, 0, payloadENGINE_5)
+end
+
+payloadENGINE_6 = {0x00, 0x82, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00}
+function sendEngine6_580_1408()
+	txCan(1, ENGINE_6_580_1408, 0, payloadENGINE_6)
+end
+
+_10msPeriodTimer = Timer.new()
+_15msPeriodTimer = Timer.new()
+
+function onTick()
+    pps = getSensor("AcceleratorPedal") or 0
+    pps = (pps == nil and 0 or pps)
+    rpm = math.floor(getSensor("RPM") + 0.5)
+
+
 	cltValue = getSensor("CLT")
 	cltValue = (cltValue == nil and 0 or cltValue)
 
 	--print('ac out = ' ..globalAcOut)
-	if globalAcOut == 1 and rpmValue &gt; 250 then
+	if globalAcOut == 1 and rpm &gt; 250 then
 		fanPayloadOff = { 0x88, 0x00 }
 		fanPayloadLo = { 0x88, 0x00 }
 		fanPayloadHi = { 0x88, 0x00 }
@@ -2378,51 +2467,38 @@ function onTick()
 		fanPayloadHi = { 0x80, 0x00 }
 	end
 
-	cltGauge = 0x00
-
 	-- clt gauge stuff
 	if cltValue &lt; 115 then
 		cltGauge = math.floor(cltValue * 1.5 + 0.5)
 	else
 		cltGauge = 0xF0
 	end
-	-- print('clt gauge = '..cltGauge)
-	-- rpm fun stuff
-	PPS256 = PPS * 256 / 100
-	TPScapped = (TPS &gt; 0.5 and 0.5 or TPS)
-	if t : getElapsedSeconds() &lt; 2 then
-		CLTandRPM_D = { 0x00, PPS256, 0x0C, 0x01, 0x0A, 0x87, 0xFF, 0xFF }
-	else
-		CLTandRPM_D = { 0x00, PPS256, 0x0c, RPMlo, RPMhi, 0x87, 0xFF, cltGauge }
+
+
+	if _10msPeriodTimer : getElapsedSeconds() &gt; 0.01 then
+    _10msPeriodTimer : reset()
+    sendENGINE_1_505()
+    sendENGINE_2_231_561()
+    sendENGINE_7_233_563()
+    sendENGINE_3_573()
+    sendENGINE_4_23E_574()
+    sendCan721_2d1()
+    sendCan734_2de()
 	end
 
-    state_233 = rpmValue &gt; 250 and 0x10 or 0x18
-	CLTandRPM_3     = { cltGauge, 0x8C, 0x20, state_233, RPMlo, 0x00, 0x00, RPMhi }
 
-	txCan(1, OUT_233, 0, CLTandRPM_3) -- transmit CLT and RPM for who knows whom
-	txCan(1, OUT_23D, 0, CLTandRPM_D) -- transmit CLT and RPM for gauge cluster
-
-
-	if rpmValue &gt; 250 then
-	    setPwmDuty(HEATER_OUTOUT_INDEX, 1)
-		if cltValue &lt;= 80 then
-			txCan(1, OUT_1F9, 0, fanPayloadOff)
-		elseif cltValue &lt; 85 then
-		    -- send nothing
-		elseif cltValue &lt; 90 then
-			txCan(1, OUT_1F9, 0, fanPayloadLo)
-		else
-			txCan(1, OUT_1F9, 0, fanPayloadHi)
-		end
-	else
-	    setPwmDuty(HEATER_OUTOUT_INDEX, 0)
-		txCan(1, OUT_1F9, 0, fanPayloadOff)
+	if _15msPeriodTimer : getElapsedSeconds() &gt; 0.015 then
+    _15msPeriodTimer : reset()
+    sendENGINE_5_551_1361()
+    sendEngine6_580_1408()
 	end
-	-- print('CLT temp' ..cltValue)
+
+
 end
 
 function onCanRxAbs1(bus, id, dlc, data)
     kph = getTwoBytesMSB(data, 0, 0.005)
+    speedSensor : set(kph)
 end
 
 function onCanRxAc(bus, id, dlc, data)
@@ -4808,7 +4884,7 @@ canRxAdd(IN_35D, onCanRxAc)</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.06.30.XYZ.1623901167" version="5.0"/>
+    <versionInfo firmwareInfo="20240617" nPages="1" signature="rusEFI main.2024.07.01.XYZ.2266041409" version="5.0"/>
     <bibliography author="rusEFI 20240617" writeDate="date"/>
     <settings/>
     <userComments/>
