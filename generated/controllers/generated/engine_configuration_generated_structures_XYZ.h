@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jul 14 16:44:27 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Jul 15 16:42:34 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -2871,7 +2871,7 @@ struct engine_configuration_s {
 	bool devBit7 : 1 {};
 	/**
 	offset 1496 bit 28 */
-	bool skipADC12bitAssert : 1 {};
+	bool unusedSkipWasHere : 1 {};
 	/**
 	offset 1496 bit 29 */
 	bool invertExhaustCamVVTSignal : 1 {};
@@ -5680,4 +5680,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22800);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Jul 14 16:44:27 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Jul 15 16:42:34 UTC 2024
