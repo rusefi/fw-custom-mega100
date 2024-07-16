@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240715E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240716E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -399,7 +399,7 @@
         <constant name="max31855_cs7">"NONE"</constant>
         <constant name="max31855_cs8">"NONE"</constant>
         <constant name="flexSensorPin">"NONE"</constant>
-        <constant name="test557pin">"NONE"</constant>
+        <constant digits="0" name="unused720" units="">0.0</constant>
         <constant name="stepperDirectionPinMode">"default"</constant>
         <constant name="mc33972spiDevice">"Off"</constant>
         <constant digits="1" name="stoichRatioSecondary" units=":1">9.0</constant>
@@ -4769,7 +4769,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.15.XYZ.2923228829" version="5.0"/>
+    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.16.XYZ.3379610609" version="5.0"/>
     <bibliography author="rusEFI 20240708" writeDate="date"/>
     <settings/>
     <userComments/>
