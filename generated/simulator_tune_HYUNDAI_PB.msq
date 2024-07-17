@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240716E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240717E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -738,7 +738,7 @@
         <constant digits="2" name="throttlePedalWOTVoltage" units="voltage">4.0</constant>
         <constant digits="0" name="startUpFuelPumpDuration" units="seconds">4.0</constant>
         <constant digits="0" name="idlePidRpmDeadZone" units="RPM">50.0</constant>
-        <constant digits="1" name="targetVBatt" units="Volts">14.0</constant>
+        <constant digits="0" name="unusedTargetVBatt" units="">0.0</constant>
         <constant name="mc33810DisableRecoveryMode">"false"</constant>
         <constant name="mc33810Gpgd0Mode">"false"</constant>
         <constant name="mc33810Gpgd1Mode">"false"</constant>
@@ -4794,10 +4794,10 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
         <constant cols="4" digits="1" name="alternatorVoltageTargetTable" rows="4">
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
 </constant>
         <constant cols="1" digits="0" name="alternatorVoltageTargetLoadBins" rows="4">
          0.0
@@ -4812,7 +4812,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.16.XYZ.3379610609" version="5.0"/>
+    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.17.XYZ.628814068" version="5.0"/>
     <bibliography author="rusEFI 20240708" writeDate="date"/>
     <settings/>
     <userComments/>
