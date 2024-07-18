@@ -167,8 +167,6 @@
     engineConfiguration->stft.deadband = 0;
     // default 90.0
     engineConfiguration->auxPid[1].maxValue = 0;
-    // default 14.0
-    engineConfiguration->targetVBatt = 14.19995;
     // default 3.0
     engineConfiguration->vssFilterReciprocal = 5;
     // default 538.0
@@ -295,12 +293,10 @@
 	nb2cannedvrThreshold1_values();
 	nb2cannedvrThreshold2_rpmBins();
 	nb2cannedvrThreshold2_values();
-	nb2cannedmafDecodingBins();
 	nb2cannedcltFuelCorr();
 	nb2cannedcrankingFuelCoef();
 	nb2cannedcrankingFuelCoefE100();
 	nb2cannedcltRevLimitRpmBins();
-	nb2cannedcltIdleCorrBins();
 	nb2cannedcltIdleCorr();
 	nb2cannedcltCrankingCorr();
 	nb2cannedcltIdleRpmBins();

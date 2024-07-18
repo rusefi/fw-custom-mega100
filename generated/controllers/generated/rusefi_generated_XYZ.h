@@ -1059,7 +1059,6 @@
 #define HPFP_DEADTIME_SIZE 8
 #define HPFP_LOBE_PROFILE_SIZE 16
 #define HPFP_TARGET_SIZE 10
-#define HW_MAX_ADC_INDEX 17
 #define IAC_PID_MULT_SIZE 8
 #define IAT_CURVE_SIZE 16
 #define IDLE_ADVANCE_CURVE_SIZE 8
@@ -1162,6 +1161,8 @@
 #define mc33810maxDwellTimer_e_DWELL_4MS 1
 #define mc33810maxDwellTimer_e_DWELL_64MS 5
 #define mc33810maxDwellTimer_e_DWELL_8MS 2
+#define MENU_NAME_AUX_TEMP1 "AuxTemp1 sensor"
+#define MENU_NAME_AUX_TEMP2 "AuxTemp2 sensor"
 #define MLQ_FIELD_HEADER_SIZE 89
 #define MLQ_HEADER_SIZE 24
 #define MsIoBox_config_s_size 4
@@ -1289,7 +1290,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 4043695465
+#define SIGNATURE_HASH 672738864
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1636,6 +1637,7 @@
 #define ts_show_gdi false
 #define ts_show_globalTriggerAngleOffset true
 #define ts_show_hardware_simulator true
+#define ts_show_hbridge_function true
 #define ts_show_hd true
 #define ts_show_hip9011 false
 #define ts_show_idle_hardware true
@@ -1700,7 +1702,7 @@
 #define ts_show_vvt_output true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.14.XYZ.4043695465"
+#define TS_SIGNATURE "rusEFI main.2024.07.18.XYZ.672738864"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'

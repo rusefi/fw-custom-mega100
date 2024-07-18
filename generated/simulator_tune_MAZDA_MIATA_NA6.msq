@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240714E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240718E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -399,7 +399,7 @@
         <constant name="max31855_cs7">"NONE"</constant>
         <constant name="max31855_cs8">"NONE"</constant>
         <constant name="flexSensorPin">"NONE"</constant>
-        <constant name="test557pin">"NONE"</constant>
+        <constant digits="0" name="unused720" units="">0.0</constant>
         <constant name="stepperDirectionPinMode">"default"</constant>
         <constant name="mc33972spiDevice">"Off"</constant>
         <constant digits="1" name="stoichRatioSecondary" units=":1">9.0</constant>
@@ -738,7 +738,7 @@
         <constant digits="2" name="throttlePedalWOTVoltage" units="voltage">5.0</constant>
         <constant digits="0" name="startUpFuelPumpDuration" units="seconds">4.0</constant>
         <constant digits="0" name="idlePidRpmDeadZone" units="RPM">50.0</constant>
-        <constant digits="1" name="targetVBatt" units="Volts">14.0</constant>
+        <constant digits="0" name="unusedTargetVBatt" units="">0.0</constant>
         <constant name="mc33810DisableRecoveryMode">"false"</constant>
         <constant name="mc33810Gpgd0Mode">"false"</constant>
         <constant name="mc33810Gpgd1Mode">"false"</constant>
@@ -767,7 +767,7 @@
         <constant name="devBit5">"false"</constant>
         <constant name="devBit6">"false"</constant>
         <constant name="devBit7">"false"</constant>
-        <constant name="skipADC12bitAssert">"false"</constant>
+        <constant name="unusedSkipWasHere">"false"</constant>
         <constant name="invertExhaustCamVVTSignal">"Rising"</constant>
         <constant name="enableKnockSpectrogram">"false"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">200.0</constant>
@@ -4704,10 +4704,10 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
         <constant cols="4" digits="1" name="alternatorVoltageTargetTable" rows="4">
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
+         14.0 14.0 14.0 14.0
 </constant>
         <constant cols="1" digits="0" name="alternatorVoltageTargetLoadBins" rows="4">
          0.0
@@ -4722,8 +4722,8 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.14.XYZ.4043695465" version="5.0"/>
-    <bibliography author="rusEFI 20240708" writeDate="date"/>
+    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.18.XYZ.672738864" version="5.0"/>
+    <bibliography author="rusEFI 20240716" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
