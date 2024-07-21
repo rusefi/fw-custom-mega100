@@ -1290,7 +1290,8 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 3105023185
+#define show_vvt_output_pin true
+#define SIGNATURE_HASH 250038079
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1592,6 +1593,7 @@
 #define ts_show_air_conditioning true
 #define ts_show_alternator true
 #define ts_show_analog_divider true
+#define ts_show_aux_sensors true
 #define ts_show_auxserial_pins true
 #define ts_show_bank2_cam1 true
 #define ts_show_bank2_cam2 true
@@ -1623,6 +1625,7 @@
 #define ts_show_ego2 true
 #define ts_show_egt true
 #define ts_show_etb true
+#define ts_show_etb_bias_curve true
 #define ts_show_etb_pins false
 #define ts_show_exhaust_vvt true
 #define ts_show_experimental true
@@ -1707,14 +1710,14 @@
 #define ts_show_vvt_output true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.20.XYZ.3105023185"
+#define TS_SIGNATURE "rusEFI main.2024.07.21.XYZ.250038079"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
 #define TS_SINGLE_WRITE_COMMAND_char W
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 1760
+#define TS_TOTAL_OUTPUT_SIZE 1756
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
