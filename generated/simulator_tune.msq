@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22800">
+    <page number="0" size="22880">
         <constant name="engineType">"MINIMAL_PINS"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -208,7 +208,7 @@
         <constant name="acrPin">"NONE"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0240725E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0240726E7</constant>
         <constant name="tps1_1AdcChannel">"NONE"</constant>
         <constant name="vbattAdcChannel">"NONE"</constant>
         <constant name="fuelLevelSensor">"NONE"</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240726E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240727E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4719,8 +4719,36 @@ end</constant>
          0.0
          0.0
 </constant>
+        <constant cols="1" digits="2" name="cltBoostCorrBins" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="cltBoostCorr" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="iatBoostCorrBins" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="iatBoostCorr" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.26.XYZ.389880149" version="5.0"/>
+    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.27.XYZ.508652102" version="5.0"/>
     <bibliography author="rusEFI 20240716" writeDate="date"/>
     <settings/>
     <userComments/>
