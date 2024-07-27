@@ -138,6 +138,7 @@
 #define BOARD_TABLES_FROM_FILE 
 #define BOARD_VE_MENU_FROM_FILE 
 #define BOOST_BLEND_COUNT 2
+#define BOOST_CURVE_SIZE 5
 #define BOOST_LOAD_COUNT 8
 #define BOOST_RPM_COUNT 8
 #define boostType_e_auto_enum 0="OPEN_LOOP",1="CLOSED_LOOP"
@@ -1209,7 +1210,7 @@
 #define PACK_PERCENT_BYTE_MULT 100.0
 #define PEDAL_TO_TPS_SIZE 8
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 22800
+#define persistent_config_s_size 22880
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1291,7 +1292,7 @@
 #define show_Proteus_presets false
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 389880149
+#define SIGNATURE_HASH 508652102
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1348,7 +1349,7 @@
 #define TOOTH_PACKET_SIZE 2
 #define TOP_DEAD_CENTER_MESSAGE "r"
 #define TORQUE_CURVE_SIZE 6
-#define TOTAL_CONFIG_SIZE 22800
+#define TOTAL_CONFIG_SIZE 22880
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_PPS_TOO_HIGH_THRESHOLD 110
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
@@ -1712,7 +1713,7 @@
 #define ts_show_vvt_output_pin true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.26.XYZ.389880149"
+#define TS_SIGNATURE "rusEFI main.2024.07.27.XYZ.508652102"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
@@ -1746,7 +1747,7 @@
 #define uart_device_e_UART_DEVICE_4 4
 #define uart_device_e_UART_NONE 0
 #define UiMode_auto_enum 0="FULL",1="INSTALLATION",2="TUNING"
-#define UiMode_enum "Full", "Installation", "Tuning"
+#define UiMode_enum "Full", "INVALID", "Tuning"
 #define UiMode_FULL 0
 #define UiMode_INSTALLATION 1
 #define UiMode_TUNING 2
