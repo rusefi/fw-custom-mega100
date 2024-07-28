@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240727E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240728E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4812,35 +4812,35 @@ end</constant>
          0.0
 </constant>
         <constant cols="1" digits="2" name="cltBoostCorrBins" rows="5">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         20.0
+         40.0
+         60.0
+         80.0
+         100.0
 </constant>
         <constant cols="1" digits="2" name="cltBoostCorr" rows="5">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         1.0
+         1.0
+         1.0
+         1.0
+         1.0
 </constant>
         <constant cols="1" digits="2" name="iatBoostCorrBins" rows="5">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         20.0
+         40.0
+         60.0
+         80.0
+         100.0
 </constant>
         <constant cols="1" digits="2" name="iatBoostCorr" rows="5">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         1.0
+         1.0
+         1.0
+         1.0
+         1.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.27.XYZ.508652102" version="5.0"/>
+    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.28.XYZ.1888434941" version="5.0"/>
     <bibliography author="rusEFI 20240716" writeDate="date"/>
     <settings/>
     <userComments/>
