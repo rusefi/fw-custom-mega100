@@ -123,14 +123,12 @@
 #define BENCH_VVT_DURATION 300
 #define blend_table_s_size 188
 #define BLOCKING_FACTOR 750
-#define BOARD_CONFIG_FROM_FILE 
 #define BOARD_CONSTANTS_EXTENSIONS_FROM_FILE 
 #define BOARD_CURVES_FROM_FILE 
 #define BOARD_DIAG_PANEL1_FROM_FILE 
 #define BOARD_DIAG_PANEL2_FROM_FILE 
 #define BOARD_ENGINE_CONFIGURATION_FROM_FILE 
 #define BOARD_GAUGES_FROM_FILE 
-#define BOARD_INDICATORS_FROM_FILE 
 #define BOARD_MENU_FROM_FILE 
 #define BOARD_OPTIONS_FROM_FILE 
 #define BOARD_PANELS_FROM_FILE 
@@ -1292,7 +1290,7 @@
 #define show_Proteus_presets false
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 233437472
+#define SIGNATURE_HASH 1885390236
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1720,7 +1718,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.08.01.XYZ.233437472"
+#define TS_SIGNATURE "rusEFI main.2024.08.01.XYZ.1885390236"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
