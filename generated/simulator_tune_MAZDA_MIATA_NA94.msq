@@ -4778,7 +4778,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240728" nPages="1" signature="rusEFI main.2024.08.01.XYZ.233437472" version="5.0"/>
+    <versionInfo firmwareInfo="20240728" nPages="1" signature="rusEFI main.2024.08.01.XYZ.1885390236" version="5.0"/>
     <bibliography author="rusEFI 20240728" writeDate="date"/>
     <settings/>
     <userComments/>
