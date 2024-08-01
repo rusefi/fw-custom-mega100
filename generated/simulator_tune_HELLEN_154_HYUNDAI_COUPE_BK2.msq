@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22880">
+    <page number="0" size="22960">
         <constant name="engineType">"HELLEN_154_HYUNDAI_COUPE_BK2"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240731E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240801E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -903,30 +903,6 @@
         <constant name="injectorCompensationMode">"Fixed rail pressure"</constant>
         <constant name="fan2PinMode">"default"</constant>
         <constant digits="0" name="fuelReferencePressure" units="kPa">586.0544</constant>
-        <constant cols="6" digits="2" name="postCrankingFactor" rows="6">
-         1.2 1.2 1.2 1.2 1.2 1.2
-         1.2 1.2 1.2 1.2 1.2 1.2
-         1.2 1.2 1.2 1.2 1.2 1.2
-         1.2 1.2 1.2 1.2 1.2 1.2
-         1.2 1.2 1.2 1.2 1.2 1.2
-         1.2 1.2 1.2 1.2 1.2 1.2
-</constant>
-        <constant cols="1" digits="0" name="postCrankingDurationBins" rows="6">
-         0.0
-         15.0
-         35.0
-         65.0
-         100.0
-         150.0
-</constant>
-        <constant cols="1" digits="0" name="postCrankingCLTBins" rows="6">
-         -20.0
-         0.0
-         20.0
-         40.0
-         60.0
-         80.0
-</constant>
         <constant digits="1" name="auxTempSensor1_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor1_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor1_tempC_3" units="*C">0.0</constant>
@@ -1818,6 +1794,30 @@
          0.0
          0.0
          0.0
+</constant>
+        <constant cols="6" digits="2" name="postCrankingFactor" rows="6">
+         1.2 1.2 1.2 1.2 1.2 1.2
+         1.2 1.2 1.2 1.2 1.2 1.2
+         1.2 1.2 1.2 1.2 1.2 1.2
+         1.2 1.2 1.2 1.2 1.2 1.2
+         1.2 1.2 1.2 1.2 1.2 1.2
+         1.2 1.2 1.2 1.2 1.2 1.2
+</constant>
+        <constant cols="1" digits="0" name="postCrankingDurationBins" rows="6">
+         0.0
+         15.0
+         35.0
+         65.0
+         100.0
+         150.0
+</constant>
+        <constant cols="1" digits="0" name="postCrankingCLTBins" rows="6">
+         -20.0
+         0.0
+         20.0
+         40.0
+         60.0
+         80.0
 </constant>
         <constant cols="1" digits="0" name="etbBiasBins" rows="8">
          0.0
@@ -4796,8 +4796,36 @@ end</constant>
          1.0
          1.0
 </constant>
+        <constant cols="1" digits="2" name="cltBoostAdderBins" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="cltBoostAdder" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="iatBoostAdderBins" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="iatBoostAdder" rows="5">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20240728" nPages="1" signature="rusEFI main.2024.07.31.XYZ.1888434941" version="5.0"/>
+    <versionInfo firmwareInfo="20240728" nPages="1" signature="rusEFI main.2024.08.01.XYZ.233437472" version="5.0"/>
     <bibliography author="rusEFI 20240728" writeDate="date"/>
     <settings/>
     <userComments/>
