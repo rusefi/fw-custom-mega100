@@ -272,8 +272,9 @@
 #define dc_function_e_DC_Wastegate 4
 #define dc_io_size 8
 #define DC_PER_STEPPER 2
-#define debug_mode_e_auto_enum 0="DBG_0",10="DBG_10",11="DBG_11",12="DBG_12",13="DBG_13",16="DBG_16",19="DBG_19",2="DBG_2",20="DBG_20",21="DBG_21",22="DBG_22",24="DBG_24",25="DBG_25",26="DBG_26",27="DBG_27",29="DBG_29",32="DBG_32",34="DBG_34",35="DBG_35",36="DBG_36",37="DBG_37",38="DBG_38",43="DBG_43",46="DBG_46",5="DBG_5",6="DBG_6",7="DBG_7",8="DBG_8",9="DBG_9",40="DBG_COMPOSITE_LOG",33="DBG_DWELL_METRIC",44="DBG_DYNO_VIEW",17="DBG_ELECTRONIC_THROTTLE_PID",4="DBG_EL_ACCEL",39="DBG_ETB_AUTOTUNE",18="DBG_EXECUTOR",30="DBG_ION",15="DBG_KNOCK",45="DBG_LOGIC_ANALYZER",48="DBG_LUA",28="DBG_METRICS",14="DBG_SR5_PROTOCOL",3="DBG_STEPPER_IDLE_CONTROL",47="DBG_TCU",31="DBG_TLE8888",1="DBG_TPS_ACCEL",41="DBG_UNUSED41",42="DBG_UNUSED_42",23="UNUSED23"
+#define debug_mode_e_auto_enum 0="DBG_0",1="DBG_1",10="DBG_10",11="DBG_11",12="DBG_12",13="DBG_13",16="DBG_16",19="DBG_19",2="DBG_2",20="DBG_20",21="DBG_21",22="DBG_22",24="DBG_24",25="DBG_25",26="DBG_26",27="DBG_27",29="DBG_29",32="DBG_32",34="DBG_34",35="DBG_35",36="DBG_36",37="DBG_37",38="DBG_38",43="DBG_43",46="DBG_46",5="DBG_5",6="DBG_6",7="DBG_7",8="DBG_8",9="DBG_9",40="DBG_COMPOSITE_LOG",33="DBG_DWELL_METRIC",44="DBG_DYNO_VIEW",17="DBG_ELECTRONIC_THROTTLE_PID",4="DBG_EL_ACCEL",39="DBG_ETB_AUTOTUNE",18="DBG_EXECUTOR",30="DBG_ION",15="DBG_KNOCK",45="DBG_LOGIC_ANALYZER",48="DBG_LUA",28="DBG_METRICS",14="DBG_SR5_PROTOCOL",3="DBG_STEPPER_IDLE_CONTROL",47="DBG_TCU",31="DBG_TLE8888",41="DBG_UNUSED41",42="DBG_UNUSED_42",23="UNUSED23"
 #define debug_mode_e_DBG_0 0
+#define debug_mode_e_DBG_1 1
 #define debug_mode_e_DBG_10 10
 #define debug_mode_e_DBG_11 11
 #define debug_mode_e_DBG_12 12
@@ -318,7 +319,6 @@
 #define debug_mode_e_DBG_STEPPER_IDLE_CONTROL 3
 #define debug_mode_e_DBG_TCU 47
 #define debug_mode_e_DBG_TLE8888 31
-#define debug_mode_e_DBG_TPS_ACCEL 1
 #define debug_mode_e_DBG_UNUSED41 41
 #define debug_mode_e_DBG_UNUSED_42 42
 #define debug_mode_e_enum "INVALID", "TPS acceleration enrichment", "INVALID", "Stepper Idle Control", "Engine Load accl enrich", "Trigger Counters", "Soft Spark Cut", "INVALID", "INVALID", "INVALID", "INVALID", "INVALID", "INVALID", "SD card", "sr5", "Knock", "INVALID", "Electronic Throttle", "Executor", "Bench Test / TS commands", "INVALID", "Analog inputs #1", "INSTANT_RPM", "INVALID", "Status", "INVALID", "INVALID", "MAP", "Metrics", "INVALID", "Ion Sense", "TLE8888", "Analog inputs #2", "Dwell Metric", "INVALID", "INVALID", "Boost Control", "INVALID", "INVALID", "ETB Autotune", "Composite Log", "INVALID", "INVALID", "INVALID", "Dyno_View", "Logic_Analyzer", "INVALID", "TCU", "Lua"
@@ -1291,7 +1291,7 @@
 #define show_Proteus_presets false
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1572975695
+#define SIGNATURE_HASH 1147070847
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1642,6 +1642,19 @@
 #define ts_show_fuel_relay_pin true
 #define ts_show_fuel_strategy true
 #define ts_show_fuel_temp_sensor true
+#define ts_show_fuel_trim_cylinder_1 true
+#define ts_show_fuel_trim_cylinder_10 true
+#define ts_show_fuel_trim_cylinder_11 true
+#define ts_show_fuel_trim_cylinder_12 true
+#define ts_show_fuel_trim_cylinder_2 true
+#define ts_show_fuel_trim_cylinder_3 true
+#define ts_show_fuel_trim_cylinder_4 true
+#define ts_show_fuel_trim_cylinder_5 true
+#define ts_show_fuel_trim_cylinder_6 true
+#define ts_show_fuel_trim_cylinder_7 true
+#define ts_show_fuel_trim_cylinder_8 true
+#define ts_show_fuel_trim_cylinder_9 true
+#define ts_show_fuel_trims true
 #define ts_show_full_pinout true
 #define ts_show_gdi false
 #define ts_show_globalTriggerAngleOffset true
@@ -1720,7 +1733,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.08.03.XYZ.1572975695"
+#define TS_SIGNATURE "rusEFI main.2024.08.04.XYZ.1147070847"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
