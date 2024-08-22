@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Aug 18 16:40:57 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Aug 22 16:42:52 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -2602,11 +2602,9 @@ struct engine_configuration_s {
 	 */
 	int idleStepperTotalSteps;
 	/**
-	 * At what trigger index should some MAP-related math be executed? This is a performance trick to reduce load on synchronization trigger callback.
-	 * units: index
 	 * offset 1356
 	 */
-	int mapAveragingSchedulingAtIndex;
+	int unusedInt3423423;
 	/**
 	 * Duration in ms or duty cycle depending on selected mode
 	 * offset 1360
@@ -4154,9 +4152,11 @@ struct engine_configuration_s {
 	 */
 	float ALSSkipRatio;
 	/**
+	 * Hysterisis: if Pressure High Disable is 240kpa, and acPressureEnableHyst is 20, when the ECU sees 240kpa, A/C will be disabled, and stay disabled until 240-20=220kpa is reached
+	 * units: kPa (absolute)
 	 * offset 3368
 	 */
-	uint8_t unusedSorry11;
+	scaled_channel<uint8_t, 2, 1> acPressureEnableHyst;
 	/**
 	 * offset 3369
 	 */
@@ -5721,4 +5721,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22968);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Sun Aug 18 16:40:57 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Thu Aug 22 16:42:52 UTC 2024
