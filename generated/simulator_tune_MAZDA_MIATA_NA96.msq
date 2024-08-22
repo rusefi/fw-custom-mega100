@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240821E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240822E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -688,7 +688,7 @@
         <constant digits="2" name="knockDetectionWindowEnd" units="angle">60.0</constant>
         <constant digits="0" name="idleStepperReactionTime" units="ms">3.0</constant>
         <constant digits="0" name="idleStepperTotalSteps" units="count">200.0</constant>
-        <constant digits="0" name="mapAveragingSchedulingAtIndex" units="index">0.0</constant>
+        <constant digits="0" name="unusedInt3423423" units="">0.0</constant>
         <constant digits="2" name="tachPulseDuractionMs" units="">0.5</constant>
         <constant digits="2" name="wwaeTau" units="Seconds">0.1</constant>
         <constant digits="4" name="alternatorControl_pFactor" units="">30.0</constant>
@@ -1431,7 +1431,7 @@
         <constant digits="2" name="ALSIdleAdd" units="%">0.0</constant>
         <constant digits="2" name="ALSEtbAdd" units="%">0.0</constant>
         <constant digits="1" name="ALSSkipRatio" units="">0.0</constant>
-        <constant digits="0" name="unusedSorry11" units="">0.0</constant>
+        <constant digits="1" name="acPressureEnableHyst" units="kPa (absolute)">0.0</constant>
         <constant name="ALSActivatePinMode">"DEFAULT"</constant>
         <constant digits="1" name="tpsSecondaryMaximum" units="%">0.0</constant>
         <constant digits="1" name="ppsSecondaryMaximum" units="%">0.0</constant>
@@ -4792,7 +4792,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240819" nPages="1" signature="rusEFI main.2024.08.21.XYZ.2854486845" version="5.0"/>
+    <versionInfo firmwareInfo="20240819" nPages="1" signature="rusEFI main.2024.08.22.XYZ.845469408" version="5.0"/>
     <bibliography author="rusEFI 20240819" writeDate="date"/>
     <settings/>
     <userComments/>
