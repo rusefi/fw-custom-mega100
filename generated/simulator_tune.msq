@@ -208,7 +208,7 @@
         <constant name="acrPin">"NONE"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0240831E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0240901E7</constant>
         <constant name="tps1_1AdcChannel">"NONE"</constant>
         <constant name="vbattAdcChannel">"NONE"</constant>
         <constant name="fuelLevelSensor">"NONE"</constant>
@@ -4790,7 +4790,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2024.09.02.XYZ.3224658991" version="5.0"/>
+    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2024.09.02.XYZ.3075099415" version="5.0"/>
     <bibliography author="rusEFI 20240830" writeDate="date"/>
     <settings/>
     <userComments/>
