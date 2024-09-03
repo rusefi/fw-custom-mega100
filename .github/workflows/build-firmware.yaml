@@ -2,7 +2,7 @@ name: Create Board Firmware
 
 on:
   schedule:
-    - cron: '35 16 * * *' # build fresh every 4:35 PM UTC which is often 12:35 EST
+    - cron: '0 0 * * *' # build fresh every midnight (that help local compilation by having local and remote date in signature match)
   push:
   #  pull_request:
   workflow_dispatch:
