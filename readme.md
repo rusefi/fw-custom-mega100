@@ -29,5 +29,15 @@ wmtronics ua4c:
 
 and others that are built around Mega2560 Socket
 
+### Q: What's the pinout, what goes where !?
+
+For 0.4 board:
+
+![image](https://github.com/user-attachments/assets/9bf27266-6805-4cec-be03-d8e6f4a9e3a7)
+
+
+for ua4c: 
+
+![image](https://github.com/user-attachments/assets/5513b8ca-3588-40cb-ac08-f7716a8d7a15)
 
 
