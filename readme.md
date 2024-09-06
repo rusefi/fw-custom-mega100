@@ -7,12 +7,21 @@ See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
 
 ## FAQ
 
+### Q: What is this ?
+A: This is an STM32F407VGT6 on an Arduino Mega socket board. It has 1 megabyte of flash, and can run both rusEFI and STM32Speeduino on existing installations that use Mega2560 board. There is a CAN PHY transciever on the board with CANTX/CANRX going to PD0/PD1, this is CAN0 ALT_2
+
+### Q: What voltage dividers are used for analog inputs ?
+A: 470 ohm and 1k ohm
+
 ### Q: What are the seven headers to solder?
 
 A: the quick and lazy way: https://a.co/d/gqrhHuu,
 ![image](https://github.com/user-attachments/assets/a16d3751-98fb-4356-81a4-0b60ea74412e)
 
-A2: There are FIVE 1x8 , ONE 1x10, ONE 2x18 headers
+A2: There are FIVE 1x8 , ONE 1x10, ONE 2x18 headers, they can be made up of normal cut to length 1x headers, and a 2x header with enough pins.
+
+### Q: Are all the pins connected ?
+A: no, Mega D46 is not connected, on 0.4 board that's earmaeked for WMI EMPTY indicator.
 
 ### Q: What is the proper orientation of the header ?
 
