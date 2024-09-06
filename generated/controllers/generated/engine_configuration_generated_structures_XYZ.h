@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Sep 02 02:11:55 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -4563,16 +4563,24 @@ struct engine_configuration_s {
 	 */
 	scaled_channel<uint8_t, 10, 1> minimumOilPressureTimeout;
 	/**
+	 * need 4 byte alignment
 	 * units: units
 	 * offset 3853
 	 */
-	uint8_t unusedOftenChangesDuringFirmwareUpdate[END_OF_CALIBRATION_PADDING];
+	uint8_t alignmentFill_at_3853[3];
 	/**
-	 * need 4 byte alignment
-	 * units: units
-	 * offset 4021
+	 * offset 3856
 	 */
-	uint8_t alignmentFill_at_4021[3];
+	linear_sensor_s auxLinear3;
+	/**
+	 * offset 3876
+	 */
+	linear_sensor_s auxLinear4;
+	/**
+	 * units: units
+	 * offset 3896
+	 */
+	uint8_t unusedOftenChangesDuringFirmwareUpdate[END_OF_CALIBRATION_PADDING];
 };
 static_assert(sizeof(engine_configuration_s) == 4024);
 
@@ -5721,4 +5729,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 22968);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Sep 02 02:11:55 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt
