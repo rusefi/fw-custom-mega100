@@ -1,5 +1,7 @@
 [firmware snapshot](https://rusefi.com/build_server/rusefi_bundle_mega100.zip)
 
+base example tune with pins selected: https://github.com/rusefi/fw-custom-mega100/blob/main/mega100_base_tune.msq
+
 Younger sibling of https://github.com/rusefi/fw-custom-mega-legacy
 
 See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
