@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "bench_test.h"
 
 static void setBoard_04_pinout() {
     engineConfiguration->injectionPins[0] = Gpio::D8;
@@ -18,4 +19,5 @@ static void setBoard_ua4c_pinout() {
     } else if (index == 1) {
         setBoard_ua4c_pinout();
     }
+    fatalErrorForPresetApply();
 }
