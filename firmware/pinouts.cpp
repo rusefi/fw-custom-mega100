@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "bench_test.h"
+#include "flash_main.h"
 
 static void setBoard_04_pinout() {
     engineConfiguration->injectionPins[0] = Gpio::D8;
@@ -10,7 +11,7 @@ static void setBoard_04_pinout() {
 
 static void setBoard_ua4c_pinout() {
     engineConfiguration->injectionPins[0] = Gpio::D8;
-    engineConfiguration->injectionPins[0] = Gpio::B15;
+    engineConfiguration->injectionPins[1] = Gpio::B15;
 }
 
 /*PUBLIC_API_WEAK*/ void boardTsAction(uint16_t index) {
@@ -19,5 +20,6 @@ static void setBoard_ua4c_pinout() {
     } else if (index == 1) {
         setBoard_ua4c_pinout();
     }
+    writeToFlashNow();
     fatalErrorForPresetApply();
 }
