@@ -182,7 +182,8 @@
         <constant digits="0" name="cylindersCount" units="">4.0</constant>
         <constant name="firingOrder">"1-3-4-2"</constant>
         <constant digits="0" name="justATempTest" units="">0.0</constant>
-        <constant digits="0" name="unused2bytesHere" units="">0.0</constant>
+        <constant digits="0" name="mapSyncThreshold" units="kPa">0.0</constant>
+        <constant digits="0" name="unusedByteHere" units="">0.0</constant>
         <constant digits="2" name="cylinderBore" units="mm">87.5</constant>
         <constant name="fuelAlgorithm">"Speed Density"</constant>
         <constant digits="0" name="ALSMaxTPS" units="%">5.0</constant>
@@ -223,7 +224,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240915E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240916E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4761,7 +4762,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2024.09.15.mega100.1769296266" version="5.0"/>
+    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2024.09.16.mega100.1749652100" version="5.0"/>
     <bibliography author="rusEFI 20240830" writeDate="date"/>
     <settings/>
     <userComments/>
