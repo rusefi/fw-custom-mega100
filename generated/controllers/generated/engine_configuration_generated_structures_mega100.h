@@ -672,10 +672,9 @@ struct engine_configuration_s {
 	 */
 	Gpio canRxPin;
 	/**
-	 * By the way ETB PID runs at 500hz, length in 1/500 of second here.
 	 * offset 36
 	 */
-	uint16_t etbExpAverageLength;
+	uint16_t unusedEtbExpAverageLength;
 	/**
 	 * units: %
 	 * offset 38
@@ -3644,10 +3643,9 @@ struct engine_configuration_s {
 	 */
 	float idleTimingSoftEntryTime;
 	/**
-	 * By the way ETB PID runs at 500hz, length in 1/500 of second here.
 	 * offset 2384
 	 */
-	int16_t etbRocExpAverageLength;
+	int16_t unusedEtbRocExpAverageLength;
 	/**
 	 * A delay in cycles between fuel-enrich. portions
 	 * units: cycles
@@ -3878,7 +3876,7 @@ struct engine_configuration_s {
 	 * units: %
 	 * offset 3062
 	 */
-	uint8_t etbJamIntegratorLimit;
+	uint8_t jamDetectThreshold;
 	/**
 	 * units: lobes/cam
 	 * offset 3063
@@ -5051,32 +5049,32 @@ struct persistent_config_s {
 	 * units: value
 	 * offset 15864
 	 */
-	int8_t vvtTable1[SCRIPT_TABLE_8][SCRIPT_TABLE_8];
+	int8_t vvtTable1[VVT_TABLE_SIZE][VVT_TABLE_SIZE];
 	/**
 	 * units: L
 	 * offset 15928
 	 */
-	uint16_t vvtTable1LoadBins[SCRIPT_TABLE_8];
+	uint16_t vvtTable1LoadBins[VVT_TABLE_SIZE];
 	/**
 	 * units: RPM
 	 * offset 15944
 	 */
-	uint16_t vvtTable1RpmBins[SCRIPT_TABLE_8];
+	uint16_t vvtTable1RpmBins[VVT_TABLE_SIZE];
 	/**
 	 * units: value
 	 * offset 15960
 	 */
-	int8_t vvtTable2[SCRIPT_TABLE_8][SCRIPT_TABLE_8];
+	int8_t vvtTable2[VVT_TABLE_SIZE][VVT_TABLE_SIZE];
 	/**
 	 * units: L
 	 * offset 16024
 	 */
-	uint16_t vvtTable2LoadBins[SCRIPT_TABLE_8];
+	uint16_t vvtTable2LoadBins[VVT_TABLE_SIZE];
 	/**
 	 * units: RPM
 	 * offset 16040
 	 */
-	uint16_t vvtTable2RpmBins[SCRIPT_TABLE_8];
+	uint16_t vvtTable2RpmBins[VVT_TABLE_SIZE];
 	/**
 	 * units: deg
 	 * offset 16056
