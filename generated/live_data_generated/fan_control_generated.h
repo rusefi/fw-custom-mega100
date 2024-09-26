@@ -104,17 +104,13 @@ struct fan_control_s {
 	/**
 	 * offset 4
 	 */
-	uint8_t tempAlive = (uint8_t)0;
-	/**
-	 * offset 5
-	 */
-	uint8_t tempCode = (uint8_t)0;
+	uint8_t radiatorFanStatus = (uint8_t)0;
 	/**
 	 * need 4 byte alignment
 	 * units: units
-	 * offset 6
+	 * offset 5
 	 */
-	uint8_t alignmentFill_at_6[2];
+	uint8_t alignmentFill_at_5[3];
 };
 static_assert(sizeof(fan_control_s) == 8);
 
