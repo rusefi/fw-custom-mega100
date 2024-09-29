@@ -224,7 +224,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240928E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240929E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -629,8 +629,8 @@
         <constant name="cutSparkOnHardLimit">"yes"</constant>
         <constant name="launchFuelCutEnable">"false"</constant>
         <constant name="launchSparkCutEnable">"false"</constant>
-        <constant name="unusedFancy1">"false"</constant>
-        <constant name="unusedFancy2">"false"</constant>
+        <constant name="torqueReductionEnabled">"false"</constant>
+        <constant name="torqueReductionTriggerPinInverted">"false"</constant>
         <constant name="unusedFancy14">"false"</constant>
         <constant name="unusedFancy7">"false"</constant>
         <constant name="unusedFancy8">"false"</constant>
@@ -1038,7 +1038,8 @@
         <constant digits="0" name="idleTimingPid_minValue" units="">-10.0</constant>
         <constant digits="0" name="idleTimingPid_maxValue" units="">10.0</constant>
         <constant digits="1" name="idleTimingSoftEntryTime" units="">0.0</constant>
-        <constant digits="0" name="unusedEtbRocExpAverageLength" units="">0.0</constant>
+        <constant name="torqueReductionTriggerPinMode">"DEFAULT"</constant>
+        <constant name="torqueReductionActivationMode">"Torque Reduction Button"</constant>
         <constant digits="0" name="tpsAccelFractionPeriod" units="cycles">0.0</constant>
         <constant digits="2" name="tpsAccelFractionDivisor" units="coef">1.0</constant>
         <constant name="tle8888spiDevice">"Off"</constant>
@@ -4764,7 +4765,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240920" nPages="1" signature="rusEFI main.2024.09.28.mega100.2269544858" version="5.0"/>
+    <versionInfo firmwareInfo="20240920" nPages="1" signature="rusEFI main.2024.09.29.mega100.3085984144" version="5.0"/>
     <bibliography author="rusEFI 20240920" writeDate="date"/>
     <settings/>
     <userComments/>
