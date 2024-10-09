@@ -5,7 +5,7 @@
 ```
     // default "Single Coil"
     engineConfiguration->ignitionMode = IM_INDIVIDUAL_COILS;
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 1.998;
     // default "false"
     engineConfiguration->isForcedInduction = true;

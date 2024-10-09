@@ -3,7 +3,7 @@
 // canned tune https://rusefi.com/online/view.php?msq=1621
 
 ```
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 1.493;
     // default "60-2"
     engineConfiguration->trigger.type = TT_TOOTHED_WHEEL;
