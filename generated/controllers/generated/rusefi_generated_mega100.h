@@ -1291,9 +1291,9 @@
 #define SentEtbType_FORD_TYPE_1 2
 #define SentEtbType_GM_TYPE_1 1
 #define SentEtbType_NONE 0
-#define show_tcu_gauges false
+#define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2946439368
+#define SIGNATURE_HASH 2567730252
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1672,13 +1672,13 @@
 #define ts_show_fuel_trim_cylinder_9 true
 #define ts_show_fuel_trims true
 #define ts_show_full_pinout true
-#define ts_show_gdi false
+#define ts_show_gdi true
 #define ts_show_gdi_low_level true
 #define ts_show_globalTriggerAngleOffset true
 #define ts_show_hardware_simulator true
 #define ts_show_hbridge_function true
 #define ts_show_hd true
-#define ts_show_hip9011 false
+#define ts_show_hip9011 true
 #define ts_show_idle_hardware true
 #define ts_show_ign_key_analog_input false
 #define ts_show_ign_key_switch false
@@ -1686,10 +1686,10 @@
 #define ts_show_inj_diag false
 #define ts_show_injection_mode true
 #define ts_show_injection_phase true
-#define ts_show_injectionPinMode false
+#define ts_show_injectionPinMode true
 #define ts_show_intake_cam_edge true
 #define ts_show_intake_vvt_direction true
-#define ts_show_k_line false
+#define ts_show_k_line true
 #define ts_show_l9779 false
 #define ts_show_maf true
 #define ts_show_main_relay true
@@ -1701,7 +1701,7 @@
 #define ts_show_oil_pressure_sensor true
 #define ts_show_oil_temp_sensor true
 #define ts_show_onboard_accelerometer false
-#define ts_show_output_diag false
+#define ts_show_output_diag true
 #define ts_show_popular_vehicles true
 #define ts_show_reboot_to_dfu true
 #define ts_show_reset_calibrations false
@@ -1709,7 +1709,7 @@
 #define ts_show_sd_card true
 #define ts_show_sd_pins true
 #define ts_show_second_bank true
-#define ts_show_software_knock false
+#define ts_show_software_knock true
 #define ts_show_speedo_settings true
 #define ts_show_spi true
 #define ts_show_spi1_enable true
@@ -1731,7 +1731,7 @@
 #define ts_show_strokes true
 #define ts_show_sync_cam true
 #define ts_show_tachometer true
-#define ts_show_tcu false
+#define ts_show_tcu true
 #define ts_show_throttle_switch true
 #define ts_show_tle8888 false
 #define ts_show_top_level_can_menu true
@@ -1754,7 +1754,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.11.01.mega100.2946439368"
+#define TS_SIGNATURE "rusEFI main.2024.11.01.mega100.2567730252"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
