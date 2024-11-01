@@ -4850,7 +4850,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.01.mega100.2946439368" version="5.0"/>
+    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.01.mega100.2567730252" version="5.0"/>
     <bibliography author="rusEFI 20241031" writeDate="date"/>
     <settings/>
     <userComments/>
