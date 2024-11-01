@@ -1,4 +1,13 @@
 #define ts_show_etb_pins true
+#define ts_show_tcu true
+#define ts_show_software_knock true
+#define ts_show_injectionPinMode true
+#define ts_show_output_diag true
+#define ts_show_gdi true
+#define ts_show_k_line true
+#define ts_show_hip9011 true
+#define show_tcu_gauges true
+
 
 ! board has zero LEDs
 #define ts_show_status_leds false
