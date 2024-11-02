@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241101E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241102E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -239,7 +239,7 @@
         <constant digits="2" name="afr_v2" units="volts">5.0</constant>
         <constant digits="2" name="afr_value2" units="AFR">19.992</constant>
         <constant name="throttlePedalPositionAdcChannel">"Disabled"</constant>
-        <constant digits="1" name="etbSplit" units="%">5.0</constant>
+        <constant digits="1" name="etbSplit" units="%">10.0</constant>
         <constant name="tle6240_cs">"NONE"</constant>
         <constant name="tle6240_csPinMode">"default"</constant>
         <constant name="mc33810_csPinMode">"default"</constant>
@@ -631,7 +631,7 @@
         <constant name="launchSparkCutEnable">"false"</constant>
         <constant name="torqueReductionEnabled">"false"</constant>
         <constant name="torqueReductionTriggerPinInverted">"false"</constant>
-        <constant name="unusedFancy14">"false"</constant>
+        <constant name="limitTorqueReductionTime">"false"</constant>
         <constant name="unusedFancy7">"false"</constant>
         <constant name="unusedFancy8">"false"</constant>
         <constant name="unusedFancy9">"false"</constant>
@@ -1635,7 +1635,7 @@
         <constant digits="2" name="auxLinear4_value2" units="">0.0</constant>
         <constant digits="1" name="knockSuppressMinTps" units="%">10.0</constant>
         <constant digits="1" name="knockFuelTrimAggression" units="%">0.0</constant>
-        <constant digits="1" name="knockFuelTrimReapplyRate" units="deg/s">0.0</constant>
+        <constant digits="1" name="knockFuelTrimReapplyRate" units="1%/s">0.0</constant>
         <constant digits="1" name="knockFuelTrim" units="%">0.0</constant>
         <constant digits="2" name="knockSpectrumSensitivity" units="sense">0.0</constant>
         <constant digits="2" name="knockFrequency" units="Hz">0.0</constant>
@@ -4757,7 +4757,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.01.mega100.2567730252" version="5.0"/>
+    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.02.mega100.2793772934" version="5.0"/>
     <bibliography author="rusEFI 20241031" writeDate="date"/>
     <settings/>
     <userComments/>
