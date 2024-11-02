@@ -2383,7 +2383,7 @@ struct engine_configuration_s {
 	bool torqueReductionTriggerPinInverted : 1 {};
 	/**
 	offset 1304 bit 22 */
-	bool unusedFancy14 : 1 {};
+	bool limitTorqueReductionTime : 1 {};
 	/**
 	offset 1304 bit 23 */
 	bool unusedFancy7 : 1 {};
@@ -4626,7 +4626,7 @@ struct engine_configuration_s {
 	scaled_channel<uint8_t, 10, 1> knockFuelTrimAggression;
 	/**
 	 * After a knock event, reapply fuel at this rate.
-	 * units: deg/s
+	 * units: 1%/s
 	 * offset 3898
 	 */
 	scaled_channel<uint8_t, 10, 1> knockFuelTrimReapplyRate;
