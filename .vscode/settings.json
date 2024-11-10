@@ -1,0 +1,38 @@
+{
+    "files.associations": {
+		"*.input": "ini",
+		"array": "cpp",
+		"*.tcc": "cpp",
+		"memory": "cpp",
+		"istream": "cpp",
+		"functional": "cpp",
+		"tuple": "cpp",
+		"utility": "cpp",
+		"variant": "cpp",
+		"format": "cpp"
+	},
+	"editor.detectIndentation": false,
+	"editor.indentSize": 4,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"files.exclude": {
+		"**/.dep": true,
+		"**/build/lst": true,
+		"**/build/obj": true,
+		"hardware/": true,
+	},
+	"search.exclude": {
+		"**/.dep": true,
+		"**/build/lst": true,
+		"**/build/obj": true,
+		"hardware/": true,
+		"firmware/ChibiOS/demos": true,
+	},
+	"cSpell.words": [
+		"IACV"
+	],
+	"files.associations": {
+		"*.input": "ini"
+	},
+	"C_Cpp.formatting": "vcFormat",
+}
