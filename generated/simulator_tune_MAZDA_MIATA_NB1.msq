@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22960">
+    <page number="0" size="22964">
         <constant name="engineType">"MAZDA_MIATA_NB1"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241118E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241119E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1628,12 +1628,9 @@
         <constant digits="1" name="knockFuelTrim" units="%">0.0</constant>
         <constant digits="2" name="knockSpectrumSensitivity" units="sense">0.0</constant>
         <constant digits="2" name="knockFrequency" units="Hz">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="116">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant name="secondaryInjectorCompensationMode">"None"</constant>
+        <constant digits="0" name="secondaryInjectorFuelReferencePressure" units="kPa">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="111">
          0.0
          0.0
          0.0
@@ -4731,7 +4728,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.18.mega100.2015163104" version="5.0"/>
+    <versionInfo firmwareInfo="20241031" nPages="1" signature="rusEFI main.2024.11.19.mega100.238936931" version="5.0"/>
     <bibliography author="rusEFI 20241031" writeDate="date"/>
     <settings/>
     <userComments/>
