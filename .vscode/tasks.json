@@ -212,6 +212,22 @@
 			}
 		},
 		{
+			"label": "Compile custom firmware",
+			"type": "shell",
+			"command": "./compile_firmware.sh",
+			"windows": {
+				"command": "wsl ./compile_firmware.sh "
+			},
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
 			"label": "Build Simulator",
 			"type": "shell",
 			"command": "make -j12",
