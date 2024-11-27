@@ -6,20 +6,20 @@
 // start of sent_state_s
 struct sent_state_s {
 	/**
-	 * "ETB: SENT value0"
-	 * units: value
+	 * "SENT ch0 value0"
+	 * units: RAW
 	 * offset 0
 	 */
 	uint16_t value0 = (uint16_t)0;
 	/**
-	 * "ETB: SENT value1"
-	 * units: value
+	 * "SENT ch0 value1"
+	 * units: RAW
 	 * offset 2
 	 */
 	uint16_t value1 = (uint16_t)0;
 	/**
-	 * "ETB: SENT error rate"
-	 * units: ratio
+	 * "SENT ch0 error rate"
+	 * units: % (don't belive me)
 	 * offset 4
 	 */
 	float errorRate = (float)0;
