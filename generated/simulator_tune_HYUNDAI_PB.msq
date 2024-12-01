@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024113E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241201E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1674,8 +1674,8 @@
         <constant digits="0" name="nitrousMinimumTps" units="">0.0</constant>
         <constant digits="0" name="nitrousMinimumClt" units="deg C">0.0</constant>
         <constant digits="0" name="nitrousMaximumMap" units="kPa">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="87">
-         0.0
+        <constant digits="1" name="nitrousMaximumAfr" units="afr">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="86">
          0.0
          0.0
          0.0
@@ -4838,7 +4838,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241120" nPages="1" signature="rusEFI main.2024.11.30.mega100.781490395" version="5.0"/>
+    <versionInfo firmwareInfo="20241120" nPages="1" signature="rusEFI main.2024.12.01.mega100.4099127604" version="5.0"/>
     <bibliography author="rusEFI 20241120" writeDate="date"/>
     <settings/>
     <userComments/>
