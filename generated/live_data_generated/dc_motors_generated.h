@@ -7,13 +7,13 @@
 struct dc_motors_s {
 	/**
 	 * "DC: output0"
-	 * units: per
+	 * units: %
 	 * offset 0
 	 */
 	float dcOutput0 = (float)0;
 	/**
 	 * "DC: en0"
-	 * units: per
+	 * units: %
 	 * offset 4
 	 */
 	uint8_t isEnabled0_int = (uint8_t)0;
