@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241212E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241213E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -759,7 +759,7 @@
         <constant name="devBit6">"false"</constant>
         <constant name="devBit7">"false"</constant>
         <constant name="invertExhaustCamVVTSignal">"Rising"</constant>
-        <constant name="enableKnockSpectrogram">"false"</constant>
+        <constant name="enableKnockSpectrogram">"no"</constant>
         <constant name="enableKnockSpectrogramFilter">"false"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">200.0</constant>
         <constant digits="0" name="iacByTpsTaper" units="percent">2.0</constant>
@@ -4736,7 +4736,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.12.mega100.1760348451" version="5.0"/>
+    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.13.mega100.581699930" version="5.0"/>
     <bibliography author="rusEFI 20241210" writeDate="date"/>
     <settings/>
     <userComments/>
