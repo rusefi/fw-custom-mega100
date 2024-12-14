@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="22964">
+    <page number="0" size="23340">
         <constant name="engineType">"HONDA_K"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241213E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241214E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4737,8 +4737,112 @@ end</constant>
          0.0
          0.0
 </constant>
+        <constant cols="8" digits="1" name="targetAfrBlends1_table" rows="8">
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+</constant>
+        <constant cols="1" digits="0" name="targetAfrBlends1_loadBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="targetAfrBlends1_rpmBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant name="targetAfrBlends1_blendParameter">"Zero"</constant>
+        <constant name="targetAfrBlends1_yAxisOverride">"Zero"</constant>
+        <constant cols="1" digits="1" name="targetAfrBlends1_blendBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="1" name="targetAfrBlends1_blendValues" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="8" digits="1" name="targetAfrBlends2_table" rows="8">
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+</constant>
+        <constant cols="1" digits="0" name="targetAfrBlends2_loadBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="targetAfrBlends2_rpmBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant name="targetAfrBlends2_blendParameter">"Zero"</constant>
+        <constant name="targetAfrBlends2_yAxisOverride">"Zero"</constant>
+        <constant cols="1" digits="1" name="targetAfrBlends2_blendBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="1" name="targetAfrBlends2_blendValues" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.13.mega100.581699930" version="5.0"/>
+    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.14.mega100.326254621" version="5.0"/>
     <bibliography author="rusEFI 20241210" writeDate="date"/>
     <settings/>
     <userComments/>
