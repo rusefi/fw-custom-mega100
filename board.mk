@@ -12,7 +12,11 @@ include $(BOARD_DIR)/meta-info.env
 DDEFS += -DRAM_UNUSED_SIZE=100
 
 # assign critical LED to a non-existent pin
+
 DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
+
+DDEFS += -DEFI_ONBOARD_MEMS_LIS3DSH=TRUE
+DDEFS += -DEFI_MAX_31855=TRUE
 
 
 # we do not have much Lua RAM, let's drop some fancy functions
