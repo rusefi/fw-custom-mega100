@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241216E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241217E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -798,7 +798,7 @@
         <constant name="can1ListenMode">"false"</constant>
         <constant name="can2ListenMode">"false"</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
-        <constant name="mc33810maxDwellTimer">"2 mS"</constant>
+        <constant name="mc33810maxDwellTimer">"8 mS"</constant>
         <constant digits="2" name="benchTestOnTime" units="ms">4.0</constant>
         <constant digits="0" name="lambdaProtectionRestoreTps" units="%">20.0</constant>
         <constant digits="0" name="lambdaProtectionRestoreLoad" units="%">30.0</constant>
@@ -4839,7 +4839,7 @@ end</constant>
          100.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.16.mega100.933052303" version="5.0"/>
+    <versionInfo firmwareInfo="20241210" nPages="1" signature="rusEFI main.2024.12.17.mega100.1579667585" version="5.0"/>
     <bibliography author="rusEFI 20241210" writeDate="date"/>
     <settings/>
     <userComments/>
