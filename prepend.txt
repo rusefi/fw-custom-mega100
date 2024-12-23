@@ -11,3 +11,8 @@
 
 ! board has zero LEDs
 #define ts_show_status_leds false
+
+#defome FUEL_LOAD_COUNT 32
+#defome FUEL_RPM_COUNT 32
+#defome IGN_LOAD_COUNT 32
+#defome IGN_RPM_COUNT 32
