@@ -270,6 +270,10 @@ static const LogField fields[] = {
 	{engine->outputChannels.targetAfrBlendBias[1], "targetAfrBlendBias 2", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[0], "targetAfrBlendOutput 1", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[1], "targetAfrBlendOutput 2", "%", 1},
+	{engine->outputChannels.coilState1, "coilState1", "", 0},
+	{engine->outputChannels.coilState2, "coilState2", "", 0},
+	{engine->outputChannels.injectorState1, "injectorState1", "", 0},
+	{engine->outputChannels.injectorState2, "injectorState2", "", 0},
 	{engine->outputChannels.outputRequestPeriod, "outputRequestPeriod", "", 0},
 	{engine->outputChannels.mapFast, "mapFast", "", 0},
 	{engine->outputChannels.luaGauges[0], "Lua: Gauge 1", "value", 3},
@@ -475,7 +479,12 @@ static const LogField fields[] = {
 #if EFI_BOOST_CONTROL
 	{engine->module<BoostController>()->boostControlTarget, "Boost: Target", "kPa", 1, "Boost Control"},
 #endif
-	{engine->module<FanControl1>()->radiatorFanStatus, "radiatorFanStatus", "", 0},
+#if FULL_SD_LOGS
+	{engine->module<FanControl1>()->radiatorFanStatus, "radiatorFanStatusfan1", "", 0},
+#endif
+#if FULL_SD_LOGS
+	{engine->module<FanControl2>()->radiatorFanStatus, "radiatorFanStatusfan2", "", 0},
+#endif
 	{engine->engineState.lua.fuelAdd, "Lua: Fuel add", "g", 3},
 	{engine->engineState.lua.fuelMult, "Lua: Fuel mult", "", 0},
 	{engine->engineState.sd.tCharge, "Air: Charge temperature estimate", "deg C", 1},
@@ -547,15 +556,141 @@ static const LogField fields[] = {
 #if EFI_SHAFT_POSITION_INPUT
 	{engine->triggerCentral.triggerElapsedUs, "triggerElapsedUs", "", 0},
 #endif
-	{engine->triggerCentral.triggerState.synchronizationCounter, "sync: wheel sync counter", "", 0},
-	{engine->triggerCentral.triggerState.vvtToothDurations0, "vvtToothDurations0", "us", 3},
-	{engine->triggerCentral.triggerState.vvtCurrentPosition, "sync: Primary Position", "", 3},
-	{engine->triggerCentral.triggerState.vvtToothPosition[0], "sync: Cam Position 1", "", 3},
-	{engine->triggerCentral.triggerState.vvtToothPosition[1], "sync: Cam Position 2", "", 3},
-	{engine->triggerCentral.triggerState.vvtToothPosition[2], "sync: Cam Position 3", "", 3},
-	{engine->triggerCentral.triggerState.vvtToothPosition[3], "sync: Cam Position 4", "", 3},
-	{engine->triggerCentral.triggerState.triggerSyncGapRatio, "Sync: Trigger Latest Ratio", "", 3},
-	{engine->triggerCentral.triggerState.triggerStateIndex, "triggerStateIndex", "", 0},
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.synchronizationCounter, "sync: wheel sync countertrg", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].synchronizationCounter, "sync: wheel sync countervvt1i", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].synchronizationCounter, "sync: wheel sync countervvt1e", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].synchronizationCounter, "sync: wheel sync countervvt2i", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].synchronizationCounter, "sync: wheel sync countervvt2e", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtToothDurations0, "vvtToothDurations0trg", "us", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtToothDurations0, "vvtToothDurations0vvt1i", "us", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtToothDurations0, "vvtToothDurations0vvt1e", "us", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtToothDurations0, "vvtToothDurations0vvt2i", "us", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtToothDurations0, "vvtToothDurations0vvt2e", "us", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtCurrentPosition, "sync: Primary Positiontrg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtCurrentPosition, "sync: Primary Positionvvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtCurrentPosition, "sync: Primary Positionvvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtCurrentPosition, "sync: Primary Positionvvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtCurrentPosition, "sync: Primary Positionvvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtToothPosition[0], "sync: Cam Position 1trg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtToothPosition[0], "sync: Cam Position 1vvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtToothPosition[0], "sync: Cam Position 1vvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtToothPosition[0], "sync: Cam Position 1vvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtToothPosition[0], "sync: Cam Position 1vvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtToothPosition[1], "sync: Cam Position 2trg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtToothPosition[1], "sync: Cam Position 2vvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtToothPosition[1], "sync: Cam Position 2vvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtToothPosition[1], "sync: Cam Position 2vvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtToothPosition[1], "sync: Cam Position 2vvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtToothPosition[2], "sync: Cam Position 3trg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtToothPosition[2], "sync: Cam Position 3vvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtToothPosition[2], "sync: Cam Position 3vvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtToothPosition[2], "sync: Cam Position 3vvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtToothPosition[2], "sync: Cam Position 3vvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.vvtToothPosition[3], "sync: Cam Position 4trg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].vvtToothPosition[3], "sync: Cam Position 4vvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].vvtToothPosition[3], "sync: Cam Position 4vvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].vvtToothPosition[3], "sync: Cam Position 4vvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].vvtToothPosition[3], "sync: Cam Position 4vvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.triggerSyncGapRatio, "Sync: Trigger Latest Ratiotrg", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].triggerSyncGapRatio, "Sync: Trigger Latest Ratiovvt1i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].triggerSyncGapRatio, "Sync: Trigger Latest Ratiovvt1e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].triggerSyncGapRatio, "Sync: Trigger Latest Ratiovvt2i", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].triggerSyncGapRatio, "Sync: Trigger Latest Ratiovvt2e", "", 3},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.triggerState.triggerStateIndex, "triggerStateIndextrg", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][0].triggerStateIndex, "triggerStateIndexvvt1i", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[0][1].triggerStateIndex, "triggerStateIndexvvt1e", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][0].triggerStateIndex, "triggerStateIndexvvt2i", "", 0},
+#endif
+#if EFI_SHAFT_POSITION_INPUT && FULL_SD_LOGS
+	{engine->triggerCentral.vvtState[1][1].triggerStateIndex, "triggerStateIndexvvt2e", "", 0},
+#endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().currentIdlePosition, "Idle: Position", "%", 1},
 #endif
@@ -582,6 +717,102 @@ static const LogField fields[] = {
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().luaAdd, "idle: Lua Adder", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->targetWithIdlePosition, "ETB: target with idleetb1", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->targetWithIdlePosition, "ETB: target with idleetb2", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->trim, "ETB: trimetb1", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->trim, "ETB: trimetb2", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->luaAdjustment, "ETB: luaAdjustmentetb1", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->luaAdjustment, "ETB: luaAdjustmentetb2", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->m_wastegatePosition, "DC: wastegatePositionetb1", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->m_wastegatePosition, "DC: wastegatePositionetb2", "%", 2, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbFeedForward, "etbFeedForwardetb1", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbFeedForward, "etbFeedForwardetb2", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbIntegralError, "etbIntegralErroretb1", "", 3},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbIntegralError, "etbIntegralErroretb2", "", 3},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbCurrentTarget, "ETB: target for current pedaletb1", "%", 3},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbCurrentTarget, "ETB: target for current pedaletb2", "%", 3},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->m_adjustedTarget, "Adjusted targetetb1", "%", 2},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->m_adjustedTarget, "Adjusted targetetb2", "%", 2},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbTpsErrorCounter, "ETB TPS error counteretb1", "count", 0, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbTpsErrorCounter, "ETB TPS error counteretb2", "count", 0, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbPpsErrorCounter, "ETB pedal error counteretb1", "count", 0, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbPpsErrorCounter, "ETB pedal error counteretb2", "count", 0, "ETB more"},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbErrorCode, "etbErrorCodeetb1", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbErrorCode, "etbErrorCodeetb2", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->etbErrorCodeBlinker, "etbErrorCodeBlinkeretb1", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->etbErrorCodeBlinker, "etbErrorCodeBlinkeretb2", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->tcEtbDrop, "ETB traction controletb1", "%", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->tcEtbDrop, "ETB traction controletb2", "%", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->jamTimer, "ETB jam timeretb1", "sec", 2},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->jamTimer, "ETB jam timeretb2", "sec", 2},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->adjustedEtbTarget, "ETB with adjustmentsetb1", "%", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->adjustedEtbTarget, "ETB with adjustmentsetb2", "%", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(0)->state, "stateetb1", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{getLiveData<electronic_throttle_s>(1)->state, "stateetb2", "", 0},
 #endif
 	{engine->dc_motors.dcOutput0, "DC: output0", "%", 2, "ETB more"},
 	{engine->dc_motors.isEnabled0_int, "DC: en0", "%", 2, "ETB more"},
