@@ -15,7 +15,7 @@ struct trigger_state_primary_s {
 	 * units: units
 	 * offset 1
 	 */
-	uint8_t alignmentFill_at_1[3];
+	uint8_t alignmentFill_at_1[3] = {};
 	/**
 	 * sync: Known Engine Phase
 	offset 4 bit 0 */

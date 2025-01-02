@@ -113,7 +113,7 @@ struct throttle_model_s {
 	 * units: units
 	 * offset 6
 	 */
-	uint8_t alignmentFill_at_6[2];
+	uint8_t alignmentFill_at_6[2] = {};
 	/**
 	 * Air: Throttle flow estimate
 	 * units: g/s

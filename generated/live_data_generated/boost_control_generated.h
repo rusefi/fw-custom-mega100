@@ -142,7 +142,7 @@ struct boost_control_s {
 	 * units: units
 	 * offset 21
 	 */
-	uint8_t alignmentFill_at_21[1];
+	uint8_t alignmentFill_at_21[1] = {};
 	/**
 	 * @@GAUGE_NAME_BOOST_TARGET@@
 	 * units: kPa

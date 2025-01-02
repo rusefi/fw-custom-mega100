@@ -111,7 +111,7 @@ struct lambda_monitor_s {
 	 * units: units
 	 * offset 6
 	 */
-	uint8_t alignmentFill_at_6[2];
+	uint8_t alignmentFill_at_6[2] = {};
 };
 static_assert(sizeof(lambda_monitor_s) == 8);
 

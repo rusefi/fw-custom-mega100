@@ -27,7 +27,7 @@ struct wideband_state_s {
 	 * units: units
 	 * offset 3
 	 */
-	uint8_t alignmentFill_at_3[1];
+	uint8_t alignmentFill_at_3[1] = {};
 	/**
 	 * WBO: Temperature
 	 * units: C
@@ -51,7 +51,7 @@ struct wideband_state_s {
 	 * units: units
 	 * offset 10
 	 */
-	uint8_t alignmentFill_at_10[2];
+	uint8_t alignmentFill_at_10[2] = {};
 };
 static_assert(sizeof(wideband_state_s) == 12);
 

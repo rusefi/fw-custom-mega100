@@ -20,7 +20,7 @@ struct vvt_s {
 	 * units: units
 	 * offset 3
 	 */
-	uint8_t alignmentFill_at_3[1];
+	uint8_t alignmentFill_at_3[1] = {};
 };
 static_assert(sizeof(vvt_s) == 4);
 

@@ -16,7 +16,7 @@ struct tcu_controller_s {
 	 * units: units
 	 * offset 1
 	 */
-	uint8_t alignmentFill_at_1[1];
+	uint8_t alignmentFill_at_1[1] = {};
 	/**
 	 * @@GAUGE_NAME_TC_RATIO@@
 	 * units: value
@@ -49,7 +49,7 @@ struct tcu_controller_s {
 	 * units: units
 	 * offset 11
 	 */
-	uint8_t alignmentFill_at_11[1];
+	uint8_t alignmentFill_at_11[1] = {};
 	/**
 	offset 12 bit 0 */
 	bool isShifting : 1 {};
