@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23344">
+    <page number="0" size="23236">
         <constant name="engineType">"MAZDA_MIATA_NA94"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250103E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250104E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -243,7 +243,6 @@
         <constant name="tle6240_cs">"NONE"</constant>
         <constant name="tle6240_csPinMode">"default"</constant>
         <constant name="mc33810_csPinMode">"default"</constant>
-        <constant name="unusedThrottlePedalUpPin">"NONE"</constant>
         <constant digits="2" name="baroSensor_lowValue" units="kpa">0.0</constant>
         <constant digits="2" name="baroSensor_highValue" units="kpa">500.0</constant>
         <constant name="baroSensor_type">"Custom"</constant>
@@ -321,7 +320,6 @@
         <constant name="triggerInputPins2">"NONE"</constant>
         <constant digits="0" name="mc33_t_min_boost" units="us">100.0</constant>
         <constant name="hip9011CsPinMode">"default"</constant>
-        <constant name="unusedThrottlePedalUpPinMode">"DEFAULT"</constant>
         <constant digits="2" name="finalGearRatio" units="ratio">4.3</constant>
         <constant name="tcuInputSpeedSensorPin">"NONE"</constant>
         <constant digits="0" name="tcuInputSpeedSensorTeeth" units="">1.0</constant>
@@ -457,7 +455,6 @@
         <constant name="consumeObdSensors">"false"</constant>
         <constant name="enableCanVss">"false"</constant>
         <constant name="suppressWboWorkaround7048">"false"</constant>
-        <constant name="showHumanReadableWarning">"false"</constant>
         <constant name="stftIgnoreErrorMagnitude">"false"</constant>
         <constant name="vvtBooleanForVerySpecialCases">"false"</constant>
         <constant name="enableSoftwareKnock">"false"</constant>
@@ -611,7 +608,6 @@
         <constant digits="0" name="tps2SecondaryMax" units="ADC">0.0</constant>
         <constant name="widebandOnSecondBus">"1"</constant>
         <constant name="fuelClosedLoopCorrectionEnabled">"false"</constant>
-        <constant name="unusedOfoddFireEngine">"false"</constant>
         <constant name="alwaysWriteSdCard">"false"</constant>
         <constant name="knockDetectionUseDoubleFrequency">"second harmonic"</constant>
         <constant name="yesUnderstandLocking">"no"</constant>
@@ -857,10 +853,10 @@
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
         <constant digits="0" name="crankingIACposition" units="percent">50.0</constant>
-        <constant digits="4" name="tChargeMinRpmMinTps" units="">0.25</constant>
-        <constant digits="4" name="tChargeMinRpmMaxTps" units="">0.25</constant>
-        <constant digits="4" name="tChargeMaxRpmMinTps" units="">0.25</constant>
-        <constant digits="4" name="tChargeMaxRpmMaxTps" units="">0.9</constant>
+        <constant digits="3" name="tChargeMinRpmMinTps" units="">0.25</constant>
+        <constant digits="3" name="tChargeMinRpmMaxTps" units="">0.25</constant>
+        <constant digits="3" name="tChargeMaxRpmMinTps" units="">0.25</constant>
+        <constant digits="3" name="tChargeMaxRpmMaxTps" units="">0.9</constant>
         <constant digits="0" name="vvtOutputFrequency" units="Hz">300.0</constant>
         <constant digits="0" name="minimumIgnitionTiming" units="deg BTDC">-10.0</constant>
         <constant digits="0" name="maximumIgnitionTiming" units="deg BTDC">60.0</constant>
@@ -4835,8 +4831,28 @@ end</constant>
          85.5
          100.0
 </constant>
+        <constant cols="1" digits="0" name="trimRpmBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="trimLoadBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20250101" nPages="1" signature="rusEFI main.2025.01.03.mega100.2830816386" version="5.0"/>
+    <versionInfo firmwareInfo="20250101" nPages="1" signature="rusEFI main.2025.01.04.mega100.1061194533" version="5.0"/>
     <bibliography author="rusEFI 20250101" writeDate="date"/>
     <settings/>
     <userComments/>
