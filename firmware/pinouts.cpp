@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "bench_test.h"
 #include "flash_main.h"
+#include "tunerstudio.h"
 
 static void setBoard_04_pinout() {
     engineConfiguration->injectionPins[0] = Gpio::D8;
@@ -21,5 +22,5 @@ static void setBoard_ua4c_pinout() {
         setBoard_ua4c_pinout();
     }
     writeToFlashNow();
-    fatalErrorForPresetApply();
+    onApplyPreset();
 }
