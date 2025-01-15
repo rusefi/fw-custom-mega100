@@ -1334,7 +1334,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2303325858
+#define SIGNATURE_HASH 3769887409
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1347,10 +1347,6 @@
 #define spi_device_e_SPI_DEVICE_5 5
 #define spi_device_e_SPI_DEVICE_6 6
 #define spi_device_e_SPI_NONE 0
-#define spi_speed_e__150KHz 3
-#define spi_speed_e__1_25MHz 2
-#define spi_speed_e__2_5MHz 1
-#define spi_speed_e__5MHz 0
 #define stepper_num_micro_steps_e_auto_enum 0="STEPPER_FULL",8="STEPPER_EIGHTH",4="STEPPER_FOURTH",2="STEPPER_HALF"
 #define stepper_num_micro_steps_e_enum "Full-Step (Default)", "INVALID", "Half-Step", "INVALID", "1/4 Micro-Step", "INVALID", "INVALID", "INVALID", "1/8 Micro-Step"
 #define stepper_num_micro_steps_e_STEPPER_EIGHTH 8
@@ -1754,7 +1750,7 @@
 #define ts_show_output_diag true
 #define ts_show_popular_vehicles true
 #define ts_show_reboot_to_dfu true
-#define ts_show_reset_calibrations false
+#define ts_show_reset_calibrations true
 #define ts_show_rotary true
 #define ts_show_sd_card true
 #define ts_show_sd_pins true
@@ -1806,7 +1802,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.01.13.mega100.2303325858"
+#define TS_SIGNATURE "rusEFI main.2025.01.15.mega100.3769887409"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'

@@ -6,33 +6,30 @@ static const LogField fields[] = {
 	{engine->outputChannels, 0, 1, "SD: Logging", ""},
 	{engine->outputChannels, 0, 2, "triggerScopeReady", ""},
 	{engine->outputChannels, 0, 3, "antilagTriggered", ""},
-	{engine->outputChannels, 0, 4, "Radiator Fan", ""},
-	{engine->outputChannels, 0, 5, "isO2HeaterOn", ""},
-	{engine->outputChannels, 0, 6, "checkEngine", ""},
-	{engine->outputChannels, 0, 7, "needBurn", ""},
-	{engine->outputChannels, 0, 8, "SD: MSD", ""},
-	{engine->outputChannels, 0, 9, "Radiator Fan 2", ""},
-	{engine->outputChannels, 0, 10, "Tooth Logger Ready", ""},
-	{engine->outputChannels, 0, 11, "Error: TPS", ""},
-	{engine->outputChannels, 0, 12, "Error: CLT", ""},
-	{engine->outputChannels, 0, 13, "Error: MAP", ""},
-	{engine->outputChannels, 0, 14, "Error: IAT", ""},
-	{engine->outputChannels, 0, 15, "Error: Trigger", ""},
-	{engine->outputChannels, 0, 16, "Error: Active", ""},
-	{engine->outputChannels, 0, 17, "Warning: Active", ""},
-	{engine->outputChannels, 0, 18, "Error: Pedal", ""},
-	{engine->outputChannels, 0, 19, "isKnockChipOk", ""},
-	{engine->outputChannels, 0, 20, "Launch Control Triggered", ""},
-	{engine->outputChannels, 0, 21, "Error: TPS2", ""},
-	{engine->outputChannels, 0, 22, "Injector Fault", ""},
-	{engine->outputChannels, 0, 23, "Ignition Fault", ""},
-	{engine->outputChannels, 0, 24, "isMainRelayOn", ""},
-	{engine->outputChannels, 0, 25, "isUsbConnected", ""},
-	{engine->outputChannels, 0, 26, "dfcoActive", ""},
-	{engine->outputChannels, 0, 27, "SD card writing", ""},
-	{engine->outputChannels, 0, 28, "SD card reading", ""},
-	{engine->outputChannels, 0, 29, "MAP from sensor seems valid", ""},
-	{engine->outputChannels, 0, 30, "triggerPageRefreshFlag", ""},
+	{engine->outputChannels, 0, 4, "isO2HeaterOn", ""},
+	{engine->outputChannels, 0, 5, "checkEngine", ""},
+	{engine->outputChannels, 0, 6, "needBurn", ""},
+	{engine->outputChannels, 0, 7, "SD: MSD", ""},
+	{engine->outputChannels, 0, 8, "Tooth Logger Ready", ""},
+	{engine->outputChannels, 0, 9, "Error: TPS", ""},
+	{engine->outputChannels, 0, 10, "Error: CLT", ""},
+	{engine->outputChannels, 0, 11, "Error: MAP", ""},
+	{engine->outputChannels, 0, 12, "Error: IAT", ""},
+	{engine->outputChannels, 0, 13, "Error: Trigger", ""},
+	{engine->outputChannels, 0, 14, "Error: Active", ""},
+	{engine->outputChannels, 0, 15, "Warning: Active", ""},
+	{engine->outputChannels, 0, 16, "Error: Pedal", ""},
+	{engine->outputChannels, 0, 17, "isKnockChipOk", ""},
+	{engine->outputChannels, 0, 18, "Launch Control Triggered", ""},
+	{engine->outputChannels, 0, 19, "Error: TPS2", ""},
+	{engine->outputChannels, 0, 20, "Injector Fault", ""},
+	{engine->outputChannels, 0, 21, "Ignition Fault", ""},
+	{engine->outputChannels, 0, 22, "isUsbConnected", ""},
+	{engine->outputChannels, 0, 23, "dfcoActive", ""},
+	{engine->outputChannels, 0, 24, "SD card writing", ""},
+	{engine->outputChannels, 0, 25, "SD card reading", ""},
+	{engine->outputChannels, 0, 26, "MAP from sensor seems valid", ""},
+	{engine->outputChannels, 0, 27, "triggerPageRefreshFlag", ""},
 	{engine->outputChannels.RPMValue, "RPM", "RPM", 0},
 	{engine->outputChannels.rpmAcceleration, "dRPM", "RPM acceleration/Rate of Change/ROC", 2},
 	{engine->outputChannels.speedToRpmRatio, "Gearbox Ratio", "value", 2},
@@ -518,7 +515,7 @@ static const LogField fields[] = {
 	{engine->module<InjectorModelPrimary>()->pressureRatio, "Fuel: Injector pressure ratio", "", 3},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController.retardThresholdRpm, "retardThresholdRpm", "", 0},
+	{engine->launchController.retardThresholdRpm, "Launch: Retard threshold RPM", "", 0},
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->launchController, 4, 0, "launchActivatePinState", ""},
@@ -527,22 +524,22 @@ static const LogField fields[] = {
 	{engine->launchController, 4, 1, "isPreLaunchCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 2, "isLaunchCondition", ""},
+	{engine->launchController, 4, 2, "Launch: isLaunchCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 3, "isSwitchActivated", ""},
+	{engine->launchController, 4, 3, "Launch: isSwitchActivated", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 4, "isClutchActivated", ""},
+	{engine->launchController, 4, 4, "Launch: isClutchActivated", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->launchController, 4, 5, "isBrakePedalActivated", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 6, "isValidInputPin", ""},
+	{engine->launchController, 4, 6, "Launch: isValidInputPin", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 7, "activateSwitchCondition", ""},
+	{engine->launchController, 4, 7, "Launch: activateSwitchCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->launchController, 4, 8, "rpmLaunchCondition", ""},
@@ -551,10 +548,10 @@ static const LogField fields[] = {
 	{engine->launchController, 4, 9, "rpmPreLaunchCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 10, "speedCondition", ""},
+	{engine->launchController, 4, 10, "Launch: speedCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
-	{engine->launchController, 4, 11, "tpsCondition", ""},
+	{engine->launchController, 4, 11, "Launch: tpsCondition", ""},
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->shiftTorqueReductionController, 0, 0, "isTorqueReductionTriggerPinValid", ""},
@@ -635,22 +632,25 @@ static const LogField fields[] = {
 	{*engine->module<FanControl1>(), 0, 1, "notRunningfan1", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl1>(), 0, 2, "disabledWhileEngineStoppedfan1", ""},
+	{*engine->module<FanControl1>(), 0, 2, "Engine stoppedfan1", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl1>(), 0, 3, "brokenCltfan1", ""},
+	{*engine->module<FanControl1>(), 0, 3, "Broken CLTfan1", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl1>(), 0, 4, "enabledForAcfan1", ""},
+	{*engine->module<FanControl1>(), 0, 4, "Enable for ACfan1", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl1>(), 0, 5, "hotfan1", ""},
+	{*engine->module<FanControl1>(), 0, 5, "Above hot thresholdfan1", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl1>(), 0, 6, "coldfan1", ""},
+	{*engine->module<FanControl1>(), 0, 6, "Below cold thresholdfan1", ""},
 #endif
 #if FULL_SD_LOGS
 	{*engine->module<FanControl1>(), 0, 7, "disabledBySpeedfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 8, "Onfan1", ""},
 #endif
 #if FULL_SD_LOGS
 	{engine->module<FanControl1>()->radiatorFanStatus, "radiatorFanStatusfan1", "", 0},
@@ -662,22 +662,25 @@ static const LogField fields[] = {
 	{*engine->module<FanControl2>(), 0, 1, "notRunningfan2", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl2>(), 0, 2, "disabledWhileEngineStoppedfan2", ""},
+	{*engine->module<FanControl2>(), 0, 2, "Engine stoppedfan2", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl2>(), 0, 3, "brokenCltfan2", ""},
+	{*engine->module<FanControl2>(), 0, 3, "Broken CLTfan2", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl2>(), 0, 4, "enabledForAcfan2", ""},
+	{*engine->module<FanControl2>(), 0, 4, "Enable for ACfan2", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl2>(), 0, 5, "hotfan2", ""},
+	{*engine->module<FanControl2>(), 0, 5, "Above hot thresholdfan2", ""},
 #endif
 #if FULL_SD_LOGS
-	{*engine->module<FanControl2>(), 0, 6, "coldfan2", ""},
+	{*engine->module<FanControl2>(), 0, 6, "Below cold thresholdfan2", ""},
 #endif
 #if FULL_SD_LOGS
 	{*engine->module<FanControl2>(), 0, 7, "disabledBySpeedfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 8, "Onfan2", ""},
 #endif
 #if FULL_SD_LOGS
 	{engine->module<FanControl2>()->radiatorFanStatus, "radiatorFanStatusfan2", "", 0},

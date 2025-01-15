@@ -6,6 +6,7 @@
 // start of launch_control_state_s
 struct launch_control_state_s {
 	/**
+	 * Launch: Retard threshold RPM
 	 * offset 0
 	 */
 	int retardThresholdRpm = (int)0;
@@ -16,21 +17,26 @@ struct launch_control_state_s {
 	offset 4 bit 1 */
 	bool isPreLaunchCondition : 1 {};
 	/**
+	 * Launch: isLaunchCondition
 	offset 4 bit 2 */
 	bool isLaunchCondition : 1 {};
 	/**
+	 * Launch: isSwitchActivated
 	offset 4 bit 3 */
 	bool isSwitchActivated : 1 {};
 	/**
+	 * Launch: isClutchActivated
 	offset 4 bit 4 */
 	bool isClutchActivated : 1 {};
 	/**
 	offset 4 bit 5 */
 	bool isBrakePedalActivated : 1 {};
 	/**
+	 * Launch: isValidInputPin
 	offset 4 bit 6 */
 	bool isValidInputPin : 1 {};
 	/**
+	 * Launch: activateSwitchCondition
 	offset 4 bit 7 */
 	bool activateSwitchCondition : 1 {};
 	/**
@@ -40,9 +46,11 @@ struct launch_control_state_s {
 	offset 4 bit 9 */
 	bool rpmPreLaunchCondition : 1 {};
 	/**
+	 * Launch: speedCondition
 	offset 4 bit 10 */
 	bool speedCondition : 1 {};
 	/**
+	 * Launch: tpsCondition
 	offset 4 bit 11 */
 	bool tpsCondition : 1 {};
 	/**
