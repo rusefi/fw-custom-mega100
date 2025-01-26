@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250125E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250126E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1006,8 +1006,8 @@
         <constant name="lowPressureFuel_hwChannel">"Disabled"</constant>
         <constant digits="2" name="lowPressureFuel_v1" units="volts">0.0</constant>
         <constant digits="2" name="lowPressureFuel_value1" units="">0.0</constant>
-        <constant digits="2" name="lowPressureFuel_v2" units="volts">0.0</constant>
-        <constant digits="2" name="lowPressureFuel_value2" units="">0.0</constant>
+        <constant digits="2" name="lowPressureFuel_v2" units="volts">5.0</constant>
+        <constant digits="2" name="lowPressureFuel_value2" units="">100.0</constant>
         <constant digits="3" name="tChargeAirCoefMin" units="">0.098</constant>
         <constant digits="3" name="tChargeAirCoefMax" units="">0.902</constant>
         <constant digits="1" name="tChargeAirFlowMax" units="kg/h">153.6</constant>
@@ -1603,8 +1603,8 @@
         <constant name="acPressure_hwChannel">"Disabled"</constant>
         <constant digits="2" name="acPressure_v1" units="volts">0.0</constant>
         <constant digits="2" name="acPressure_value1" units="">0.0</constant>
-        <constant digits="2" name="acPressure_v2" units="volts">0.0</constant>
-        <constant digits="2" name="acPressure_value2" units="">0.0</constant>
+        <constant digits="2" name="acPressure_v2" units="volts">5.0</constant>
+        <constant digits="2" name="acPressure_value2" units="">100.0</constant>
         <constant digits="0" name="minAcPressure" units="kPa">100.0</constant>
         <constant digits="0" name="maxAcPressure" units="kPa">300.0</constant>
         <constant digits="1" name="minimumOilPressureTimeout" units="sec">0.5</constant>
@@ -4901,7 +4901,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20250108" nPages="1" signature="rusEFI main.2025.01.25.mega100.3742792717" version="5.0"/>
+    <versionInfo firmwareInfo="20250108" nPages="1" signature="rusEFI main.2025.01.26.mega100.2337972582" version="5.0"/>
     <bibliography author="rusEFI 20250108" writeDate="date"/>
     <settings/>
     <userComments/>
