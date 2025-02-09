@@ -1186,11 +1186,9 @@ struct engine_configuration_s {
 	 */
 	float idle_derivativeFilterLoss;
 	/**
-	 * just a temporary solution
-	 * units: angle
 	 * offset 520
 	 */
-	int trailingSparkAngle;
+	int unusedTrailingSparkAngle;
 	/**
 	 * offset 524
 	 */
@@ -6131,8 +6129,86 @@ struct persistent_config_s {
 	 * offset 23228
 	 */
 	uint16_t trimLoadBins[FUEL_TRIM_LOAD_COUNT] = {};
+	/**
+	 * offset 23244
+	 */
+	uint8_t dynoRpmStep;
+	/**
+	 * offset 23245
+	 */
+	int8_t dynoSaeTemperatureC;
+	/**
+	 * offset 23246
+	 */
+	uint8_t dynoSaeRelativeHumidity;
+	/**
+	 * need 4 byte alignment
+	 * units: units
+	 * offset 23247
+	 */
+	uint8_t alignmentFill_at_23247[1] = {};
+	/**
+	 * units: kPa
+	 * offset 23248
+	 */
+	float dynoSaeBaro;
+	/**
+	 * offset 23252
+	 */
+	int8_t dynoCarWheelDiaInch;
+	/**
+	 * offset 23253
+	 */
+	int8_t dynoCarWheelAspectRatio;
+	/**
+	 * offset 23254
+	 */
+	int16_t dynoCarWheelTireWidthMm;
+	/**
+	 * offset 23256
+	 */
+	float dynoCarGearPrimaryReduction;
+	/**
+	 * offset 23260
+	 */
+	float dynoCarGearRatio;
+	/**
+	 * offset 23264
+	 */
+	float dynoCarGearFinalDrive;
+	/**
+	 * offset 23268
+	 */
+	int16_t dynoCarCarMassKg;
+	/**
+	 * offset 23270
+	 */
+	int16_t dynoCarCargoMassKg;
+	/**
+	 * offset 23272
+	 */
+	float dynoCarCoeffOfDrag;
+	/**
+	 * offset 23276
+	 */
+	float dynoCarFrontalAreaM2;
+	/**
+	 * units: deg
+	 * offset 23280
+	 */
+	scaled_channel<int8_t, 10, 1> trailingSparkTable[TRAILING_SPARK_SIZE][TRAILING_SPARK_SIZE] = {};
+	/**
+	 * units: rpm
+	 * offset 23296
+	 */
+	scaled_channel<uint8_t, 1, 50> trailingSparkRpmBins[TRAILING_SPARK_SIZE] = {};
+	/**
+	 * units: Load
+	 * offset 23300
+	 */
+	scaled_channel<uint8_t, 1, 5> trailingSparkLoadBins[TRAILING_SPARK_SIZE] = {};
 };
-static_assert(sizeof(persistent_config_s) == 23244);
+static_assert(sizeof(persistent_config_s) == 23304);
 
 // end
 // this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt
