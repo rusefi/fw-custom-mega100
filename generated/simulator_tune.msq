@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23244">
+    <page number="0" size="23304">
         <constant name="engineType">"MINIMAL_PINS"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -210,13 +210,13 @@
         <constant name="acrPin">"NONE"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant digits="2" name="canSleepPeriodMs" units="ms">50.0</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250206E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250208E7</constant>
         <constant name="tps1_1AdcChannel">"Disabled"</constant>
         <constant name="vbattAdcChannel">"Disabled"</constant>
         <constant name="fuelLevelSensor">"Disabled"</constant>
         <constant name="tps2_1AdcChannel">"Disabled"</constant>
         <constant digits="4" name="idle_derivativeFilterLoss" units="x">0.0</constant>
-        <constant digits="0" name="trailingSparkAngle" units="angle">10.0</constant>
+        <constant digits="0" name="unusedTrailingSparkAngle" units="">0.0</constant>
         <constant name="trigger_type">"60-2"</constant>
         <constant digits="0" name="trigger_customTotalToothCount" units="number">0.0</constant>
         <constant digits="0" name="trigger_customSkippedToothCount" units="number">0.0</constant>
@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250207E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250209E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4851,9 +4851,41 @@ end</constant>
          0.0
          0.0
 </constant>
+        <constant digits="0" name="dynoRpmStep" units="">100.0</constant>
+        <constant digits="0" name="dynoSaeTemperatureC" units="">20.0</constant>
+        <constant digits="0" name="dynoSaeRelativeHumidity" units="">80.0</constant>
+        <constant digits="2" name="dynoSaeBaro" units="kPa">101.33</constant>
+        <constant digits="0" name="dynoCarWheelDiaInch" units="">18.0</constant>
+        <constant digits="0" name="dynoCarWheelAspectRatio" units="">40.0</constant>
+        <constant digits="0" name="dynoCarWheelTireWidthMm" units="">235.0</constant>
+        <constant digits="4" name="dynoCarGearPrimaryReduction" units="">1.0</constant>
+        <constant digits="4" name="dynoCarGearRatio" units="">1.0</constant>
+        <constant digits="4" name="dynoCarGearFinalDrive" units="">4.2</constant>
+        <constant digits="0" name="dynoCarCarMassKg" units="">1000.0</constant>
+        <constant digits="0" name="dynoCarCargoMassKg" units="">95.0</constant>
+        <constant digits="4" name="dynoCarCoeffOfDrag" units="">0.29</constant>
+        <constant digits="4" name="dynoCarFrontalAreaM2" units="">1.85</constant>
+        <constant cols="4" digits="1" name="trailingSparkTable" rows="4">
+         7.0 9.0 10.0 12.0
+         7.0 9.0 10.0 12.0
+         7.0 9.0 10.0 12.0
+         7.0 9.0 10.0 12.0
+</constant>
+        <constant cols="1" digits="0" name="trailingSparkRpmBins" rows="4">
+         650.0
+         800.0
+         3750.0
+         7000.0
+</constant>
+        <constant cols="1" digits="0" name="trailingSparkLoadBins" rows="4">
+         20.0
+         45.0
+         75.0
+         100.0
+</constant>
     </page>
-    <versionInfo firmwareInfo="20250126" nPages="1" signature="rusEFI main.2025.02.07.mega100.249340440" version="5.0"/>
-    <bibliography author="rusEFI 20250126" writeDate="date"/>
+    <versionInfo firmwareInfo="20250206" nPages="1" signature="rusEFI main.2025.02.09.mega100.1833545877" version="5.0"/>
+    <bibliography author="rusEFI 20250206" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
