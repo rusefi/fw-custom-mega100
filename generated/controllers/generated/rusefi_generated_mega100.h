@@ -347,6 +347,34 @@
 #define display_mode_e_DM_HD44780_OVER_PCF8574 2
 #define display_mode_e_DM_NONE 0
 #define DWELL_CURVE_SIZE 8
+#define DYNO_CAR_CAR_MASS_TOOLTIP "Full car mass"
+#define DYNO_CAR_CAR_MASS_UNITS "Kg"
+#define DYNO_CAR_CARGO_MASS_TOOLTIP "Mass of passengers and cargo"
+#define DYNO_CAR_CARGO_MASS_UNITS "Kg"
+#define DYNO_CAR_COEFF_OF_DRAG_STEP_UNITS "Coeff"
+#define DYNO_CAR_COEFF_OF_DRAG_TOOLTIP "Resistance of an car in air, for example see list of popular cars: https://ecomodder.com/wiki/Vehicle_Coefficient_of_Drag_List"
+#define DYNO_CAR_FRONTAL_AREA_TOOLTIP "The frontal area A represents the frontal projection of the car's area"
+#define DYNO_CAR_FRONTAL_AREA_UNITS "m2"
+#define DYNO_CAR_GEAR_FINAL_DRIVE_TOOLTIP "Final drive gear ratio"
+#define DYNO_CAR_GEAR_FINAL_DRIVE_UNITS "Units"
+#define DYNO_CAR_GEAR_PRIMARY_REDUCTION_TOOLTIP "Primary reduction"
+#define DYNO_CAR_GEAR_PRIMARY_REDUCTION_UNITS "Units"
+#define DYNO_CAR_GEAR_RATIO_TOOLTIP "Ratio of the gear on which the measurement will be carried out, usually the gear is selected whose ratio is closest to 1"
+#define DYNO_CAR_GEAR_RATIO_UNITS "Units"
+#define DYNO_CAR_WHEEL_ASPECT_RATIO_TOOLTIP "Tyre height"
+#define DYNO_CAR_WHEEL_ASPECT_RATIO_UNITS "Aspect Ratio (height)"
+#define DYNO_CAR_WHEEL_DIA_INCH_TOOLTIP "Disc diameter"
+#define DYNO_CAR_WHEEL_DIA_INCH_UNITS "Inch"
+#define DYNO_CAR_WHEEL_TIRE_WIDTH_TOOLTIP "Tyre width"
+#define DYNO_CAR_WHEEL_TIRE_WIDTH_UNITS "Width mm"
+#define DYNO_RPM_STEP_TOOLTIP "RPM Trim Window, Leave on 100 if you dont know what this does"
+#define DYNO_RPM_STEP_UNITS "Rpm"
+#define DYNO_SAE_BARO_TOOLTIP "Atmospheric pressure"
+#define DYNO_SAE_BARO_UNITS "KPa"
+#define DYNO_SAE_RELATIVE_HUMIDITY_TOOLTIP "Relative humidity of air"
+#define DYNO_SAE_RELATIVE_HUMIDITY_UNITS "%"
+#define DYNO_SAE_TEMPERATURE_C_TOOLTIP "Air temperature"
+#define DYNO_SAE_TEMPERATURE_C_UNITS "C"
 #define ego_sensor_e_auto_enum 0="ES_BPSX_D1",2="ES_14Point7_Free",6="ES_AEM",5="ES_Custom",1="ES_Innovate_MTX_L",4="ES_PLX"
 #define ego_sensor_e_enum "BPSX", "Innovate", "14Point7", "INVALID", "PLX", "Custom", "AEM"
 #define ego_sensor_e_ES_14Point7_Free 2
@@ -357,7 +385,7 @@
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
 #define END_OF_CALIBRATION_PADDING 58
-#define engine_configuration_s_size 4040
+#define engine_configuration_s_size 4028
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
 #define engine_load_mode_e_LM_ALPHA_N 2
@@ -491,7 +519,7 @@
 #define ETB_BIAS_CURVE_LENGTH 8
 #define ETB_COUNT 2
 #define ETB_HW_MAX_FREQUENCY 3000
-#define FLASH_DATA_VERSION 250206
+#define FLASH_DATA_VERSION 250210
 #define FRONTEND_TITLE_BAR_NAME "rusEFI"
 #define fuel_cyl_trim_s_size 16
 #define FUEL_LEVEL_TABLE_COUNT 8
@@ -1263,7 +1291,7 @@
 #define pedalSensor_NAME "Accelerator pedal"
 #define pedalToTpsTbl_NAME "ETB pedal target"
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 23304
+#define persistent_config_s_size 23292
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1345,7 +1373,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3902873295
+#define SIGNATURE_HASH 2214669217
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1407,7 +1435,7 @@
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_BUTTON 0
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_CLUTCH_DOWN_SWITCH 2
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_CLUTCH_UP_SWITCH 3
-#define TOTAL_CONFIG_SIZE 23304
+#define TOTAL_CONFIG_SIZE 23292
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_PPS_TOO_HIGH_THRESHOLD 110
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
@@ -1658,6 +1686,7 @@
 #define ts_show_acr_pins true
 #define ts_show_air_conditioning true
 #define ts_show_alternator true
+#define ts_show_analog_diag false
 #define ts_show_analog_divider true
 #define ts_show_analog_ego true
 #define ts_show_analog_input_settings true
@@ -1808,7 +1837,6 @@
 #define ts_show_tunerstudio_port true
 #define ts_show_vbatt true
 #define ts_show_vehicle_speed_sensor true
-#define ts_show_vehicle_weight false
 #define ts_show_vr_threshold_2 false
 #define ts_show_vr_threshold_all false
 #define ts_show_vr_threshold_pins true
@@ -1817,7 +1845,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.02.10.mega100.3902873295"
+#define TS_SIGNATURE "rusEFI main.2025.02.11.mega100.2214669217"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
