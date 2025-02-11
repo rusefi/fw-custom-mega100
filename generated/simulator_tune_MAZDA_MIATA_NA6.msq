@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23304">
+    <page number="0" size="23292">
         <constant name="engineType">"MAZDA_MIATA_NA6"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -175,7 +175,10 @@
         <constant digits="1" name="iat_bias_resistor" units="Ohm">2700.0</constant>
         <constant name="iat_adcChannel">"Disabled"</constant>
         <constant digits="2" name="launchTimingRetard" units="deg">0.0</constant>
-        <constant digits="0" name="hip9011PrescalerAndSDO" units="integer">0.0</constant>
+        <constant digits="0" name="hip9011Prescaler" units="integer">0.0</constant>
+        <constant digits="0" name="unusedHip0" units="">0.0</constant>
+        <constant digits="0" name="unusedHip1" units="">0.0</constant>
+        <constant digits="0" name="unusedHip2" units="">0.0</constant>
         <constant digits="0" name="alternator_iTermMin" units="">0.0</constant>
         <constant digits="0" name="alternator_iTermMax" units="">0.0</constant>
         <constant digits="3" name="displacement" units="L">1.6</constant>
@@ -216,7 +219,6 @@
         <constant name="fuelLevelSensor">"Disabled"</constant>
         <constant name="tps2_1AdcChannel">"Disabled"</constant>
         <constant digits="4" name="idle_derivativeFilterLoss" units="x">0.0</constant>
-        <constant digits="0" name="unusedTrailingSparkAngle" units="">0.0</constant>
         <constant name="trigger_type">"Miata NA"</constant>
         <constant digits="0" name="trigger_customTotalToothCount" units="number">0.0</constant>
         <constant digits="0" name="trigger_customSkippedToothCount" units="number">0.0</constant>
@@ -225,7 +227,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.025021E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250211E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -381,7 +383,6 @@
         <constant name="boostOpenLoopYAxis">"TPS"</constant>
         <constant name="l9779spiDevice">"Off"</constant>
         <constant name="imuType">"None"</constant>
-        <constant digits="0" name="vehicleWeight" units="kg">950.0</constant>
         <constant digits="0" name="idlePidRpmUpperLimit" units="RPM">300.0</constant>
         <constant digits="3" name="applyNonlinearBelowPulse" units="ms">0.0</constant>
         <constant name="lps25BaroSensorScl">"NONE"</constant>
@@ -678,7 +679,6 @@
         <constant digits="0" name="acIdleRpmTarget" units="RPM">900.0</constant>
         <constant digits="0" name="warningPeriod" units="seconds">0.0</constant>
         <constant digits="2" name="knockDetectionWindowStart" units="angle">20.0</constant>
-        <constant digits="2" name="knockDetectionWindowEnd" units="angle">60.0</constant>
         <constant digits="0" name="idleStepperReactionTime" units="ms">3.0</constant>
         <constant digits="0" name="idleStepperTotalSteps" units="count">200.0</constant>
         <constant digits="0" name="torqueReductionArmingApp" units="">0.0</constant>
@@ -4853,20 +4853,20 @@ end</constant>
          0.0
          0.0
 </constant>
-        <constant digits="0" name="dynoRpmStep" units="">100.0</constant>
-        <constant digits="0" name="dynoSaeTemperatureC" units="">20.0</constant>
-        <constant digits="0" name="dynoSaeRelativeHumidity" units="">80.0</constant>
-        <constant digits="2" name="dynoSaeBaro" units="kPa">101.33</constant>
-        <constant digits="0" name="dynoCarWheelDiaInch" units="">18.0</constant>
-        <constant digits="0" name="dynoCarWheelAspectRatio" units="">40.0</constant>
-        <constant digits="0" name="dynoCarWheelTireWidthMm" units="">235.0</constant>
-        <constant digits="4" name="dynoCarGearPrimaryReduction" units="">1.0</constant>
-        <constant digits="4" name="dynoCarGearRatio" units="">1.0</constant>
-        <constant digits="4" name="dynoCarGearFinalDrive" units="">4.2</constant>
-        <constant digits="0" name="dynoCarCarMassKg" units="">1000.0</constant>
-        <constant digits="0" name="dynoCarCargoMassKg" units="">95.0</constant>
-        <constant digits="4" name="dynoCarCoeffOfDrag" units="">0.29</constant>
-        <constant digits="4" name="dynoCarFrontalAreaM2" units="">1.85</constant>
+        <constant digits="0" name="dynoRpmStep" units="Rpm">100.0</constant>
+        <constant digits="0" name="dynoSaeTemperatureC" units="C">20.0</constant>
+        <constant digits="0" name="dynoSaeRelativeHumidity" units="%">80.0</constant>
+        <constant digits="3" name="dynoSaeBaro" units="KPa">101.33</constant>
+        <constant digits="1" name="dynoCarWheelDiaInch" units="Inch">18.0</constant>
+        <constant digits="0" name="dynoCarWheelAspectRatio" units="Aspect Ratio (height)">40.0</constant>
+        <constant digits="0" name="dynoCarWheelTireWidthMm" units="Width mm">235.0</constant>
+        <constant digits="3" name="dynoCarGearPrimaryReduction" units="Units">1.0</constant>
+        <constant digits="3" name="dynoCarGearRatio" units="Units">1.0</constant>
+        <constant digits="3" name="dynoCarGearFinalDrive" units="Units">4.2</constant>
+        <constant digits="0" name="dynoCarCarMassKg" units="Kg">950.0</constant>
+        <constant digits="0" name="dynoCarCargoMassKg" units="Kg">95.0</constant>
+        <constant digits="3" name="dynoCarCoeffOfDrag" units="Coeff">0.29</constant>
+        <constant digits="2" name="dynoCarFrontalAreaM2" units="m2">1.85</constant>
         <constant cols="4" digits="1" name="trailingSparkTable" rows="4">
          7.0 9.0 10.0 12.0
          7.0 9.0 10.0 12.0
@@ -4886,8 +4886,8 @@ end</constant>
          100.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20250206" nPages="1" signature="rusEFI main.2025.02.10.mega100.3902873295" version="5.0"/>
-    <bibliography author="rusEFI 20250206" writeDate="date"/>
+    <versionInfo firmwareInfo="20250209" nPages="1" signature="rusEFI main.2025.02.11.mega100.1504775067" version="5.0"/>
+    <bibliography author="rusEFI 20250209" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
