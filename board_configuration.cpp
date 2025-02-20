@@ -17,8 +17,8 @@ void setBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
-//   engineConfiguration->triggerInputPins[0] = Gpio::B1;
-//	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
+	engineConfiguration->triggerInputPins[0] = Gpio::D3;
+	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
 //	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 
