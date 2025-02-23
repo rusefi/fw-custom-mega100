@@ -514,8 +514,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250221E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250222E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250222E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250223E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -841,7 +841,6 @@
 </constant>
         <constant digits="0" name="customSentTpsMax" units="">0.0</constant>
         <constant digits="0" name="customSentTpsMin" units="">0.0</constant>
-        <constant name="cutFuelInAcr">"false"</constant>
         <constant name="cutFuelOnHardLimit">"yes"</constant>
         <constant name="cutSparkOnHardLimit">"yes"</constant>
         <constant digits="0" name="cylinderBankSelect1" units="">0.0</constant>
@@ -2903,7 +2902,6 @@ end</constant>
         <constant digits="1" name="oilTempSensor_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="oilTempSensor_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="oilTempSensor_tempC_3" units="*C">0.0</constant>
-        <constant name="overrideCrankingIacSetting">"false"</constant>
         <constant name="overrideTriggerGaps">"false"</constant>
         <constant name="overrideVvtTriggerGaps">"false"</constant>
         <constant name="pauseEtbControl">"false"</constant>
@@ -4304,6 +4302,7 @@ end</constant>
         <constant name="unused32nd">"false"</constant>
         <constant name="unused920_0">"false"</constant>
         <constant name="unused920_1">"false"</constant>
+        <constant name="unusedCutFuelInAcr">"false"</constant>
         <constant name="unusedFancy10">"false"</constant>
         <constant name="unusedFancy11">"false"</constant>
         <constant name="unusedFancy12">"false"</constant>
@@ -4398,6 +4397,7 @@ end</constant>
          0.0
          0.0
 </constant>
+        <constant name="unusedOverrideCrankingIacSetting">"false"</constant>
         <constant name="useAdvanceCorrectionsForCranking">"false"</constant>
         <constant name="useAuxSpeedForSlipRatio">"false"</constant>
         <constant name="useBiQuadOnAuxSpeedSensors">"false"</constant>
@@ -4885,8 +4885,8 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250216" nPages="1" signature="rusEFI main.2025.02.22.mega100.1840579329" version="5.0"/>
-    <bibliography author="rusEFI 20250216" writeDate="date"/>
+    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.02.23.mega100.525231361" version="5.0"/>
+    <bibliography author="rusEFI 20250221" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
