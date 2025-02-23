@@ -18,7 +18,9 @@ struct stft_cell_cfg_s {
 	 */
 	int8_t maxRemove;
 	/**
+	 * Commonly referred as Integral gain.
 	 * Time constant for correction while in this cell: this sets responsiveness of the closed loop correction. A value of 5.0 means it will try to make most of the correction within 5 seconds, and a value of 1.0 will try to correct within 1 second.
+	 * Lower values makes the correction more sensitive, higher values slow the correction down.
 	 * units: sec
 	 * offset 2
 	 */
@@ -42,12 +44,14 @@ struct stft_s {
 	uint8_t alignmentFill_at_1[1] = {};
 	/**
 	 * Below this engine load, the overrun region is active
+	 * When tuning by MAP the units are kPa, e.g. 30 would mean 30kPa. When tuning TPS, 30 would be 30%
 	 * units: load
 	 * offset 2
 	 */
 	uint16_t maxOverrunLoad;
 	/**
 	 * Above this engine load, the power region is active
+	 * When tuning by MAP the units are kPa
 	 * units: load
 	 * offset 4
 	 */
@@ -2507,7 +2511,7 @@ struct engine_configuration_s {
 	 * If enabled, use separate temperature multiplier table for cranking idle position.
 	 * If disabled, use normal running multiplier table applied to the cranking base position.
 	offset 1320 bit 6 */
-	bool overrideCrankingIacSetting : 1 {};
+	bool unusedOverrideCrankingIacSetting : 1 {};
 	/**
 	 * This activates a separate ignition timing table for idle conditions, this can help idle stability by using ignition retard and advance either side of the desired idle speed. Extra advance at low idle speeds will prevent stalling and extra retard at high idle speeds can help reduce engine power and slow the idle speed.
 	offset 1320 bit 7 */
@@ -2526,7 +2530,7 @@ struct engine_configuration_s {
 	bool verboseTriggerSynchDetails : 1 {};
 	/**
 	offset 1320 bit 11 */
-	bool cutFuelInAcr : 1 {};
+	bool unusedCutFuelInAcr : 1 {};
 	/**
 	offset 1320 bit 12 */
 	bool hondaK : 1 {};
@@ -2915,13 +2919,14 @@ struct engine_configuration_s {
 	offset 1492 bit 31 */
 	bool unusedBit_517_31 : 1 {};
 	/**
-	 * This is the duration in cycles that the IAC will take to reach its normal idle position, it can be used to hold the idle higher for a few seconds after cranking to improve startup.\Should be 100 once tune is better
+	 * This is the duration in cycles that the IAC will take to reach its normal idle position, it can be used to hold the idle higher for a few seconds after cranking to improve startup.
+	 * Should be 100 once tune is better
 	 * units: cycles
 	 * offset 1496
 	 */
 	int16_t afterCrankingIACtaperDuration;
 	/**
-	 * IAC Value added when coasting and transitioning into idle.
+	 * This value is an added for base idle value. Idle Value added when coasting and transitioning into idle.
 	 * units: percent
 	 * offset 1498
 	 */
@@ -4317,7 +4322,7 @@ struct engine_configuration_s {
 	 */
 	uint32_t benchTestCount;
 	/**
-	 * How long initial IAC adder is held before starting to decay.
+	 * How long initial idle adder is held before starting to decay.
 	 * units: seconds
 	 * offset 3396
 	 */
