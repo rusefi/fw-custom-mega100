@@ -515,7 +515,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250226E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250227E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -925,7 +925,7 @@
         <constant digits="1" name="dynoCarWheelDiaInch" units="Inch">18.0</constant>
         <constant digits="0" name="dynoCarWheelTireWidthMm" units="Width mm">235.0</constant>
         <constant digits="0" name="dynoRpmStep" units="Rpm">100.0</constant>
-        <constant digits="3" name="dynoSaeBaro" units="KPa">101.33</constant>
+        <constant digits="3" name="dynoSaeBaro" units="KPa">101.325</constant>
         <constant digits="0" name="dynoSaeRelativeHumidity" units="%">80.0</constant>
         <constant digits="0" name="dynoSaeTemperatureC" units="C">20.0</constant>
         <constant digits="2" name="egoValueShift" units="value">0.0</constant>
@@ -4381,6 +4381,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tuneHidingKey" units="">0.0</constant>
         <constant digits="0" name="tunerStudioSerialSpeed" units="BPs">38400.0</constant>
+        <constant digits="0" name="tuningDetector" units="seconds">0.0</constant>
         <constant digits="0" name="turbochargerFilter" units="">0.01</constant>
         <constant name="turboSpeedSensorInputPin">"NONE"</constant>
         <constant digits="3" name="turboSpeedSensorMultiplier" units="mult">1.0</constant>
@@ -4428,7 +4429,6 @@ end</constant>
         <constant name="unusedFancy9">"false"</constant>
         <constant digits="0" name="unusedHip0" units="">0.0</constant>
         <constant digits="0" name="unusedHip1" units="">0.0</constant>
-        <constant digits="0" name="unusedHip2" units="">0.0</constant>
         <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="58">
          0.0
          0.0
@@ -4977,7 +4977,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.02.26.mega100.3257992998" version="5.0"/>
+    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.02.27.mega100.2878984075" version="5.0"/>
     <bibliography author="rusEFI 20250221" writeDate="date"/>
     <settings/>
     <userComments/>
