@@ -615,6 +615,7 @@
 #define GAUGE_NAME_FUEL_CHARGE_TEMP "Fuel: Estimated charge temperature"
 #define GAUGE_NAME_FUEL_CLT_CORR "Fuel: CLT correction"
 #define GAUGE_NAME_FUEL_CONSUMPTION "Fuel: Total consumed"
+#define GAUGE_NAME_FUEL_CORRECTION_REFERENCE_PRESSURE "Fuel: corr reference pressure"
 #define GAUGE_NAME_FUEL_CRANKING "Fuel: cranking"
 #define GAUGE_NAME_FUEL_FLOW "Fuel: Flow rate"
 #define GAUGE_NAME_FUEL_IAT_CORR "Fuel: IAT correction"
@@ -1059,7 +1060,7 @@
 #define GPPWM_3_NAME "General Purpose PWM 3"
 #define GPPWM_4_NAME "General Purpose PWM 4"
 #define gppwm_channel_e_auto_enum 0="GPPWM_Zero",9="GPPWM_AccelPedal",16="GPPWM_AuxLinear1",17="GPPWM_AuxLinear2",29="GPPWM_AuxLinear3",30="GPPWM_AuxLinear4",7="GPPWM_AuxTemp1",8="GPPWM_AuxTemp2",26="GPPWM_BaroPressure",3="GPPWM_Clt",25="GPPWM_DetectedGear",27="GPPWM_Egt1",28="GPPWM_Egt2",15="GPPWM_EthanolPercent",5="GPPWM_FuelLoad",18="GPPWM_GppwmOutput1",19="GPPWM_GppwmOutput2",20="GPPWM_GppwmOutput3",21="GPPWM_GppwmOutput4",4="GPPWM_Iat",6="GPPWM_IgnLoad",22="GPPWM_LuaGauge1",23="GPPWM_LuaGauge2",2="GPPWM_Map",32="GPPWM_OilPressure",33="GPPWM_OilTemp",24="GPPWM_Rpm",1="GPPWM_Tps",12="GPPWM_VVT_1E",11="GPPWM_VVT_1I",14="GPPWM_VVT_2E",13="GPPWM_VVT_2I",10="GPPWM_Vbatt",31="GPPWM_VehicleSpeed"
-#define gppwm_channel_e_enum "Zero", "TPS", "MAP", "CLT", "IAT", "Fuel Load", "Ignition Load", "Aux Temp 1", "Aux Temp 2", "Accel Pedal", "Battery Voltage", "VVT 1 I", "VVT 1 E", "VVT 2 I", "VVT 2 E", "Ethanol (Flex) %", "Aux Linear 1", "Aux Linear 2", "GPPWM Output 1", "GPPWM Output 2", "GPPWM Output 3", "GPPWM Output 4", "Lua Gauge 1", "Lua Gauge 2", "RPM", "Gear (detected)", "Baro pressure", "EGT 1", "EGT 2", "Aux Linear 3", "Aux Linear 4", "Vehicle speed", "Oil pressure", "Oil temp"
+#define gppwm_channel_e_enum "Zero", "TPS", "MAP", "CLT", "IAT", "Fuel Load", "Ignition Load", "Aux Temp 1", "Aux Temp 2", "Accel Pedal", "Battery Voltage", "VVT 1 In Actual", "VVT 1 Ex Actual", "VVT 2 In Actual", "VVT 2 Ex Actual", "Ethanol (Flex) %", "Aux Linear 1", "Aux Linear 2", "GPPWM Output 1", "GPPWM Output 2", "GPPWM Output 3", "GPPWM Output 4", "Lua Gauge 1", "Lua Gauge 2", "RPM", "Gear (detected)", "Baro pressure", "EGT 1", "EGT 2", "Aux Linear 3", "Aux Linear 4", "Vehicle speed", "Oil pressure", "Oil temp"
 #define gppwm_channel_e_GPPWM_AccelPedal 9
 #define gppwm_channel_e_GPPWM_AuxLinear1 16
 #define gppwm_channel_e_GPPWM_AuxLinear2 17
@@ -1379,7 +1380,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3257992998
+#define SIGNATURE_HASH 2878984075
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1870,14 +1871,14 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.02.26.mega100.3257992998"
+#define TS_SIGNATURE "rusEFI main.2025.02.27.mega100.2878984075"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
 #define TS_SINGLE_WRITE_COMMAND_char W
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 1804
+#define TS_TOTAL_OUTPUT_SIZE 1808
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
@@ -1897,6 +1898,7 @@
 #define TsCalMode_Tps2Min 9
 #define TsCalMode_Tps2SecondaryMax 10
 #define TsCalMode_Tps2SecondaryMin 11
+#define TUNING_DETECTOR_PERSISTENCE_OFFSET 1
 #define uart_device_e_auto_enum 0="UART_NONE",1="UART_DEVICE_1",2="UART_DEVICE_2",3="UART_DEVICE_3",4="UART_DEVICE_4"
 #define uart_device_e_UART_DEVICE_1 1
 #define uart_device_e_UART_DEVICE_2 2
@@ -1908,7 +1910,9 @@
 #define UiMode_FULL 0
 #define UiMode_INSTALLATION 1
 #define UiMode_TUNING 2
+#define VBAT_INJECTOR_CURVE_PRESSURE_SIZE 2
 #define VBAT_INJECTOR_CURVE_SIZE 8
+#define VE_BLEND1_TABLE_NAME "VE blend 1"
 #define VE_BLEND_COUNT 4
 #define VE_LOAD_COUNT 16
 #define VE_MENU_MAP_NAME "VE 3D view"

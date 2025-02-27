@@ -32,6 +32,7 @@ static const LogField fields[] = {
 	{engine->outputChannels, 0, 27, "triggerPageRefreshFlag", ""},
 	{engine->outputChannels, 0, 28, "hasFaultReportFile", ""},
 	{engine->outputChannels, 0, 29, "Analog sensors supply failure", ""},
+	{engine->outputChannels, 0, 30, "isTuningNow", ""},
 	{engine->outputChannels.RPMValue, "RPM", "RPM", 0},
 	{engine->outputChannels.rpmAcceleration, "dRPM", "RPM acceleration/Rate of Change/ROC", 2},
 	{engine->outputChannels.speedToRpmRatio, "Gearbox Ratio", "value", 2},
@@ -518,6 +519,9 @@ static const LogField fields[] = {
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<InjectorModelPrimary>()->pressureRatio, "Fuel: Injector pressure ratio", "", 3},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<InjectorModelPrimary>()->pressureCorrectionReference, "Fuel: corr reference pressure", "kPa", 1},
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->launchController.retardThresholdRpm, "Launch: Retard threshold RPM", "", 0},
