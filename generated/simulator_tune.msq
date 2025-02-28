@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23352">
+    <page number="0" size="23336">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -515,7 +515,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">2.0250226E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250227E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250228E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2201,17 +2201,7 @@
         <constant name="injectionPinsStage28">"NONE"</constant>
         <constant name="injectionPinsStage29">"NONE"</constant>
         <constant name="injectionTimingMode">"End of injection"</constant>
-        <constant cols="1" digits="2" name="injector_battLagCorr" rows="8">
-         3.371
-         1.974
-         1.383
-         1.194
-         1.04
-         0.914
-         0.797
-         0.726
-</constant>
-        <constant cols="1" digits="2" name="injector_battLagCorrBins" rows="8">
+        <constant cols="1" digits="2" name="injector_battLagCorrBattBins" rows="8">
          6.0
          8.0
          10.0
@@ -2220,6 +2210,14 @@
          13.0
          14.0
          15.0
+</constant>
+        <constant cols="1" digits="2" name="injector_battLagCorrPressBins" rows="2">
+         206.8
+         413.7
+</constant>
+        <constant cols="8" digits="2" name="injector_battLagCorrTable" rows="2">
+         4.24 2.48 1.74 1.5 1.31 1.15 0.96 0.91
+         3.08 1.64 1.15 1.19 0.99 0.76 0.64 0.6
 </constant>
         <constant digits="2" name="injector_flow" units="">200.0</constant>
         <constant name="injectorCompensationMode">"None"</constant>
@@ -2234,17 +2232,7 @@
         <constant name="injectorFlowAsMassFlow">"volumetric flow"</constant>
         <constant name="injectorNonlinearMode">"None"</constant>
         <constant name="injectorPressureType">"Low"</constant>
-        <constant cols="1" digits="2" name="injectorSecondary_battLagCorr" rows="8">
-         3.371
-         1.974
-         1.383
-         1.194
-         1.04
-         0.914
-         0.797
-         0.726
-</constant>
-        <constant cols="1" digits="2" name="injectorSecondary_battLagCorrBins" rows="8">
+        <constant cols="1" digits="2" name="injectorSecondary_battLagCorrBattBins" rows="8">
          6.0
          8.0
          10.0
@@ -2253,6 +2241,14 @@
          13.0
          14.0
          15.0
+</constant>
+        <constant cols="1" digits="2" name="injectorSecondary_battLagCorrPressBins" rows="2">
+         206.8
+         413.7
+</constant>
+        <constant cols="8" digits="2" name="injectorSecondary_battLagCorrTable" rows="2">
+         4.24 2.48 1.74 1.5 1.31 1.15 0.96 0.91
+         3.08 1.64 1.15 1.19 0.99 0.76 0.64 0.6
 </constant>
         <constant digits="2" name="injectorSecondary_flow" units="">200.0</constant>
         <constant cols="1" digits="0" name="injectorStagingLoadBins" rows="6">
@@ -4885,7 +4881,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.02.27.mega100.2878984075" version="5.0"/>
+    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.02.28.mega100.1229099324" version="5.0"/>
     <bibliography author="rusEFI 20250221" writeDate="date"/>
     <settings/>
     <userComments/>
