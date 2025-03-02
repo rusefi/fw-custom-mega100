@@ -138,9 +138,11 @@ static const LogField fields[] = {
 	{engine->outputChannels.rawRawPpsSecondary, "rawRawPpsSecondary", "V", 3},
 	{engine->outputChannels.idlePositionSensor, "Idle: Position sensor", "%", 2},
 	{engine->outputChannels.AFRValue, "Air/Fuel Ratio", "AFR", 2},
+	{engine->outputChannels.AFRValue2, "Air/Fuel Ratio 2", "AFR", 2},
+	{engine->outputChannels.SmoothedAFRValue, "Smoothed Air/Fuel Ratio", "AFR", 2},
+	{engine->outputChannels.SmoothedAFRValue2, "Smoothed Air/Fuel Ratio 2", "AFR", 2},
 	{engine->outputChannels.VssAcceleration, "Vss Accel", "m/s2", 2},
 	{engine->outputChannels.lambdaValue2, "Lambda 2", "", 3},
-	{engine->outputChannels.AFRValue2, "Air/Fuel Ratio 2", "AFR", 2},
 	{engine->outputChannels.vvtPositionB1E, "VVT: bank 1 exhaust", "deg", 1},
 	{engine->outputChannels.vvtPositionB2I, "VVT: bank 2 intake", "deg", 1},
 	{engine->outputChannels.vvtPositionB2E, "VVT: bank 2 exhaust", "deg", 1},
@@ -300,36 +302,36 @@ static const LogField fields[] = {
 	{engine->outputChannels.targetAfrBlendBias[1], "targetAfrBlendBias 2", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[0], "targetAfrBlendOutput 1", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[1], "targetAfrBlendOutput 2", "%", 1},
-	{engine->outputChannels, 656, 0, "coilState1", ""},
-	{engine->outputChannels, 656, 1, "coilState2", ""},
-	{engine->outputChannels, 656, 2, "coilState3", ""},
-	{engine->outputChannels, 656, 3, "coilState4", ""},
-	{engine->outputChannels, 656, 4, "coilState5", ""},
-	{engine->outputChannels, 656, 5, "coilState6", ""},
-	{engine->outputChannels, 656, 6, "coilState7", ""},
-	{engine->outputChannels, 656, 7, "coilState8", ""},
-	{engine->outputChannels, 656, 8, "coilState9", ""},
-	{engine->outputChannels, 656, 9, "coilState10", ""},
-	{engine->outputChannels, 656, 10, "coilState11", ""},
-	{engine->outputChannels, 656, 11, "coilState12", ""},
-	{engine->outputChannels, 656, 12, "injectorState1", ""},
-	{engine->outputChannels, 656, 13, "injectorState2", ""},
-	{engine->outputChannels, 656, 14, "injectorState3", ""},
-	{engine->outputChannels, 656, 15, "injectorState4", ""},
-	{engine->outputChannels, 656, 16, "injectorState5", ""},
-	{engine->outputChannels, 656, 17, "injectorState6", ""},
-	{engine->outputChannels, 656, 18, "injectorState7", ""},
-	{engine->outputChannels, 656, 19, "injectorState8", ""},
-	{engine->outputChannels, 656, 20, "injectorState9", ""},
-	{engine->outputChannels, 656, 21, "injectorState10", ""},
-	{engine->outputChannels, 656, 22, "injectorState11", ""},
-	{engine->outputChannels, 656, 23, "injectorState12", ""},
-	{engine->outputChannels, 656, 24, "triggerChannel1", ""},
-	{engine->outputChannels, 656, 25, "triggerChannel2", ""},
-	{engine->outputChannels, 656, 26, "bank 1 intake cam input", ""},
-	{engine->outputChannels, 656, 27, "bank 1 exhaust cam input", ""},
-	{engine->outputChannels, 656, 28, "bank 2 intake cam input", ""},
-	{engine->outputChannels, 656, 29, "bank 2 exhaust cam input", ""},
+	{engine->outputChannels, 660, 0, "coilState1", ""},
+	{engine->outputChannels, 660, 1, "coilState2", ""},
+	{engine->outputChannels, 660, 2, "coilState3", ""},
+	{engine->outputChannels, 660, 3, "coilState4", ""},
+	{engine->outputChannels, 660, 4, "coilState5", ""},
+	{engine->outputChannels, 660, 5, "coilState6", ""},
+	{engine->outputChannels, 660, 6, "coilState7", ""},
+	{engine->outputChannels, 660, 7, "coilState8", ""},
+	{engine->outputChannels, 660, 8, "coilState9", ""},
+	{engine->outputChannels, 660, 9, "coilState10", ""},
+	{engine->outputChannels, 660, 10, "coilState11", ""},
+	{engine->outputChannels, 660, 11, "coilState12", ""},
+	{engine->outputChannels, 660, 12, "injectorState1", ""},
+	{engine->outputChannels, 660, 13, "injectorState2", ""},
+	{engine->outputChannels, 660, 14, "injectorState3", ""},
+	{engine->outputChannels, 660, 15, "injectorState4", ""},
+	{engine->outputChannels, 660, 16, "injectorState5", ""},
+	{engine->outputChannels, 660, 17, "injectorState6", ""},
+	{engine->outputChannels, 660, 18, "injectorState7", ""},
+	{engine->outputChannels, 660, 19, "injectorState8", ""},
+	{engine->outputChannels, 660, 20, "injectorState9", ""},
+	{engine->outputChannels, 660, 21, "injectorState10", ""},
+	{engine->outputChannels, 660, 22, "injectorState11", ""},
+	{engine->outputChannels, 660, 23, "injectorState12", ""},
+	{engine->outputChannels, 660, 24, "triggerChannel1", ""},
+	{engine->outputChannels, 660, 25, "triggerChannel2", ""},
+	{engine->outputChannels, 660, 26, "bank 1 intake cam input", ""},
+	{engine->outputChannels, 660, 27, "bank 1 exhaust cam input", ""},
+	{engine->outputChannels, 660, 28, "bank 2 intake cam input", ""},
+	{engine->outputChannels, 660, 29, "bank 2 exhaust cam input", ""},
 	{engine->outputChannels.outputRequestPeriod, "outputRequestPeriod", "", 0},
 	{engine->outputChannels.mapFast, "mapFast", "", 0},
 	{engine->outputChannels.luaGauges[0], "Lua: Gauge 1", "value", 3},
@@ -921,67 +923,61 @@ static const LogField fields[] = {
 	{engine->triggerCentral.vvtState[1][1].triggerStateIndex, "vvt2etriggerStateIndex", "", 0},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock().currentIdlePosition, "Idle: Position", "%", 1},
-#endif
-#if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().baseIdlePosition, "idle: base value", "", 0},
-#endif
-#if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock().idleClosedLoop, "Idle: Closed loop", "", 0},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().iacByTpsTaper, "idle: iacByTpsTaper portion", "", 0},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 0, "idle: mightResetPid", ""},
+	{engine->module<IdleController>().unmock(), 12, 0, "idle: mightResetPid", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 1, "Idle: shouldResetPid", ""},
+	{engine->module<IdleController>().unmock(), 12, 1, "Idle: shouldResetPid", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 2, "Idle: wasResetPid", ""},
+	{engine->module<IdleController>().unmock(), 12, 2, "Idle: wasResetPid", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 3, "Idle: mustResetPid", ""},
+	{engine->module<IdleController>().unmock(), 12, 3, "Idle: mustResetPid", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 4, "Idle: cranking", ""},
+	{engine->module<IdleController>().unmock(), 12, 4, "Idle: cranking", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 5, "isIacTableForCoasting", ""},
+	{engine->module<IdleController>().unmock(), 12, 5, "isIacTableForCoasting", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 6, "notIdling", ""},
+	{engine->module<IdleController>().unmock(), 12, 6, "notIdling", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 7, "Idle: reset", ""},
+	{engine->module<IdleController>().unmock(), 12, 7, "Idle: reset", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 8, "Idle: dead zone", ""},
+	{engine->module<IdleController>().unmock(), 12, 8, "Idle: dead zone", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 9, "isBlipping", ""},
+	{engine->module<IdleController>().unmock(), 12, 9, "isBlipping", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 10, "useClosedLoop", ""},
+	{engine->module<IdleController>().unmock(), 12, 10, "useClosedLoop", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 11, "badTps", ""},
+	{engine->module<IdleController>().unmock(), 12, 11, "badTps", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 12, "looksLikeRunning", ""},
+	{engine->module<IdleController>().unmock(), 12, 12, "looksLikeRunning", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 13, "looksLikeCoasting", ""},
+	{engine->module<IdleController>().unmock(), 12, 13, "looksLikeCoasting", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 14, "looksLikeCrankToIdle", ""},
+	{engine->module<IdleController>().unmock(), 12, 14, "looksLikeCrankToIdle", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 15, "Idle: coasting", ""},
+	{engine->module<IdleController>().unmock(), 12, 15, "Idle: coasting", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
-	{engine->module<IdleController>().unmock(), 20, 16, "Idle: Closed loop active", ""},
+	{engine->module<IdleController>().unmock(), 12, 16, "Idle: Closed loop active", ""},
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().idleTarget, "Idle: Target RPM", "", 0},
@@ -997,6 +993,18 @@ static const LogField fields[] = {
 #endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().luaAdd, "idle: Lua Adder", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock().idleClosedLoop, "Closed loop", "", 0},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock().currentIdlePosition, "Idle: Position", "%", 1},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock().idleTargetAirmass, "Target airmass", "mg", 0},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock().idleTargetFlow, "Target airflow", "kg/h", 2},
 #endif
 #if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
 	{getLiveData<electronic_throttle_s>(0)->targetWithIdlePosition, "etb1ETB: target with idle", "%", 2, "ETB more"},
