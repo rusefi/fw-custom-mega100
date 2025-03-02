@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23336">
+    <page number="0" size="23340">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -515,7 +515,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250301E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250302E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1692,6 +1692,7 @@
          0.0
 </constant>
         <constant name="idleIncrementalPidCic">"false"</constant>
+        <constant digits="1" name="idleMaximumAirmass" units="mg">0.0</constant>
         <constant name="idleMode">"Open Loop"</constant>
         <constant digits="1" name="idlePidActivationTime" units="seconds">0.0</constant>
         <constant digits="0" name="idlePidDeactivationTpsThreshold" units="%">5.0</constant>
@@ -2229,7 +2230,7 @@
         <constant digits="4" name="injectorCorrectionPolynomial6" units="">0.0</constant>
         <constant digits="4" name="injectorCorrectionPolynomial7" units="">0.0</constant>
         <constant digits="4" name="injectorCorrectionPolynomial8" units="">0.0</constant>
-        <constant name="injectorFlowAsMassFlow">"volumetric flow"</constant>
+        <constant name="injectorFlowAsMassFlow">"cc/min"</constant>
         <constant name="injectorNonlinearMode">"None"</constant>
         <constant name="injectorPressureType">"Low"</constant>
         <constant cols="1" digits="2" name="injectorSecondary_battLagCorrBattBins" rows="8">
@@ -2748,6 +2749,7 @@ end</constant>
          93.33
          100.0
 </constant>
+        <constant digits="3" name="mapExpAverageAfr" units="">0.0</constant>
         <constant digits="3" name="mapExpAverageAlpha" units="">0.0</constant>
         <constant digits="2" name="mapHighValueVoltage" units="v">5.0</constant>
         <constant digits="2" name="mapLowValueVoltage" units="v">0.0</constant>
@@ -2855,6 +2857,7 @@ end</constant>
          0.0
 </constant>
         <constant digits="0" name="minOilPressureAfterStart" units="kPa">0.0</constant>
+        <constant name="modeledFlowIdle">"false"</constant>
         <constant name="msIoBox0_id">"Off"</constant>
         <constant name="msIoBox0_vss">"Off"</constant>
         <constant digits="2" name="multisparkDwell" units="ms">2.0</constant>
@@ -4296,7 +4299,6 @@ end</constant>
         <constant name="unused1308_20">"false"</constant>
         <constant name="unused1308_24">"false"</constant>
         <constant name="unused1320_28">"false"</constant>
-        <constant name="unused32nd">"false"</constant>
         <constant name="unused920_0">"false"</constant>
         <constant name="unused920_1">"false"</constant>
         <constant name="unusedCutFuelInAcr">"false"</constant>
@@ -4333,11 +4335,7 @@ end</constant>
         <constant name="unusedFancy9">"false"</constant>
         <constant digits="0" name="unusedHip0" units="">0.0</constant>
         <constant digits="0" name="unusedHip1" units="">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="58">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="54">
          0.0
          0.0
          0.0
@@ -4881,7 +4879,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.03.01.mega100.2461139754" version="5.0"/>
+    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.03.02.mega100.1981167391" version="5.0"/>
     <bibliography author="rusEFI 20250221" writeDate="date"/>
     <settings/>
     <userComments/>
