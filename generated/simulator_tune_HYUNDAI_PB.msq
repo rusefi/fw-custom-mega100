@@ -515,7 +515,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250306E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250307E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -3400,6 +3400,7 @@ end</constant>
          4.0
          4.0
 </constant>
+        <constant digits="0" name="sparkHardwareLatencyCorrection" units="uS">0.0</constant>
         <constant name="speedometerOutputPin">"NONE"</constant>
         <constant digits="0" name="speedometerPulsePerKm" units="">0.0</constant>
         <constant name="spi1MisoMode">"default"</constant>
@@ -4426,8 +4427,7 @@ end</constant>
         <constant name="unusedFancy9">"false"</constant>
         <constant digits="0" name="unusedHip0" units="">0.0</constant>
         <constant digits="0" name="unusedHip1" units="">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="54">
-         0.0
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="53">
          0.0
          0.0
          0.0
@@ -4970,7 +4970,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.03.06.mega100.2244607775" version="5.0"/>
+    <versionInfo firmwareInfo="20250221" nPages="1" signature="rusEFI main.2025.03.07.mega100.3601654694" version="5.0"/>
     <bibliography author="rusEFI 20250221" writeDate="date"/>
     <settings/>
     <userComments/>
