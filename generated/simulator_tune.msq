@@ -524,8 +524,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250318E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250319E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250319E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.025032E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4930,7 +4930,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.19.mega100.2172218657" version="5.0"/>
+    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.20.mega100.2896322572" version="5.0"/>
     <bibliography author="rusEFI 20250312" writeDate="date"/>
     <settings/>
     <userComments/>
