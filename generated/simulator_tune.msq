@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23536">
+    <page number="0" size="23572">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -35,6 +35,26 @@
         <constant name="afrOverrideMode">"None"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">200.0</constant>
         <constant digits="1" name="airByRpmTaper" units="%">0.0</constant>
+        <constant cols="1" digits="0" name="airmassToTimingBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="airmassToTimingValues" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
         <constant digits="0" name="airTaperRpmRange" units="RPM">0.0</constant>
         <constant name="allowIdenticalPps">"false"</constant>
         <constant name="alphaNUseIat">"false"</constant>
@@ -524,8 +544,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250321E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250322E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250322E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250323E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1722,6 +1742,26 @@
          0.0
 </constant>
         <constant cols="1" digits="0" name="idleAdvanceBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="2" name="idleFlowEstimateFlow" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="1" name="idleFlowEstimatePosition" rows="8">
          0.0
          0.0
          0.0
@@ -4384,7 +4424,6 @@ end</constant>
         <constant name="unusedFancy7">"false"</constant>
         <constant name="unusedFancy8">"false"</constant>
         <constant name="unusedFancy9">"false"</constant>
-        <constant digits="0" name="unusedHip0" units="">0.0</constant>
         <constant digits="0" name="unusedHip1" units="">0.0</constant>
         <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="54">
          0.0
@@ -4930,7 +4969,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.22.mega100.1668874001" version="5.0"/>
+    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.23.mega100.4139168907" version="5.0"/>
     <bibliography author="rusEFI 20250312" writeDate="date"/>
     <settings/>
     <userComments/>
