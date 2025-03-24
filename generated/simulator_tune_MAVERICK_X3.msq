@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23572">
+    <page number="0" size="23604">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -545,7 +545,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250323E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250324E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -558,6 +558,7 @@
         <constant name="camInputsDebug4">"NONE"</constant>
         <constant name="camSimulatorPin">"NONE"</constant>
         <constant name="camSimulatorPinMode">"default"</constant>
+        <constant name="camSyncOnSecondCrankRevolution">"first"</constant>
         <constant name="can1ListenMode">"false"</constant>
         <constant name="can2BaudRate">"500kbps"</constant>
         <constant name="can2ListenMode">"false"</constant>
@@ -4125,6 +4126,18 @@ end</constant>
         <constant name="tle8888_csPinMode">"default"</constant>
         <constant name="tle8888mode">"Auto"</constant>
         <constant name="tle8888spiDevice">"Off"</constant>
+        <constant cols="1" digits="1" name="tmfOpeningBins" rows="2">
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="1" name="tmfRatioBins" rows="2">
+         0.0
+         0.0
+</constant>
+        <constant cols="2" digits="2" name="tmfTable" rows="2">
+         0.0 0.0
+         0.0 0.0
+</constant>
         <constant cols="1" digits="0" name="torqueLoadBins" rows="6">
          0.0
          0.0
@@ -4387,7 +4400,6 @@ end</constant>
         <constant name="twoWireBatchIgnition">"false"</constant>
         <constant digits="0" name="uartConsoleSerialSpeed" units="BPs">115200.0</constant>
         <constant name="uiMode">"Full"</constant>
-        <constant name="unused1308_20">"false"</constant>
         <constant name="unused1308_24">"false"</constant>
         <constant name="unused1320_28">"false"</constant>
         <constant name="unused920_1testChange">"false"</constant>
@@ -4968,7 +4980,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.23.mega100.4139168907" version="5.0"/>
+    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.24.mega100.181310747" version="5.0"/>
     <bibliography author="rusEFI 20250312" writeDate="date"/>
     <settings/>
     <userComments/>
