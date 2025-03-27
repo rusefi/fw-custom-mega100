@@ -544,8 +544,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250325E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250326E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250326E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250327E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1783,6 +1783,7 @@
         <constant digits="0" name="idlePositionMax" units="mv">5000.0</constant>
         <constant digits="0" name="idlePositionMin" units="mv">0.0</constant>
         <constant name="idleReturnTargetRamp">"no"</constant>
+        <constant digits="1" name="idleReturnTargetRampDuration" units="seconds">3.0</constant>
         <constant digits="4" name="idleRpmPid_dFactor" units="">0.0</constant>
         <constant digits="4" name="idleRpmPid_iFactor" units="">0.002</constant>
         <constant digits="0" name="idlerpmpid_iTermMax" units="">20.0</constant>
@@ -4437,8 +4438,7 @@ end</constant>
         <constant name="unusedFancy8">"false"</constant>
         <constant name="unusedFancy9">"false"</constant>
         <constant digits="0" name="unusedHip1" units="">0.0</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="54">
-         0.0
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="53">
          0.0
          0.0
          0.0
@@ -4839,7 +4839,7 @@ end</constant>
         <constant digits="0" name="vssToothCount" units="count">21.0</constant>
         <constant digits="0" name="vvtActivationDelayMs" units="ms">6000.0</constant>
         <constant name="vvtBooleanForVerySpecialCases">"false"</constant>
-        <constant digits="0" name="vvtControlMinRpm" units="RPM">550.0</constant>
+        <constant digits="0" name="vvtControlMinRpm" units="RPM">600.0</constant>
         <constant name="vvtMode1">"Single Tooth"</constant>
         <constant name="vvtMode2">"Inactive"</constant>
         <constant digits="1" name="vvtOffsets1" units="value">450.0</constant>
@@ -4981,7 +4981,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.26.mega100.3308454359" version="5.0"/>
+    <versionInfo firmwareInfo="20250312" nPages="1" signature="rusEFI main.2025.03.27.mega100.1530392887" version="5.0"/>
     <bibliography author="rusEFI 20250312" writeDate="date"/>
     <settings/>
     <userComments/>
