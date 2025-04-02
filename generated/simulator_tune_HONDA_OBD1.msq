@@ -125,8 +125,8 @@
          0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0
 </constant>
-        <constant digits="0" name="alternator_iTermMax" units="">0.0</constant>
-        <constant digits="0" name="alternator_iTermMin" units="">0.0</constant>
+        <constant digits="0" name="alternator_iTermMax" units="">1000.0</constant>
+        <constant digits="0" name="alternator_iTermMin" units="">-1000.0</constant>
         <constant digits="4" name="alternatorControl_dFactor" units="">0.0</constant>
         <constant digits="4" name="alternatorControl_iFactor" units="">0.0</constant>
         <constant digits="0" name="alternatorControl_maxValue" units="">90.0</constant>
@@ -545,7 +545,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250401E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250402E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2811,7 +2811,7 @@ end</constant>
          100.0
 </constant>
         <constant digits="3" name="mapExpAverageAfr" units="">0.0</constant>
-        <constant digits="3" name="mapExpAverageAlpha" units="">0.0</constant>
+        <constant digits="3" name="mapExpAverageAlpha" units="">1.0</constant>
         <constant digits="2" name="mapHighValueVoltage" units="v">5.0</constant>
         <constant digits="2" name="mapLowValueVoltage" units="v">0.0</constant>
         <constant digits="0" name="mapMinBufferLength" units="count">1.0</constant>
@@ -4377,7 +4377,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tuneHidingKey" units="">0.0</constant>
         <constant digits="0" name="tunerStudioSerialSpeed" units="BPs">38400.0</constant>
-        <constant digits="0" name="tuningDetector" units="seconds">0.0</constant>
+        <constant digits="0" name="tuningDetector" units="seconds">11.0</constant>
         <constant digits="0" name="turbochargerFilter" units="">0.01</constant>
         <constant name="turboSpeedSensorInputPin">"NONE"</constant>
         <constant digits="3" name="turboSpeedSensorMultiplier" units="mult">1.0</constant>
@@ -4964,7 +4964,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250327" nPages="1" signature="rusEFI main.2025.04.01.mega100.3009730578" version="5.0"/>
+    <versionInfo firmwareInfo="20250327" nPages="1" signature="rusEFI main.2025.04.02.mega100.142287874" version="5.0"/>
     <bibliography author="rusEFI 20250327" writeDate="date"/>
     <settings/>
     <userComments/>
