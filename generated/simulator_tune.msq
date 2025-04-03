@@ -544,8 +544,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250401E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250402E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250402E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250403E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -616,14 +616,14 @@
          100.0
 </constant>
         <constant cols="1" digits="2" name="cltCrankingCorr" rows="8">
-         1.0
-         1.0
-         1.0
-         1.0
-         1.0
-         1.0
-         1.0
-         1.0
+         50.0
+         50.0
+         50.0
+         50.0
+         50.0
+         50.0
+         50.0
+         50.0
 </constant>
         <constant cols="1" digits="2" name="cltCrankingCorrBins" rows="8">
          -40.0
@@ -825,7 +825,6 @@
          1.0
          1.0
 </constant>
-        <constant digits="0" name="crankingIACposition" units="percent">50.0</constant>
         <constant name="crankingInjectionMode">"Simultaneous"</constant>
         <constant digits="0" name="crankingTimingAngle" units="deg">6.0</constant>
         <constant cols="1" digits="2" name="crankingTpsBins" rows="8">
@@ -4387,6 +4386,7 @@ end</constant>
         <constant name="unused1308_24">"false"</constant>
         <constant name="unused1320_28">"false"</constant>
         <constant name="unused920_1testChange">"false"</constant>
+        <constant digits="0" name="unusedcrankingIACposition" units="">0.0</constant>
         <constant name="unusedCutFuelInAcr">"false"</constant>
         <constant name="unusedFancy10">"false"</constant>
         <constant name="unusedFancy11">"false"</constant>
@@ -4963,7 +4963,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250327" nPages="1" signature="rusEFI main.2025.04.02.mega100.142287874" version="5.0"/>
+    <versionInfo firmwareInfo="20250327" nPages="1" signature="rusEFI main.2025.04.03.mega100.3109929869" version="5.0"/>
     <bibliography author="rusEFI 20250327" writeDate="date"/>
     <settings/>
     <userComments/>
