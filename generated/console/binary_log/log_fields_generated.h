@@ -53,6 +53,7 @@ static const LogField fields[] = {
 	{engine->outputChannels.oilPressure, "Oil Pressure", "kPa", 0},
 	{engine->outputChannels.vvtPositionB1I, "VVT: bank 1 intake", "deg", 1},
 	{engine->outputChannels.actualLastInjection, "Fuel: Last inj pulse width", "ms", 3},
+	{engine->outputChannels.stopEngineCode, "stopEngineCode", "", 0},
 	{engine->outputChannels.injectorDutyCycle, "Fuel: injector duty cycle", "%", 0},
 	{engine->outputChannels.tempLogging1, "tempLogging1", "", 0},
 	{engine->outputChannels.injectionOffset, "Fuel: Injection timing SOI", "deg", 0},
@@ -583,6 +584,9 @@ static const LogField fields[] = {
 #endif
 #if EFI_LAUNCH_CONTROL
 	{engine->shiftTorqueReductionController, 0, 5, "isFlatShiftConditionSatisfied", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 6, "isBelowTemperatureThreshold", ""},
 #endif
 #if EFI_BOOST_CONTROL
 	{*engine->module<BoostController>(), 0, 0, "isTpsInvalid", ""},

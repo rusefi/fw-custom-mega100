@@ -808,9 +808,8 @@ struct engine_configuration_s {
 	offset 168 bit 16 */
 	bool launchControlEnabled : 1 {};
 	/**
-	 * "Detect double trigger edges"
 	offset 168 bit 17 */
-	bool doNotFilterTriggerEdgeNoise : 1 {};
+	bool unusedBitHere : 1 {};
 	/**
 	offset 168 bit 18 */
 	bool antiLagEnabled : 1 {};
@@ -4095,16 +4094,15 @@ struct engine_configuration_s {
 	 */
 	uint16_t tuneHidingKey;
 	/**
-	 * Individual charaters are accessible using vin(index) Lua function
+	 * Individual characters are accessible using vin(index) Lua function
 	 * offset 3144
 	 */
 	vin_number_t vinNumber;
 	/**
-	 * need 4 byte alignment
-	 * units: units
+	 * units: C
 	 * offset 3161
 	 */
-	uint8_t alignmentFill_at_3161[1] = {};
+	int8_t torqueReductionActivationTemperature;
 	/**
 	 * offset 3162
 	 */
