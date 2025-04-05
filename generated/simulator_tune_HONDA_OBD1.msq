@@ -560,7 +560,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250404E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250405E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -911,7 +911,6 @@
         <constant name="disableFan2WhenStopped">"false"</constant>
         <constant digits="3" name="displacement" units="L">1.645</constant>
         <constant name="displayLogicLevelsInEngineSniffer">"false"</constant>
-        <constant name="doNotFilterTriggerEdgeNoise">"with filter"</constant>
         <constant digits="1" name="driveWheelRevPerKm" units="revs/km">1000.0</constant>
         <constant name="drv8860_cs">"NONE"</constant>
         <constant name="drv8860_csPinMode">"default"</constant>
@@ -4146,6 +4145,7 @@ end</constant>
          0.0
 </constant>
         <constant name="torqueReductionActivationMode">"Torque Reduction Button"</constant>
+        <constant digits="0" name="torqueReductionActivationTemperature" units="C">60.0</constant>
         <constant digits="0" name="torqueReductionArmingApp" units="">0.0</constant>
         <constant digits="0" name="torqueReductionArmingRpm" units="rpm">0.0</constant>
         <constant name="torqueReductionEnabled">"false"</constant>
@@ -4403,6 +4403,7 @@ end</constant>
         <constant name="unused1320_28">"false"</constant>
         <constant name="unused920_1testChange">"false"</constant>
         <constant digits="0" name="unusedafterCrankingIACtaperDuration" units="">0.0</constant>
+        <constant name="unusedBitHere">"false"</constant>
         <constant digits="0" name="unusedcrankingIACposition" units="">0.0</constant>
         <constant name="unusedCutFuelInAcr">"false"</constant>
         <constant name="unusedFancy10">"false"</constant>
@@ -4980,7 +4981,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250403" nPages="1" signature="rusEFI main.2025.04.04.mega100.4030882164" version="5.0"/>
+    <versionInfo firmwareInfo="20250403" nPages="1" signature="rusEFI main.2025.04.05.mega100.3851554531" version="5.0"/>
     <bibliography author="rusEFI 20250403" writeDate="date"/>
     <settings/>
     <userComments/>
