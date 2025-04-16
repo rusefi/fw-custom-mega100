@@ -32,6 +32,7 @@
         <constant digits="2" name="afr_v2" units="volts">5.0</constant>
         <constant digits="2" name="afr_value1" units="AFR">9.996</constant>
         <constant digits="2" name="afr_value2" units="AFR">19.992</constant>
+        <constant digits="3" name="afrExpAverageAlpha" units="">1.0</constant>
         <constant name="afrOverrideMode">"None"</constant>
         <constant cols="1" digits="1" name="afterCrankingIACtaperDuration" rows="6">
          100.0
@@ -560,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250415E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250416E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2891,7 +2892,6 @@ end</constant>
          93.33
          100.0
 </constant>
-        <constant digits="3" name="mapExpAverageAfr" units="">0.0</constant>
         <constant digits="3" name="mapExpAverageAlpha" units="">1.0</constant>
         <constant digits="2" name="mapHighValueVoltage" units="v">5.0</constant>
         <constant digits="2" name="mapLowValueVoltage" units="v">0.0</constant>
@@ -5049,7 +5049,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250403" nPages="1" signature="rusEFI main.2025.04.15.mega100.1135897621" version="5.0"/>
+    <versionInfo firmwareInfo="20250403" nPages="1" signature="rusEFI main.2025.04.16.mega100.1697370915" version="5.0"/>
     <bibliography author="rusEFI 20250403" writeDate="date"/>
     <settings/>
     <userComments/>
