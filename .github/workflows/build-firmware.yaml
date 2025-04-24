@@ -22,7 +22,8 @@ jobs:
             echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           fi
           if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
-            echo 'upload=bundles' >> $GITHUB_OUTPUT
+            echo 'extra_makefile_targets=build_both_bundles' >> $GITHUB_OUTPUT
+            echo 'upload=ftp_upload_bundles' >> $GITHUB_OUTPUT
             echo 'push=true' >> $GITHUB_OUTPUT
             echo 'sim=true' >> $GITHUB_OUTPUT
           else
