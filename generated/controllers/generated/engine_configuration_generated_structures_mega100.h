@@ -1087,6 +1087,7 @@ struct engine_configuration_s {
 	 */
 	uint8_t maxIdleVss;
 	/**
+	 * Allowed range around detection position
 	 * offset 447
 	 */
 	uint8_t camDecoder2jzPrecision;
@@ -3130,6 +3131,8 @@ struct engine_configuration_s {
 	offset 1520 bit 31 */
 	bool unusedBit_549_31 : 1 {};
 	/**
+	 * Angle of tooth detection within engine phase cycle
+	 * units: angle
 	 * offset 1524
 	 */
 	uint8_t camDecoder2jzPosition;
@@ -3929,6 +3932,7 @@ struct engine_configuration_s {
 	scaled_channel<uint16_t, 1000, 1> hpfpPumpVolume;
 	/**
 	 * How long to keep the valve activated (in order to allow the pump to build pressure and keep the valve open on its own)
+	 * https://rusefi.com/forum/viewtopic.php?t=2192
 	 * units: deg
 	 * offset 3026
 	 */
