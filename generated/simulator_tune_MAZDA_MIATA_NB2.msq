@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250426E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250427E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2329,6 +2329,18 @@
         <constant digits="4" name="injectorCorrectionPolynomial7" units="">0.0</constant>
         <constant digits="4" name="injectorCorrectionPolynomial8" units="">0.0</constant>
         <constant name="injectorFlowAsMassFlow">"cc/min"</constant>
+        <constant cols="2" digits="2" name="injectorFlowLinearization" rows="2">
+         0.0 0.0
+         0.0 0.0
+</constant>
+        <constant cols="1" digits="2" name="injectorFlowLinearizationFuelMassBins" rows="2">
+         0.0
+         500.0
+</constant>
+        <constant cols="1" digits="1" name="injectorFlowLinearizationPressureBins" rows="2">
+         0.0
+         300.0
+</constant>
         <constant name="injectorNonlinearMode">"None"</constant>
         <constant name="injectorPressureType">"Low"</constant>
         <constant cols="1" digits="2" name="injectorSecondary_battLagCorrBattBins" rows="8">
@@ -4472,7 +4484,6 @@ end</constant>
         <constant name="uiMode">"Full"</constant>
         <constant name="unused1308_24">"false"</constant>
         <constant name="unused1320_28">"false"</constant>
-        <constant name="unused920_1testChange">"false"</constant>
         <constant digits="0" name="unusedafterCrankingIACtaperDuration" units="">0.0</constant>
         <constant digits="0" name="unusedcrankingIACposition" units="">0.0</constant>
         <constant name="unusedFancy10">"false"</constant>
@@ -4577,6 +4588,7 @@ end</constant>
         <constant name="useIacPidMultTable">"false"</constant>
         <constant name="useIacTableForCoasting">"false"</constant>
         <constant name="useIdleTimingPidControl">"true"</constant>
+        <constant name="useInjectorFlowLinearizationTable">"false"</constant>
         <constant name="useLinearCltSensor">"false"</constant>
         <constant name="useLinearIatSensor">"false"</constant>
         <constant name="useNoiselessTriggerDecoder">"false"</constant>
@@ -5051,7 +5063,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250424" nPages="1" signature="rusEFI main.2025.04.26.mega100.1546638414" version="5.0"/>
+    <versionInfo firmwareInfo="20250424" nPages="1" signature="rusEFI main.2025.04.27.mega100.2488699953" version="5.0"/>
     <bibliography author="rusEFI 20250424" writeDate="date"/>
     <settings/>
     <userComments/>
