@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23788">
+    <page number="0" size="23780">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -560,8 +560,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250429E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.025043E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.025043E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250501E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1418,14 +1418,6 @@
          0.0
          0.0
 </constant>
-        <constant name="hip9011CsPin">"NONE"</constant>
-        <constant name="hip9011CsPinMode">"default"</constant>
-        <constant digits="2" name="hip9011Gain" units="">1.0</constant>
-        <constant name="hip9011IntHoldPin">"NONE"</constant>
-        <constant name="hip9011IntHoldPinMode">"default"</constant>
-        <constant digits="0" name="hip9011Prescaler" units="integer">0.0</constant>
-        <constant name="hip9011SpiDevice">"Off"</constant>
-        <constant name="hipOutputChannel">"Disabled"</constant>
         <constant name="hondaK">"false"</constant>
         <constant digits="0" name="hpfpActivationAngle" units="deg">30.0</constant>
         <constant name="hpfpCam">"NONE"</constant>
@@ -1554,6 +1546,8 @@
 </constant>
         <constant digits="0" name="hpfpMinAngle" units="deg">10.0</constant>
         <constant digits="0" name="hpfpPeakPos" units="deg">10.0</constant>
+        <constant digits="0" name="hpfpPid_iTermMax" units="">0.0</constant>
+        <constant digits="0" name="hpfpPid_iTermMin" units="">0.0</constant>
         <constant digits="5" name="hpfpPidI" units="%/kPa/lobe">3.0E-4</constant>
         <constant digits="3" name="hpfpPidP" units="%/kPa">0.01</constant>
         <constant digits="3" name="hpfpPumpVolume" units="cc">0.29</constant>
@@ -2438,7 +2432,6 @@
         <constant name="isDoubleSolenoidIdle">"false"</constant>
         <constant name="isFasterEngineSpinUpEnabled">"true"</constant>
         <constant name="isForcedInduction">"false"</constant>
-        <constant name="isHip9011Enabled">"false"</constant>
         <constant name="isIgnitionEnabled">"true"</constant>
         <constant name="isInjectionEnabled">"true"</constant>
         <constant name="isMapAveragingEnabled">"true"</constant>
@@ -4515,7 +4508,6 @@ end</constant>
         <constant name="unusedFancy7">"false"</constant>
         <constant name="unusedFancy8">"false"</constant>
         <constant name="unusedFancy9">"false"</constant>
-        <constant digits="0" name="unusedHip1" units="">0.0</constant>
         <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="53">
          0.0
          0.0
@@ -4601,7 +4593,6 @@ end</constant>
         <constant name="useStepperIdle">"false"</constant>
         <constant name="useTLE8888_cranking_hack">"true"</constant>
         <constant name="useTLE8888_stepper">"false"</constant>
-        <constant name="useTpicAdvancedMode">"false"</constant>
         <constant name="useVssAsSecondWheelSpeed">"false"</constant>
         <constant name="vbattAdcChannel">"Disabled"</constant>
         <constant digits="2" name="vbattDividerCoeff" units="coef">5.333333</constant>
@@ -5060,7 +5051,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250424" nPages="1" signature="rusEFI main.2025.04.30.mega100.2722748619" version="5.0"/>
+    <versionInfo firmwareInfo="20250424" nPages="1" signature="rusEFI main.2025.05.01.mega100.3075303642" version="5.0"/>
     <bibliography author="rusEFI 20250424" writeDate="date"/>
     <settings/>
     <userComments/>
