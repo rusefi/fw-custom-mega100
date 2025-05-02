@@ -388,7 +388,7 @@
 #define ego_sensor_e_ES_Innovate_MTX_L 1
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
-#define END_OF_CALIBRATION_PADDING 53
+#define END_OF_CALIBRATION_PADDING 44
 #define engine_configuration_s_size 3972
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
@@ -1418,7 +1418,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3075303642
+#define SIGNATURE_HASH 2399613779
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1923,7 +1923,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.05.01.mega100.3075303642"
+#define TS_SIGNATURE "rusEFI main.2025.05.02.mega100.2399613779"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
@@ -1939,6 +1939,8 @@
 #define TsCalMode_EtbKd 5
 #define TsCalMode_EtbKi 4
 #define TsCalMode_EtbKp 3
+#define TsCalMode_EwgPosMax 14
+#define TsCalMode_EwgPosMin 15
 #define TsCalMode_None 0
 #define TsCalMode_PedalMax 13
 #define TsCalMode_PedalMin 12

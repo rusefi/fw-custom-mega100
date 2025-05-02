@@ -645,20 +645,13 @@ struct engine_configuration_s {
 	 */
 	float compressionRatio;
 	/**
-	 * Voltage when the wastegate is closed.
-	 * You probably don't have one of these!
-	 * units: mv
 	 * offset 20
 	 */
-	uint16_t wastegatePositionMin;
+	uint16_t unusedWastgate0;
 	/**
-	 * Voltage when the wastegate is fully open.
-	 * You probably don't have one of these!
-	 * 1 volt = 1000 units
-	 * units: mv
 	 * offset 22
 	 */
-	uint16_t wastegatePositionMax;
+	uint16_t unusedWastgate1;
 	/**
 	 * Voltage when the idle valve is closed.
 	 * You probably don't have one of these!
@@ -4935,8 +4928,26 @@ struct engine_configuration_s {
 	 */
 	scaled_channel<uint8_t, 10, 1> idleReturnTargetRampDuration;
 	/**
+	 * need 4 byte alignment
 	 * units: units
 	 * offset 3919
+	 */
+	uint8_t alignmentFill_at_3919[1] = {};
+	/**
+	 * Voltage when the wastegate is fully open
+	 * units: v
+	 * offset 3920
+	 */
+	float wastegatePositionOpenedVoltage;
+	/**
+	 * Voltage when the wastegate is closed
+	 * units: v
+	 * offset 3924
+	 */
+	float wastegatePositionClosedVoltage;
+	/**
+	 * units: units
+	 * offset 3928
 	 */
 	uint8_t unusedOftenChangesDuringFirmwareUpdate[END_OF_CALIBRATION_PADDING] = {};
 };
