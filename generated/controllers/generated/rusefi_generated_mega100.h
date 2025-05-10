@@ -130,6 +130,7 @@
 #define BLEND_TABLE_COUNT 8
 #define blend_table_s_size 188
 #define BLOCKING_FACTOR 1024
+#define BOARD_CAM_SETTINGS_FILE 
 #define BOARD_CONSTANTS_EXTENSIONS_FROM_FILE 
 #define BOARD_CURVES_FROM_FILE 
 #define BOARD_DIAG_PANEL1_FROM_FILE 
@@ -1424,7 +1425,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 458929681
+#define SIGNATURE_HASH 2416353263
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1835,6 +1836,12 @@
 #define ts_show_gdi true
 #define ts_show_gdi_low_level true
 #define ts_show_globalTriggerAngleOffset true
+#define ts_show_gppwm1_pin true
+#define ts_show_gppwm2_pin true
+#define ts_show_gppwm3_error_value true
+#define ts_show_gppwm3_frequency true
+#define ts_show_gppwm3_pin true
+#define ts_show_gppwm4_pin true
 #define ts_show_hardware_simulator true
 #define ts_show_hbridge_function true
 #define ts_show_hd true
@@ -1929,7 +1936,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.05.09.mega100.458929681"
+#define TS_SIGNATURE "rusEFI main.2025.05.10.mega100.2416353263"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
