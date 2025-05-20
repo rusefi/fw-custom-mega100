@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250519E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.025052E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4599,11 +4599,7 @@ end</constant>
         <constant name="unusedFancy7">"false"</constant>
         <constant name="unusedFancy8">"false"</constant>
         <constant name="unusedFancy9">"false"</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="44">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="40">
          0.0
          0.0
          0.0
@@ -5070,7 +5066,9 @@ end</constant>
         <constant digits="2" name="wastegatePositionOpenedVoltage" units="v">5.0</constant>
         <constant name="wastegatePositionSensor">"Disabled"</constant>
         <constant name="watchOutForLinearTime">"true"</constant>
-        <constant name="widebandOnSecondBus">"1"</constant>
+        <constant name="wboType1">"RusEFI"</constant>
+        <constant name="wboType2">"RusEFI"</constant>
+        <constant name="widebandOnSecondBus">"CAN1"</constant>
         <constant digits="2" name="wwaeBeta" units="Fraction">0.0</constant>
         <constant digits="2" name="wwaeTau" units="Seconds">0.0</constant>
         <constant cols="1" digits="2" name="wwBetaCltValues" rows="8">
@@ -5135,8 +5133,8 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250516" nPages="1" signature="rusEFI main.2025.05.19.mega100.4289737889" version="5.0"/>
-    <bibliography author="rusEFI 20250516" writeDate="date"/>
+    <versionInfo firmwareInfo="20250519" nPages="1" signature="rusEFI main.2025.05.20.mega100.3814947438" version="5.0"/>
+    <bibliography author="rusEFI 20250519" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
