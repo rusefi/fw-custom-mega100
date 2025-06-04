@@ -120,10 +120,12 @@
 #define bench_mode_e_BENCH_VVT3_VALVE 19
 #define bench_mode_e_HD_ACR 28
 #define bench_mode_e_HD_ACR2 29
-#define bench_mode_e_LUA_COMMAND_1 30
-#define bench_mode_e_LUA_COMMAND_2 31
-#define bench_mode_e_LUA_COMMAND_3 32
-#define bench_mode_e_LUA_COMMAND_4 33
+#define bench_mode_e_LTFT_DEV_POKE 31
+#define bench_mode_e_LTFT_RESET 30
+#define bench_mode_e_LUA_COMMAND_1 32
+#define bench_mode_e_LUA_COMMAND_2 33
+#define bench_mode_e_LUA_COMMAND_3 34
+#define bench_mode_e_LUA_COMMAND_4 35
 #define BENCH_STARTER_DURATION 4000
 #define BENCH_VVT_DURATION 300
 #define BLEND_FACTOR_SIZE 8
@@ -287,6 +289,7 @@
 #define CRANKING_CLT_IDLE_CURVE_SIZE 8
 #define CRANKING_CURVE_SIZE 8
 #define CRANKING_CYCLE_CLT_SIZE 4
+#define CRANKING_ENRICH_CLT_COUNT 6
 #define CRANKING_ENRICH_COUNT 6
 #define cranking_parameters_s_size 4
 #define CRITICAL_BUFFER_SIZE 120
@@ -1178,9 +1181,11 @@
 #define HPFP_LOBE_PROFILE_SIZE 16
 #define HPFP_TARGET_SIZE 10
 #define HW_EVENT_TYPES 4
+#define IAC_PID_MULT_RPM_SIZE 8
 #define IAC_PID_MULT_SIZE 8
 #define IAT_CURVE_SIZE 16
 #define IAT_IGN_CORR_COUNT 8
+#define IAT_IGN_CORR_LOAD_COUNT 8
 #define IDLE_ADVANCE_CURVE_SIZE 8
 #define idle_hardware_s_size 12
 #define idle_mode_e_auto_enum 0="IM_AUTO",1="IM_MANUAL"
@@ -1439,7 +1444,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 35853349
+#define SIGNATURE_HASH 637731814
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1492,11 +1497,13 @@
 #define tle8888_mode_e_TL_HALL 3
 #define tle8888_mode_e_TL_MANUAL 2
 #define tle8888_mode_e_TL_SEMI_AUTO 1
+#define TMF_RATIO_SIZE 2
 #define TMF_SIZE 2
 #define TOOTH_DATA_LENGTH 2000
 #define TOOTH_PACKET_COUNT 1000
 #define TOOTH_PACKET_SIZE 2
 #define TOP_DEAD_CENTER_MESSAGE "r"
+#define TORQUE_CURVE_RPM_SIZE 6
 #define TORQUE_CURVE_SIZE 6
 #define TORQUE_TABLE_X_SIZE 6
 #define TORQUE_TABLE_Y_SIZE 2
@@ -1512,7 +1519,8 @@
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
 #define TPS_TPS_ACCEL_CLT_CORR_TABLE 4
 #define TPS_TPS_ACCEL_TABLE 8
-#define TRACTION_CONTROL_ETB_DROP_SIZE 6
+#define TRACTION_CONTROL_ETB_DROP_SLIP_SIZE 6
+#define TRACTION_CONTROL_ETB_DROP_SPEED_SIZE 6
 #define TRAILING_SPARK_SIZE 4
 #define transmission_controller_e_enum "None", "Simple Transmission", "Generic 4-Speed", "GM 4L6X"
 #define TransmissionControllerMode_auto_enum 0="None",2="Generic4",3="Gm4l6x",1="SimpleTransmissionController"
@@ -1890,6 +1898,8 @@
 #define ts_show_k_line true
 #define ts_show_knock_cylinder_mapping true
 #define ts_show_l9779 false
+#define ts_show_live_data true
+#define ts_show_long_term_fuel_trim false
 #define ts_show_maf true
 #define ts_show_main_relay true
 #define ts_show_main_relay_microRusEFI_message false
@@ -1965,7 +1975,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.06.03.mega100.35853349"
+#define TS_SIGNATURE "rusEFI main.2025.06.04.mega100.637731814"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
