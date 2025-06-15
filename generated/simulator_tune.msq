@@ -560,8 +560,8 @@
         <constant digits="0" name="brakeMeanEffectivePressureDifferential" units="">0.0</constant>
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">2.0250613E7</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250614E7</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">2.0250614E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250615E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4256,11 +4256,11 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="torqueLoadBins" rows="6">
          0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         20.0
+         40.0
+         60.0
+         80.0
+         100.0
 </constant>
         <constant name="torqueReductionActivationMode">"Torque Reduction Button"</constant>
         <constant digits="0" name="torqueReductionActivationTemperature" units="C">60.0</constant>
@@ -4321,12 +4321,12 @@ end</constant>
         <constant name="torqueReductionTriggerPin">"NONE"</constant>
         <constant name="torqueReductionTriggerPinMode">"DEFAULT"</constant>
         <constant cols="1" digits="0" name="torqueRpmBins" rows="6">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         650.0
+         800.0
+         2200.0
+         3600.0
+         5000.0
+         7000.0
 </constant>
         <constant cols="6" digits="0" name="torqueTable" rows="6">
          0.0 0.0 0.0 0.0 0.0 0.0
@@ -5102,7 +5102,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250610" nPages="1" signature="rusEFI main.2025.06.14.mega100.1270803975" version="5.0"/>
+    <versionInfo firmwareInfo="20250610" nPages="1" signature="rusEFI main.2025.06.15.mega100.1859957202" version="5.0"/>
     <bibliography author="rusEFI 20250610" writeDate="date"/>
     <settings/>
     <userComments/>
