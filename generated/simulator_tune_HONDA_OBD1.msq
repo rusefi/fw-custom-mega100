@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23696">
+    <page number="0" size="23660">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250616E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250617E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2707,6 +2707,12 @@
         <constant digits="2" name="lowPressureFuel_value2" units="">100.0</constant>
         <constant name="lps25BaroSensorScl">"NONE"</constant>
         <constant name="lps25BaroSensorSda">"NONE"</constant>
+        <constant name="ltft_correctionEnabled">"false"</constant>
+        <constant digits="1" name="ltft_deadband" units="%">0.0</constant>
+        <constant name="ltft_enabled">"false"</constant>
+        <constant digits="1" name="ltft_maxAdd" units="%">12.5</constant>
+        <constant digits="1" name="ltft_maxRemove" units="%">12.5</constant>
+        <constant digits="0" name="ltft_timeConstant" units="sec">0.0</constant>
         <constant name="luaCanRxWorkaround">"false"</constant>
         <constant name="luaDigitalInputPinModes1">"DEFAULT"</constant>
         <constant name="luaDigitalInputPinModes2">"DEFAULT"</constant>
@@ -4536,42 +4542,6 @@ end</constant>
         <constant digits="3" name="triggerVVTGapOverrideTo2" units="ratio">0.0</constant>
         <constant digits="3" name="triggerVVTGapOverrideTo3" units="ratio">0.0</constant>
         <constant digits="3" name="triggerVVTGapOverrideTo4" units="ratio">0.0</constant>
-        <constant cols="1" digits="0" name="trimLoadBins" rows="16">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-</constant>
-        <constant cols="1" digits="0" name="trimRpmBins" rows="16">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-</constant>
         <constant digits="0" name="tuneHidingKey" units="">0.0</constant>
         <constant digits="0" name="tunerStudioSerialSpeed" units="BPs">38400.0</constant>
         <constant digits="0" name="tuningDetector" units="seconds">11.0</constant>
@@ -5103,8 +5073,8 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250610" nPages="1" signature="rusEFI main.2025.06.16.mega100.899209699" version="5.0"/>
-    <bibliography author="rusEFI 20250610" writeDate="date"/>
+    <versionInfo firmwareInfo="20250615" nPages="1" signature="rusEFI main.2025.06.17.mega100.2832617091" version="5.0"/>
+    <bibliography author="rusEFI 20250615" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
