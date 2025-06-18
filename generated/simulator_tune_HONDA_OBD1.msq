@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="23660">
+    <page number="0" size="23672">
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
         <constant name="accelerometerSpiDevice">"Off"</constant>
@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250617E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250618E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2255,6 +2255,7 @@
          10.5 12.1 15.2 18.3 21.5 24.6 27.7 30.8 34.0 35.0 35.0 35.0 35.0 35.0 35.0 35.0
 </constant>
         <constant name="ignKeyAdcChannel">"Disabled"</constant>
+        <constant digits="0" name="ignKeyAdcDivider" units="">0.0</constant>
         <constant name="ignOverrideMode">"None"</constant>
         <constant cols="1" digits="0" name="ignTrimLoadBins" rows="4">
          20.0
@@ -3098,6 +3099,7 @@ end</constant>
         <constant digits="0" name="nitrousMinimumVehicleSpeed" units="Kph">0.0</constant>
         <constant name="nitrousRelayPin">"NONE"</constant>
         <constant name="nitrousRelayPinMode">"default"</constant>
+        <constant digits="1" name="noFuelTrimAfterAccelTime" units="sec">0.0</constant>
         <constant digits="1" name="noFuelTrimAfterDfcoTime" units="sec">5.0</constant>
         <constant name="o2heaterPin">"NONE"</constant>
         <constant name="o2heaterPinModeTodO">"default"</constant>
@@ -4596,6 +4598,7 @@ end</constant>
         <constant name="useHbridgesToDriveIdleStepper">"false"</constant>
         <constant name="useIacPidMultTable">"false"</constant>
         <constant name="useIacTableForCoasting">"false"</constant>
+        <constant name="useIdleAdvanceWhileCoasting">"false"</constant>
         <constant name="useIdleTimingPidControl">"false"</constant>
         <constant name="useInjectorFlowLinearizationTable">"false"</constant>
         <constant name="useLinearCltSensor">"false"</constant>
@@ -5073,7 +5076,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250615" nPages="1" signature="rusEFI main.2025.06.17.mega100.2832617091" version="5.0"/>
+    <versionInfo firmwareInfo="20250615" nPages="1" signature="rusEFI main.2025.06.18.mega100.2035373521" version="5.0"/>
     <bibliography author="rusEFI 20250615" writeDate="date"/>
     <settings/>
     <userComments/>
