@@ -3214,13 +3214,13 @@ struct engine_configuration_s {
 	 */
 	switch_input_pin_e tcuDownshiftButtonPin;
 	/**
-	 * units: voltage
+	 * units: volts
 	 * offset 1496
 	 */
 	float throttlePedalUpVoltage;
 	/**
 	 * Pedal in the floor
-	 * units: voltage
+	 * units: volts
 	 * offset 1500
 	 */
 	float throttlePedalWOTVoltage;
@@ -3404,13 +3404,13 @@ struct engine_configuration_s {
 	 */
 	uint32_t uartConsoleSerialSpeed;
 	/**
-	 * units: voltage
+	 * units: volts
 	 * offset 1536
 	 */
 	float throttlePedalSecondaryUpVoltage;
 	/**
 	 * Pedal in the floor
-	 * units: voltage
+	 * units: volts
 	 * offset 1540
 	 */
 	float throttlePedalSecondaryWOTVoltage;
@@ -5945,6 +5945,9 @@ struct persistent_config_s {
 	 */
 	uint8_t tcuSolenoidTable[TCU_SOLENOID_COUNT][TCU_GEAR_COUNT] = {};
 	/**
+	 * This table represents MAP at a given TPS vs RPM, which we use if our MAP sensor has failed, or if we are using MAP Prediciton. 
+	 *  This table should be a direct representation of MAP, you can tune it manually by disconnecting MAP sensor, and filling out the table with values that match an external gauge that shows MAP.
+	 * Additionally, you can also use MLV to get the map values and/or generate the table for you
 	 * units: kPa
 	 * offset 15252
 	 */
@@ -6612,7 +6615,7 @@ struct persistent_config_s {
 	 */
 	float tcu_shiftTime;
 	/**
-	 * units: Volts
+	 * units: volts
 	 * offset 22884
 	 */
 	scaled_channel<int16_t, 10, 1> alternatorVoltageTargetTable[ALTERNATOR_VOLTAGE_TARGET_SIZE][ALTERNATOR_VOLTAGE_TARGET_SIZE] = {};
