@@ -64,7 +64,7 @@ struct stft_s {
 	scaled_channel<uint8_t, 10, 1> deadband;
 	/**
 	 * Below this temperature, correction is disabled.
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 7
 	 */
 	int8_t minClt;
@@ -3920,7 +3920,7 @@ struct engine_configuration_s {
 	 */
 	float injectorCorrectionPolynomial[8] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 1932
 	 */
 	scaled_channel<int8_t, 1, 5> primeBins[PRIME_CURVE_COUNT] = {};
@@ -3995,7 +3995,7 @@ struct engine_configuration_s {
 	int16_t coastingFuelCutTps;
 	/**
 	 * Fuel cutoff is disabled when the engine is cold.
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 1984
 	 */
 	int16_t coastingFuelCutClt;
@@ -4523,7 +4523,7 @@ struct engine_configuration_s {
 	 */
 	vin_number_t vinNumber;
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 3181
 	 */
 	int8_t torqueReductionActivationTemperature;
@@ -4557,12 +4557,12 @@ struct engine_configuration_s {
 	 */
 	int16_t ALSMaxDuration;
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 3206
 	 */
 	int8_t ALSMinCLT;
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 3207
 	 */
 	int8_t ALSMaxCLT;
@@ -5548,7 +5548,7 @@ struct persistent_config_s {
 	 */
 	uint16_t postCrankingDurationBins[CRANKING_ENRICH_COUNT] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 4164
 	 */
 	int16_t postCrankingCLTBins[CRANKING_ENRICH_CLT_COUNT] = {};
@@ -5605,7 +5605,7 @@ struct persistent_config_s {
 	scaled_channel<uint16_t, 100, 1> sparkDwellValues[DWELL_CURVE_SIZE] = {};
 	/**
 	 * CLT-based target RPM for automatic idle controller
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 4376
 	 */
 	scaled_channel<int8_t, 1, 2> cltIdleRpmBins[CLT_CURVE_SIZE] = {};
@@ -5622,7 +5622,7 @@ struct persistent_config_s {
 	scaled_channel<int16_t, 10, 1> ignitionCltCorrTable[CLT_TIMING_CURVE_SIZE][CLT_TIMING_CURVE_SIZE] = {};
 	/**
 	 * CLT-based timing correction
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 4458
 	 */
 	scaled_channel<int8_t, 1, 5> ignitionCltCorrTempBins[CLT_TIMING_CURVE_SIZE] = {};
@@ -5779,7 +5779,7 @@ struct persistent_config_s {
 	scaled_channel<uint8_t, 1, 100> pedalToTpsRpmBins[PEDAL_TO_TPS_RPM_SIZE] = {};
 	/**
 	 * CLT-based cranking position % for simple manual idle controller
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 5436
 	 */
 	float cltCrankingCorrBins[CLT_CRANKING_CURVE_SIZE] = {};
@@ -5790,7 +5790,7 @@ struct persistent_config_s {
 	 */
 	float cltCrankingCorr[CLT_CRANKING_CURVE_SIZE] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 5500
 	 */
 	float afterCrankingIACtaperDurationBins[CLT_CRANKING_TAPER_CURVE_SIZE] = {};
@@ -5833,7 +5833,7 @@ struct persistent_config_s {
 	 */
 	lua_script_t luaScript;
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 13616
 	 */
 	float cltFuelCorrBins[CLT_FUEL_CURVE_SIZE] = {};
@@ -5843,7 +5843,7 @@ struct persistent_config_s {
 	 */
 	float cltFuelCorr[CLT_FUEL_CURVE_SIZE] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 13744
 	 */
 	float iatFuelCorrBins[IAT_CURVE_SIZE] = {};
@@ -5858,7 +5858,7 @@ struct persistent_config_s {
 	 */
 	float crankingFuelCoef[CRANKING_CURVE_SIZE] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 13904
 	 */
 	float crankingFuelBins[CRANKING_CURVE_SIZE] = {};
@@ -5868,7 +5868,7 @@ struct persistent_config_s {
 	 */
 	float crankingCycleBins[CRANKING_CURVE_SIZE] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 13968
 	 */
 	int16_t crankingCycleFuelCltBins[CRANKING_CYCLE_CLT_SIZE] = {};
@@ -5882,7 +5882,7 @@ struct persistent_config_s {
 	float crankingCycleBaseFuel[CRANKING_CYCLE_CLT_SIZE][CRANKING_CURVE_SIZE] = {};
 	/**
 	 * CLT-based idle position for simple manual idle controller
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 14104
 	 */
 	float cltIdleCorrBins[CLT_IDLE_TABLE_CLT_SIZE] = {};
@@ -5928,7 +5928,7 @@ struct persistent_config_s {
 	 */
 	scaled_channel<int16_t, 10, 1> ignitionIatCorrTable[IAT_IGN_CORR_LOAD_COUNT][IAT_IGN_CORR_COUNT] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 14604
 	 */
 	int8_t ignitionIatCorrTempBins[IAT_IGN_CORR_COUNT] = {};
@@ -6558,7 +6558,7 @@ struct persistent_config_s {
 	 */
 	scaled_channel<uint8_t, 50, 1> tpsTspCorrValues[TPS_TPS_ACCEL_CLT_CORR_TABLE] = {};
 	/**
-	 * units: C
+	 * units: SPECIAL_CASE_TEMPERATURE
 	 * offset 22776
 	 */
 	scaled_channel<int8_t, 1, 5> cltRevLimitRpmBins[CLT_LIMITER_CURVE_SIZE] = {};
