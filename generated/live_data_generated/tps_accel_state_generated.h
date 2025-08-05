@@ -21,10 +21,12 @@ struct tps_accel_state_s {
 	 */
 	percent_t deltaTps = (percent_t)0;
 	/**
+	 * Fuel: TPS extraFuel
 	 * offset 12
 	 */
 	floatms_t extraFuel = (floatms_t)0;
 	/**
+	 * Fuel: TPS valueFromTable
 	 * offset 16
 	 */
 	float valueFromTable = (float)0;
@@ -129,6 +131,7 @@ struct tps_accel_state_s {
 	offset 20 bit 31 */
 	bool unusedBit_11_31 : 1 {};
 	/**
+	 * Fuel: TPS AE fractionalInjFuel
 	 * offset 24
 	 */
 	float fractionalInjFuel = (float)0;
