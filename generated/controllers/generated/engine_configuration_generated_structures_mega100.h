@@ -1408,10 +1408,11 @@ struct engine_configuration_s {
 	 */
 	float cylinderBore;
 	/**
-	 * This setting controls which fuel quantity control algorithm is used.
-	 * Alpha-N means drive by TPS commonly only used for NA engines
-	 * Speed Density requires MAP sensor and is the default choice for may installs
-	 * MAF air charge is a cylinder filling based method that uses a mass air flow sensor.
+	 * Determines the method used for calculating fuel delivery. The following options are available:
+	 * Uses intake manifold pressure (MAP) and intake air temperature (IAT) to calculate air density and fuel requirements. This is a common strategy, especially for naturally aspirated or turbocharged engines.
+	 * Alpha-N: Uses throttle position as the primary load input for fuel calculation. This strategy is generally used in engines with individual throttle bodies or those that lack a reliable MAP signal.
+	 * MAF Air Charge: Relies on a Mass Air Flow (MAF) sensor to measure the amount of air entering the engine directly, making it effective for engines equipped with a MAF sensor.
+	 * Lua: Allows for custom fuel calculations using Lua scripting, enabling highly specific tuning applications where the other strategies don't apply.
 	 * offset 452
 	 */
 	engine_load_mode_e fuelAlgorithm;
@@ -2949,6 +2950,7 @@ struct engine_configuration_s {
 	offset 1344 bit 14 */
 	bool invertSecondaryTriggerSignal : 1 {};
 	/**
+	 * When enabled, this option cuts the fuel supply when the RPM limit is reached. Cutting fuel provides a smoother limiting action; however, it may lead to slightly higher combustion chamber temperatures since unburned fuel is not present to cool the combustion process.
 	offset 1344 bit 15 */
 	bool cutFuelOnHardLimit : 1 {};
 	/**
@@ -3734,8 +3736,7 @@ struct engine_configuration_s {
 	 */
 	uint8_t alignmentFill_at_1579[1] = {};
 	/**
-	 * MAP value above which fuel is cut in case of overboost.
-	 * Set to 0 to disable overboost cut.
+	 * Specifies the boost pressure allowed before triggering a cut. Setting this to 0 will DISABLE overboost cut.
 	 * units: SPECIAL_CASE_PRESSURE
 	 * offset 1580
 	 */
@@ -4768,6 +4769,7 @@ struct engine_configuration_s {
 	 */
 	scaled_channel<uint8_t, 5, 1> rpmSoftLimitFuelAdded;
 	/**
+	 * Sets a buffer below the RPM hard limit, helping avoid rapid cycling of cut actions by defining a range within which RPM must drop before cut actions are re-enabled.
 	 * Hysterisis: if the hard limit is 7200rpm and rpmHardLimitHyst is 200rpm, then when the ECU sees 7200rpm, fuel/ign will cut, and stay cut until 7000rpm (7200-200) is reached
 	 * units: RPM
 	 * offset 3261
@@ -4917,13 +4919,13 @@ struct engine_configuration_s {
 	 */
 	int8_t tractionControlEtbDrop[TRACTION_CONTROL_ETB_DROP_SLIP_SIZE][TRACTION_CONTROL_ETB_DROP_SPEED_SIZE] = {};
 	/**
-	 * If injector duty cycle hits this value, instantly cut fuel.
+	 * This sets an immediate limit on injector duty cycle. If this threshold is reached, the system will immediately cut the injectors.
 	 * units: %
 	 * offset 3524
 	 */
 	uint8_t maxInjectorDutyInstant;
 	/**
-	 * If injector duty cycle hits this value for the specified delay time, cut fuel.
+	 * This limit allows injectors to operate up to the specified duty cycle percentage for a short period (as defined by the delay). After this delay, if the duty cycle remains above the limit, it will trigger a cut.
 	 * units: %
 	 * offset 3525
 	 */
