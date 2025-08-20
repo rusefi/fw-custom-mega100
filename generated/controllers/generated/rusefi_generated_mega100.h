@@ -1512,7 +1512,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 4269545705
+#define SIGNATURE_HASH 3513214451
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1787,6 +1787,7 @@
 #define ts_command_e_TS_SET_DEFAULT_ENGINE 31
 #define ts_command_e_TS_SET_ENGINE_TYPE 30
 #define ts_command_e_TS_SOLENOID_CATEGORY 25
+#define ts_command_e_TS_STOP_ENGINE 36
 #define ts_command_e_TS_UNUSED_23 23
 #define ts_command_e_TS_UNUSED_24 24
 #define ts_command_e_TS_UNUSED_26 26
@@ -2065,12 +2066,12 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.08.19.mega100.4269545705"
+#define TS_SIGNATURE "rusEFI main.2025.08.20.mega100.3513214451"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 2032
+#define TS_TOTAL_OUTPUT_SIZE 2036
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
