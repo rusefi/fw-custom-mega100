@@ -1492,7 +1492,7 @@ struct engine_configuration_s {
 	int8_t gapTrackingLengthOverride;
 	/**
 	 * Above this speed, disable closed loop idle control. Set to 0 to disable (allow closed loop idle at any speed).
-	 * units: kph
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 474
 	 */
 	uint8_t maxIdleVss;
@@ -1900,8 +1900,7 @@ struct engine_configuration_s {
 	 */
 	uint8_t vssToothCount;
 	/**
-	 * Override the Y axis (load) value used for only the Idle VE table.
-	 * Advanced users only: If you aren't sure you need this, you probably don't need this.
+	 * Allows you to change the default load axis used for the VE table, which is typically MAP (manifold absolute pressure).
 	 * offset 644
 	 */
 	ve_override_e idleVeOverrideMode;
@@ -2600,7 +2599,7 @@ struct engine_configuration_s {
 	offset 932 bit 12 */
 	bool invertCamVVTSignal : 1 {};
 	/**
-	 * In Alpha-N mode, compensate for air temperature.
+	 * When set to true, it enables intake air temperature-based corrections for Alpha-N tuning strategies.
 	offset 932 bit 13 */
 	bool alphaNUseIat : 1 {};
 	/**
@@ -2753,7 +2752,7 @@ struct engine_configuration_s {
 	uint8_t alignmentFill_at_1003[1] = {};
 	/**
 	 * Launch disabled above this speed if setting is above zero
-	 * units: Kph
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 1004
 	 */
 	int launchSpeedThreshold;
@@ -3459,13 +3458,13 @@ struct engine_configuration_s {
 	Gpio accelerometerCsPin;
 	/**
 	 * Below this speed, disable DFCO. Use this to prevent jerkiness from fuel enable/disable in low gears.
-	 * units: kph
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 1524
 	 */
 	uint8_t coastingFuelCutVssLow;
 	/**
 	 * Above this speed, allow DFCO. Use this to prevent jerkiness from fuel enable/disable in low gears.
-	 * units: kph
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 1525
 	 */
 	uint8_t coastingFuelCutVssHigh;
@@ -3490,7 +3489,7 @@ struct engine_configuration_s {
 	 */
 	uint8_t totalGearsCount;
 	/**
-	 * Sets what part of injection's is controlled by the injection phase table.
+	 * Defines when fuel is injected relative to the intake valve opening. Options include End of Injection or other timing references.
 	 * offset 1537
 	 */
 	InjectionTimingMode injectionTimingMode;
@@ -5428,7 +5427,7 @@ struct engine_configuration_s {
 	 */
 	float nitrousIgnitionRetard;
 	/**
-	 * units: Kph
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 3844
 	 */
 	uint16_t nitrousMinimumVehicleSpeed;
@@ -6318,17 +6317,17 @@ struct persistent_config_s {
 	 */
 	uint8_t tcu_tccTpsBins[8] = {};
 	/**
-	 * units: MPH
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 19192
 	 */
 	uint8_t tcu_tccLockSpeed[8] = {};
 	/**
-	 * units: MPH
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 19200
 	 */
 	uint8_t tcu_tccUnlockSpeed[8] = {};
 	/**
-	 * units: KPH
+	 * units: SPECIAL_CASE_SPEED
 	 * offset 19208
 	 */
 	uint8_t tcu_32SpeedBins[8] = {};
