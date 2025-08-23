@@ -466,13 +466,13 @@
 #define egoSettings_NAME "CAN O2 sensors"
 #define EGT_CHANNEL_COUNT 8
 #define engine_configuration_s_size 3936
-#define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
+#define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",1="LM_REAL_MAF",4="UNSUPPORTED_ENUM_VALUE"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
 #define engine_load_mode_e_LM_ALPHA_N 2
 #define engine_load_mode_e_LM_LUA 3
-#define engine_load_mode_e_LM_MOCK 100
 #define engine_load_mode_e_LM_REAL_MAF 1
 #define engine_load_mode_e_LM_SPEED_DENSITY 0
+#define engine_load_mode_e_UNSUPPORTED_ENUM_VALUE 4
 #define ENGINE_MAKE_BMW "BMW"
 #define ENGINE_MAKE_FORD "Ford"
 #define ENGINE_MAKE_GM "GM"
@@ -1512,7 +1512,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 353180763
+#define SIGNATURE_HASH 2159562284
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2066,7 +2066,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.08.22.mega100.353180763"
+#define TS_SIGNATURE "rusEFI main.2025.08.23.mega100.2159562284"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
